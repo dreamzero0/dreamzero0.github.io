@@ -29,42 +29,10 @@ const PaperInfo = ({
       </div>
       
       <div style={{ marginBottom: 20 }}>
-        <div style={{ fontWeight: 600, marginBottom: 8 }}>To read more about {paperType}:</div>
+        <div style={{ fontWeight: 600, marginBottom: 8 }}>Read about the details:</div>
         <a href={paperUrl} style={{ color: '#4285F4', textDecoration: 'none', fontWeight: 500 }}>
           {title}
         </a>
-      </div>
-      
-      <div>
-        <div style={{ fontWeight: 600, marginBottom: 12 }}>Authors:</div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginTop: 8 }}>
-          {authors.map((author, i) => (
-            <React.Fragment key={i}>
-              {author.url ? (
-                <a 
-                  href={author.url} 
-                  style={{ 
-                    color: '#333', 
-                    textDecoration: 'underline', 
-                    fontWeight: 500 
-                  }}
-                >
-                  {author.name}
-                </a>
-              ) : (
-                <span 
-                  style={{ 
-                    color: '#333', 
-                    fontWeight: 500 
-                  }}
-                >
-                  {author.name}
-                </span>
-              )}
-              {i < authors.length - 1 && ','}
-            </React.Fragment>
-          ))}
-        </div>
       </div>
     </div>
   );

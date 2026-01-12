@@ -8,7 +8,6 @@ import VideoComparison from '../components/VideoComparison';
 import ButtonSelector from '../components/ButtonSelector';
 import VideoCarousel from '../components/VideoCarousel';
 import PerformanceChart from '../components/PerformanceChart';
-import BenchmarkSection from '../components/BenchmarkSection';
 import PaperInfo from '../components/PaperInfo';
 import dynamic from 'next/dynamic';
 import { 
@@ -34,10 +33,8 @@ const mainVideo = '/labs/gear/videos/dreamgen_teaser/hsl/DreamGen_New.m3u8';
 const LazyVideo = dynamic(() => import('../components/LazyVideo'), { ssr: false });
 
 export default function FirstPost() {
-  const [selectedVideo, setSelectedVideo] = useState(behaviorVideos[0]);
-  const [selectedEnvVideo, setSelectedEnvVideo] = useState(environmentVideos[0]);
   const [selectedCombinedVideo, setSelectedCombinedVideo] = useState(combinedVideos[0]);
-  const [selectedPlatform, setSelectedPlatform] = useState('gr1');
+  const [selectedPlatform, setSelectedPlatform] = useState('seen_1');
   
   // Memoize chart data to prevent re-renders
   const mainChartData = useMemo(() => getMainChartData(), []);
@@ -82,13 +79,43 @@ export default function FirstPost() {
 
       <article className={styles.blogPost}>
         <div className={styles.center}>
-          <div className={styles.category}>Research</div>
           <h1 className={styles.blogTitle}>
-            DreamGen
+            <br /> 
+            DreamZero: World Action Models are Zero-shot Policies
             <br />
-            <span className={styles.subtitle} style={{fontSize: "0.55em"}}>Unlocking Genearlization in Robot Learning through Video World Models</span>
+            <span className={styles.subtitle} style={{fontSize: "0.55em"}}>
+              <div className={styles.authors}>
+                <div className={styles.authorList}>
+                  <span className={styles.authorName}><b><a href='https://seonghyeonye.github.io/' className={styles.authorLink}>Seonghyeon Ye</a></b><sup>†</sup></span>
+                  <span className={styles.authorName}><b><a href='https://gyhandy.github.io/' className={styles.authorLink}>Yunhao Ge</a></b><sup>*</sup></span>
+                  <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=6kkyR1wAAAAJ&hl=en' className={styles.authorLink}>Kaiyuan Zheng</a></b><sup>*</sup></span>
+                  <span className={styles.authorName}><b><a href='https://github.com/Little-Podi' className={styles.authorLink}>Shenyuan Gao</a></b><sup>*</sup></span>
+                  <span className={styles.authorName}><b><a href='https://sihyun.me/' className={styles.authorLink}>Sihyun Yu</a></b><sup>*</sup></span>
+                  <span className={styles.authorName}><b><a href='https://www.linkedin.com/in/georgekuriannetapp/' className={styles.authorLink}>George Kurian</a></b><sup>*</sup></span>
+                  <span className={styles.authorName}><b><a href='https://www.linkedin.com/in/suneel-indupuru-13b787/' className={styles.authorLink}>Suneel Indupuru</a></b><sup>*</sup></span>
+                  <div className={styles.lineBreak}></div>
+                  <span className={styles.authorName}><b><a href='https://homes.cs.washington.edu/~zchuning/' className={styles.authorLink}>Chuning Zhu</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://szxiangjn.github.io/' className={styles.authorLink}>Jiannan Xiang</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://www.linkedin.com/in/ayaannaveedmalik/' className={styles.authorLink}>Ayaan Malik</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://kyungmnlee.github.io/' className={styles.authorLink}>Kyungmin Lee</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://willjhliang.github.io/' className={styles.authorLink}>William Liang</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://youliangtan.github.io/' className={styles.authorLink}>You Liang Tan</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=lJth6jwAAAAJ&hl=en' className={styles.authorLink}>Nadun Ranawaka</a></b></span>
+                  <div className={styles.lineBreak}></div>
+                  <span className={styles.authorName}><b><a href='https://ryanjulian.me/' className={styles.authorLink}>Ryan Julian</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=ADkiClQAAAAJ&hl=en' className={styles.authorLink}>Yevgen Chebotar</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://reedscot.github.io/' className={styles.authorLink}>Scott Reed</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://yukezhu.me/' className={styles.authorLink}>Yuke Zhu</a></b><sup>†</sup></span>
+                  <span className={styles.authorName}><b><a href='https://jimfan.me/' className={styles.authorLink}>Linxi "Jim" Fan</a></b><sup>†</sup></span>
+                  <span className={styles.authorName}><b><a href='https://joeljang.github.io/' className={styles.authorLink}>Joel Jang</a></b><sup>†</sup></span>
+                </div>
+                <div className={styles.affiliation}><b>NVIDIA</b></div>
+                <div className={styles.authorNote}>
+                  <sup>†</sup>Project Leads &nbsp;&nbsp; <sup>*</sup>Core Contributors
+                </div>
+              </div>
+            </span>
           </h1>
-          <div className={styles.publishDate} style={{ fontSize: "1.0em" }}>May 20, 2025</div>
           
           <div className={styles.linkContainer}>
             <a href="https://arxiv.org/abs/2505.12705" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
@@ -99,8 +126,8 @@ export default function FirstPost() {
               GitHub
             </a>
             <span className={styles.linkDivider}>•</span>
-            <a href="https://dreamgen-u8q2hhdcu.brevlab.com/" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
-              Demo
+            <a href="http://github.com/nvidia/GR00T-dreams" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+              X Summary
             </a>
           </div>
           
@@ -117,114 +144,49 @@ export default function FirstPost() {
 
         <div id="content" className={styles.blogContent}>
           <p>
-          We introduce <b>DreamGen</b>, a 4-stage pipeline to generate <i>neural trajectories</i>, synthetic robot data generated from video world models. This work is the first in literature to enable <b>zero-shot behavior generalization and zero-shot environment generalization</b>: we enable a humanoid robot to perform 22 new behaviors in both seen and unseen environments, while requiring teleoperation data from only a single pick-and-place task in one environment. Through DreamGen, we change the paradigm of robot learning from scaling human teleoperation data to scaling GPU compute through world models.
+            <b>Traditional Vision-Language-Action (VLA) models</b> require thousands of repetitive, in-the-lab demonstrations per task and rely solely on linguistic priors, which limits their ability to generalize to unseen tasks and environments. <b>DreamZero</b> introduces a paradigm shift toward <b>World Action Models (WAMs)</b>—robotic foundation models built upon pretrained video diffusion models. Unlike VLAs that directly map observations to actions, DreamZero jointly predicts video and actions, leveraging the rich spatiotemporal priors and world physics understanding inherent in video models. This enables DreamZero to learn from diverse, "on-the-job" robot data where each demonstration is unique, rather than requiring dense coverage of repetitive behaviors. As a result, DreamZero achieves <b>zero-shot generalization</b> to both unseen tasks and unseen environments—capabilities that traditional VLAs fundamentally lack. Through system optimizations, we enable a 14B autoregressive video diffusion model to perform <em>real-time video generation and closed-loop motor control at 5Hz</em>.
           <br></br>
           </p>
 
-          <div className={styles.videoContainer}>
-            <LazyVideo
-              src="/labs/gear/videos/dreams_four_steps/hsl/method_preview.m3u8"
-              title="DreamGen Method Overview" 
-              className={styles.videoElement}
-              controls
+          <div style={{ 
+            width: '130%', 
+            marginLeft: '-15%', 
+            marginTop: '4rem',
+            marginBottom: '4rem'
+          }}>
+            <img 
+              src="/images/project_overview.png"
+              alt="DreamZero Method Overview"
+              style={{ 
+                width: '100%', 
+                borderRadius: '0',
+                boxShadow: 'none',
+                filter: 'none'
+              }}
             />
           </div>
 
           <p style={{marginTop: '20px'}}>
-            DreamGen is divided into 4-steps:
-          </p>
-          <ol>
-            <li>We first finetune video world models (image-to-video diffusion models) on a target robot to learn the dynamics of the given robot embodiment.​</li>
-            <li>We prompt the models with initial frames and language instructions, generating robot videos that not only include in-domain behaviors, but also novel behaviors in novel environments.​</li>
-            <li>We extract pseudo robot actions via a <a href="https://latentactionpretraining.github.io/" style={{ textDecoration: "underline" }}>latent action model</a> or an <a href="https://openai.com/index/vpt/" style={{ textDecoration: "underline" }}>inverse dynamics model</a> (IDM).​</li>
-            <li>We use these videos labeled with pseudo actions, named as <i>neural trajectories</i>, for downstream visuomotor policy learning​</li>
-          </ol>
-          <p>
-            With DreamGen, we enable a humanoid robot to perform <b>22 new verbs</b> in <b>10 new environments</b>. In the next subsections, we show videos of the generated neural trajectory along with the visuomotor policy execution from training <i>soley</i> on the neural trajectories (50 per task) for learning (1) new verbs in the lab, (2) seen verbs in new scenes, and (3) new verbs in new scenes. Note that both the video world model and the IDM model was trained only on pick-and-place teleoperation data in a single environment.
+            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 4 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen & unseen tasks</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, and <em>#4 Emergent Capabilities from WAMs (tool use, human-robot-interaction, collision avoidance, and visual reasoning)</em>.
           </p>
 
           {/* Behavior Generalization Videos */}
-          <h3>#1. Behavior Generalization:​</h3>
+          <h3>#1. AgiBot pretrain seen & unseen tasks​</h3>
           <p>Select a behavior to see the corresponding neural trajectory and real-robot execution videos:</p>
-          
-          <ButtonSelector 
-            options={behaviorVideos}
-            selectedId={selectedVideo.id}
-            onSelect={setSelectedVideo}
-          />
-        </div>
-
-        <VideoComparison 
-          neuralVideo={selectedVideo.neuralTrajectoryVideo}
-          policyVideo={selectedVideo.policyRolloutVideo}
-        />
-
-        {/* Environment Generalization */}
-        <div className={styles.blogContent}>
-          <h3>#2. Environment Generalization:​</h3>
-          <p>Select an environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
-          
-          <ButtonSelector 
-            options={environmentVideos}
-            selectedId={selectedEnvVideo.id}
-            onSelect={setSelectedEnvVideo}
-          />
-        </div>
-        
-        <VideoComparison 
-          neuralVideo={selectedEnvVideo.neuralTrajectoryVideo}
-          policyVideo={selectedEnvVideo.policyRolloutVideo}
-        />
-
-        {/* Behavior + Environment Generalization */}
-        <div className={styles.blogContent}>
-          <h3>#3. Behavior + Environment Generalization</h3>
-          <p>Select a behavior and environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
-          
-          <ButtonSelector 
-            options={combinedVideos}
-            selectedId={selectedCombinedVideo.id}
-            onSelect={setSelectedCombinedVideo}
-          />
-        </div>
-
-        <VideoComparison 
-          neuralVideo={selectedCombinedVideo.neuralTrajectoryVideo}
-          policyVideo={selectedCombinedVideo.policyRolloutVideo}
-        />
-
-
-        {/* Performance Comparison */}
-        <div className={styles.blogContent}>
-          <h3>Performance Comparison</h3>
-          
-          <p>The chart below shows the performance comparison between GR00T N1 and GR00T N1 w/ DreamGen across different generalization conditions:</p>
-          
-          <div className={styles.chartContainer}>
-            <PerformanceChart 
-              id="mainPerformanceChart"
-              data={mainChartData}
-              options={mainChartOptions}
-              type="bar"
-              height="300px"
-            />
-          </div>
-        </div>
-
-        {/* Neural Trajectories for Data Augmentation */}
-        <div className={styles.blogContent}>
-          <h3>DreamGen for augmenting data for contact-rich tasks</h3>
-          <p>
-            While prior work shows that generating synthetic robot data is possible through simulation, they still face the sim2real issue and have a hard time generating training data for contact-rich tasks. We show that DreamGen enables augmenting data for contact-rich tasks such as manipulating deformable objects (folding), tool-use (hammering), etc., and goes straight from real2real, starting first the initial frame. The same pipeline can also be applied to any robotic systems, including a single-arm robot (Franka) as well as a $100 robot arm (SO-100), and with multiple camera views (e.g. wrist cams). Below are neural trajectories from DreamGen along with the downstream policy co-trained with real-world and neural trajectories. 
-          </p>
           
           {/* Robot platform selector buttons */}
           <ButtonSelector 
             options={[
-              { id: 'gr1', label: 'GR1' },
-              { id: 'franka', label: 'Franka' },
-              { id: 'so100', label: 'SO 100' },
-              { id: 'robocasa', label: 'RoboCasa' }
+              { id: 'seen_1', label: 'Pick & Place Fruit' },
+              { id: 'seen_2', label: 'Take Fruit out of bag' },
+              { id: 'seen_3', label: 'Wipe the Mess' },
+              { id: 'seen_4', label: 'Pick & Place fork/spoon' },
+              { id: 'seen_5', label: 'Pen in Cup' },
+              { id: 'seen_6', label: 'Cup on coaster' },
+              { id: 'seen_7', label: 'Stacking bowls/cups together' },
+              { id: 'seen_8', label: 'Folding Shirts' },
+              { id: 'seen_9', label: 'Folding Shorts' },
+              { id: 'seen_10', label: 'Stacking clothes' },          
             ]}
             selectedId={selectedPlatform}
             onSelect={(option) => setSelectedPlatform(option.id)}
@@ -234,208 +196,164 @@ export default function FirstPost() {
         {/* Neural Trajectories Row */}
         <VideoCarousel 
           videos={platformVideos[selectedPlatform].neural}
-          title="Neural Trajectories"
         />
 
-        {/* Policy Rollouts Row */}
-        <VideoCarousel 
-          videos={platformVideos[selectedPlatform].policy}
-          title="Real-Robot Execution"
-        />
-
-        {/* Neural trajectories for data augmentation graphs */}
+        {/* Environment Generalization */}
         <div className={styles.blogContent}>
-          <p>The graphs below shows the performance gain from DreamGen across different robotic platforms (GR1, Franka, SO-100) & visuomotor robot policies (DP, π0, GR00T N1), highlighting the flexibility of DreamGen.</p>
+          <p>Here are rollouts of totally unseen tasks.</p>
           
-          <div className={styles.graphsContainer} style={{ 
-            display: 'flex', 
-            flexDirection: 'row', 
-            flexWrap: 'nowrap', 
-            justifyContent: 'space-between', 
-            marginTop: '20px',
-            marginBottom: '20px',
-            width: '100%',
-            overflowX: 'auto',
-            gap: '15px'
-          }}>
-            {/* GR1 Chart */}
-            <div style={{ 
-              flex: '1',
-              minWidth: '200px',
-              maxWidth: 'calc(33.33% - 10px)',
-              height: '300px',
-              display: 'flex',
-              flexDirection: 'column'
-            }}>
-              <div style={{
-                textAlign: 'center', 
-                fontSize: '16px', 
-                fontWeight: '500',
-                marginBottom: '5px'
-              }}>GR1</div>
-              <div style={{ flex: '1', position: 'relative' }}>
-                <PerformanceChart 
-                  id="gr1Chart"
-                  data={gr1ChartData}
-                  options={{
-                    ...gr1ChartOptions,
-                    maintainAspectRatio: true
-                  }}
-                  type="bar"
-                  height="100%"
-                />
-              </div>
-            </div>
-            
-            {/* Franka Chart */}
-            <div style={{ 
-              flex: '1',
-              minWidth: '200px',
-              maxWidth: 'calc(33.33% - 10px)',
-              height: '300px',
-              display: 'flex',
-              flexDirection: 'column'
-            }}>
-              <div style={{
-                textAlign: 'center', 
-                fontSize: '16px',
-                fontWeight: '500',
-                marginBottom: '5px'
-              }}>Franka</div>
-              <div style={{ flex: '1', position: 'relative' }}>
-                <PerformanceChart 
-                  id="frankaChart"
-                  data={frankaChartData}
-                  options={{
-                    ...frankaChartOptions,
-                    maintainAspectRatio: true
-                  }}
-                  type="bar"
-                  height="100%"
-                />
-              </div>
-            </div>
-            
-            {/* SO 100 Chart */}
-            <div style={{ 
-              flex: '1',
-              minWidth: '200px',
-              maxWidth: 'calc(33.33% - 10px)',
-              height: '300px',
-              display: 'flex',
-              flexDirection: 'column'
-            }}>
-              <div style={{
-                textAlign: 'center', 
-                fontSize: '16px',
-                fontWeight: '500',
-                marginBottom: '5px'
-              }}>SO 100</div>
-              <div style={{ flex: '1', position: 'relative' }}>
-                <PerformanceChart 
-                  id="s100Chart"
-                  data={s100ChartData}
-                  options={{
-                    ...s100ChartOptions,
-                    maintainAspectRatio: true
-                  }}
-                  type="bar"
-                  height="100%"
-                />
-              </div>
-            </div>
-          </div>
-          <h3>Data Scaling​</h3>
-          <p>
-            We analyze whether increasing the amount of neural trajectories would lead to better performance by measuring RoboCasa (sample neural trajectories and policy evals shown above) performance in simulation. We vary the total amount of neural trajectories, from 0 to 240k nerual trajectories, across different scenarios of ground-truth data (low, medium, high). We explore using both latent actions (LAPA) and IDM for getting pseudo actions. We observe that both IDM and LAPA actions lead in performance boost for all data regime. Also, we observe that there is a log-linear slope between the total number of neural trajectories and the downstream robot policy performance, establishing a promising new axis for scaling robot training data.
-          ​</p>
+          <ButtonSelector 
+            options={[
+              { id: 'unseen_1', label: 'Untie Shoe/gift' },
+              { id: 'unseen_2', label: 'Take Hat Off from Mannequin' },
+              { id: 'unseen_3', label: 'Draw a Circle' },
+              { id: 'unseen_4', label: 'Take out the Straw' },
+              { id: 'unseen_5', label: 'Stack the Cubes' },
+              { id: 'unseen_6', label: 'Paint with the Brush' },
+              { id: 'unseen_7', label: 'Iron the Clothes' },
+              { id: 'unseen_8', label: 'Shake Hands with the Human' },
+              { id: 'unseen_9', label: 'Fold the Map' },
+              { id: 'unseen_10', label: 'Pulling Cart' },          
+            ]}
+            selectedId={selectedPlatform}
+            onSelect={(option) => setSelectedPlatform(option.id)}
+          />
+        </div>
+        
+        {/* Neural Trajectories Row */}
+        <VideoCarousel 
+          videos={platformVideos[selectedPlatform].neural}
+        />
+
+        {/* Environment Generalization */}
+        <div className={styles.blogContent}>
+          <h3>#2. DROID pretrain seen & unseen tasks​</h3>
+          <p>Select an environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
+          
+          <ButtonSelector 
+            options={[
+              { id: 'seen_1', label: 'Pick & Place Fruit' },
+              { id: 'seen_2', label: 'Take Fruit out of bag' },
+              { id: 'seen_3', label: 'Wipe the Mess' },
+              { id: 'seen_4', label: 'Pick & Place fork/spoon' },
+              { id: 'seen_5', label: 'Pen in Cup' },
+              { id: 'seen_6', label: 'Cup on coaster' },
+              { id: 'seen_7', label: 'Stacking bowls/cups together' },
+              { id: 'seen_8', label: 'Folding Shirts' },
+              { id: 'seen_9', label: 'Folding Shorts' },
+              { id: 'seen_10', label: 'Stacking clothes' },          
+            ]}
+            selectedId={selectedPlatform}
+            onSelect={(option) => setSelectedPlatform(option.id)}
+          />
+        </div>
+        
+        {/* Neural Trajectories Row */}
+        <VideoCarousel 
+          videos={platformVideos[selectedPlatform].neural}
+        />
+
+        {/* Environment Generalization */}
+        <div className={styles.blogContent}>
+          <p>Here are rollouts of totally unseen tasks.</p>
+          
+          <ButtonSelector 
+            options={[
+              { id: 'unseen_1', label: 'Untie Shoe/gift' },
+              { id: 'unseen_2', label: 'Take Hat Off from Mannequin' },
+              { id: 'unseen_3', label: 'Draw a Circle' },
+              { id: 'unseen_4', label: 'Take out the Straw' },
+              { id: 'unseen_5', label: 'Stack the Cubes' },
+              { id: 'unseen_6', label: 'Paint with the Brush' },
+              { id: 'unseen_7', label: 'Iron the Clothes' },
+              { id: 'unseen_8', label: 'Shake Hands with the Human' },
+              { id: 'unseen_9', label: 'Fold the Map' },
+              { id: 'unseen_10', label: 'Pulling Cart' },          
+            ]}
+            selectedId={selectedPlatform}
+            onSelect={(option) => setSelectedPlatform(option.id)}
+          />
         </div>
 
-        {/* neural trajectory for data augmentation graph 2 */}
+        {/* Neural Trajectories Row */}
+        <VideoCarousel 
+          videos={platformVideos[selectedPlatform].neural}
+        />
+
+        {/* Behavior + Environment Generalization */}
         <div className={styles.blogContent}>
-          <div className={styles.graphsContainer} style={{ 
-            display: 'flex', 
-            flexDirection: 'row', 
-            flexWrap: 'nowrap', 
-            justifyContent: 'space-between', 
-            marginTop: '20px',
-            marginBottom: '20px',
-            width: '100%',
-            overflowX: 'auto',
-            gap: '15px'
+          <h3>#3. AgiBot post-train out-of-distribution</h3>
+          <p>Select a behavior and environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
+          
+          <ButtonSelector 
+            options={combinedVideos}
+            selectedId={selectedCombinedVideo.id}
+            onSelect={setSelectedCombinedVideo}
+          />
+
+        </div>
+
+        <div style={{ 
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <div style={{ 
+            width: '80%',
+            maxWidth: '70%'
           }}>
-            <div style={{ flex: '1', minWidth: '350px', height: '300px', position: 'relative' }}>
-              <PerformanceChart 
-                id="lapaChart"
-                data={lapaChartData}
-                options={{
-                  ...lapaChartOptions,
-                  maintainAspectRatio: true
-                }}
-                type="line"
-                height="100%"
-              />
-            </div>
-            <div style={{ flex: '1', minWidth: '350px', height: '300px', position: 'relative' }}>
-              <PerformanceChart 
-                id="idmChart"
-                data={idmChartData}
-                options={{
-                  ...idmChartOptions,
-                  maintainAspectRatio: true
-                }}
-                type="line"
-                height="100%"
+            <h3 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>10 consecutive evaluations (average 96% Task Progress)</h3>
+            <div style={{ 
+              width: '100%',
+              aspectRatio: '16/9',
+              borderRadius: '6px',
+              overflow: 'hidden',
+              backgroundColor: '#0f0f0f'
+            }}>
+              <LazyVideo
+                src={selectedCombinedVideo.policyRolloutVideo}
+                title="Policy Rollout Video"
+                style={{ width: '100%', height: '100%' }}
               />
             </div>
           </div>
         </div>
 
-        {/* RobotWorld Benchmark */}
         <div className={styles.blogContent}>
-          <BenchmarkSection />
+          <h3>#4. Emergent Capabilities from WAMs​</h3>
+          <p>Leveraging the priors of WAMs, we observe that DreamZero some <em>emergent</em> capabilities and is able to accomplish tasks that previously required task-specific methods.</p>
+
+          <ButtonSelector
+            options={[
+              { id: 'tool_use', label: 'Tool Use' },
+              { id: 'hri', label: 'Human-Robot-Interaction' },
+              { id: 'collision_avoidance', label: 'Collision Avoidance' },
+              { id: 'visual_reasoning', label: 'Visual Reasoning' }
+            ]}
+            selectedId={selectedPlatform}
+            onSelect={(option) => setSelectedPlatform(option.id)}
+          />
+        </div>
+        
+         {/* Neural Trajectories Row */}
+        <VideoCarousel 
+          videos={platformVideos[selectedPlatform].neural}
+        />
+
+        <div className={styles.blogContent}>
+          <h3>We are keeping track of all of the <a href="https://droid-dataset.github.io/visualizer/" style={{ color: 'blue' }}>unseen task rollouts (100+ tasks)!</a></h3>
         </div>
 
         {/* Paper Information Section */}
         <div className={styles.blogContent}>
           <PaperInfo
-            title={<><b>DreamGen</b>: Unlocking Genearlization in Robot Learning through Video World Models</>}
+            title={<><b>DreamZero</b>: World Action Models are Zero-shot Policies</>}
             paperUrl="https://arxiv.org/abs/2505.12705"
             paperType="paper"
-            tags={['Neural Trajectories', 'World Models', 'Humanoid Robot', 'Generalization']}
-            authors={[
-              { name: 'Joel Jang' },
-              { name: 'Seonghyeon Ye' },
-              { name: 'Zongyu Lin' },
-              { name: 'Jiannan Xiang'},
-              { name: 'Johan Bjorck' },
-              { name: 'Ruijie Zheng' },
-              { name: 'Yu Fang' },
-              { name: 'Fengyuan Hu'},
-              { name: 'Spencer Huang' },
-              { name: 'Kaushil Kundalia' },
-              { name: 'Yen-Chen Lin' },
-              { name: 'Loic Magne' },
-              { name: 'Ajay Mandlekar' },
-              { name: 'Avnish Narayan' },
-              { name: 'You Liang Tan' },
-              { name: 'Guanzhi Wang' },
-              { name: 'Jing Wang' },
-              { name: 'Qi Wang' },
-              { name: 'Yinzhen Xu' },
-              { name: 'Xiaohui Zeng' },
-              { name: 'Kaiyuan Zheng' },
-              { name: 'Ming-Yu Liu' },
-              { name: 'Luke Zettlemoyer' },
-              { name: 'Dieter Fox' },
-              { name: 'Jan Kautz' },
-              { name: 'Scott Reed' },
-              { name: 'Yuke Zhu' },
-              { name: 'Linxi Fan' }
-            ]}
+            tags={['World Models', 'Zero-shot Generalization']}
           />
         </div>
-
+      
       </article>
     </>
   );
