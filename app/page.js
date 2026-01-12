@@ -1,66 +1,68 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from './page.module.css';
+
+export const metadata = {
+  title: 'DreamGen',
+  description: 'Unlocking Generalization in Robot Learning through Video World Models',
+};
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <article className={styles.blogPost}>
+      <div className={styles.center}>
+        <div className={styles.category}>Research</div>
+        <h1 className={styles.blogTitle}>
+          DreamGen
+          <br />
+          <span className={styles.subtitle}>
+            Unlocking Generalization in Robot Learning through Video World Models
+          </span>
+        </h1>
+        <div className={styles.publishDate}>May 20, 2025</div>
+
+        <div className={styles.linkContainer}>
+          <a href="https://arxiv.org/abs/2505.12705" className={styles.textLink} target="_blank" rel="noopener noreferrer">
+            Paper
           </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <span className={styles.linkDivider}>•</span>
+          <a href="http://github.com/nvidia/GR00T-dreams" className={styles.textLink} target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <span className={styles.linkDivider}>•</span>
+          <a href="https://dreamgen-u8q2hhdcu.brevlab.com/" className={styles.textLink} target="_blank" rel="noopener noreferrer">
+            Demo
           </a>
         </div>
-      </main>
-    </div>
+      </div>
+
+      <div className={styles.blogContent}>
+        <p>
+          We introduce <b>DreamGen</b>, a 4-stage pipeline to generate <i>neural trajectories</i>, 
+          synthetic robot data generated from video world models. This work is the first in literature 
+          to enable <b>zero-shot behavior generalization and zero-shot environment generalization</b>: 
+          we enable a humanoid robot to perform 22 new behaviors in both seen and unseen environments, 
+          while requiring teleoperation data from only a single pick-and-place task in one environment.
+        </p>
+
+        <h3>DreamGen is divided into 4 steps:</h3>
+        <ol>
+          <li>We first finetune video world models (image-to-video diffusion models) on a target robot to learn the dynamics of the given robot embodiment.</li>
+          <li>We prompt the models with initial frames and language instructions, generating robot videos that not only include in-domain behaviors, but also novel behaviors in novel environments.</li>
+          <li>We extract pseudo robot actions via a latent action model or an inverse dynamics model (IDM).</li>
+          <li>We use these videos labeled with pseudo actions, named as neural trajectories, for downstream visuomotor policy learning.</li>
+        </ol>
+
+        <h3>#1. Behavior Generalization</h3>
+        <p>Select a behavior to see the corresponding neural trajectory and real-robot execution videos:</p>
+        <p><i>[Video selector will go here]</i></p>
+
+        <h3>#2. Environment Generalization</h3>
+        <p>Select an environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
+        <p><i>[Video selector will go here]</i></p>
+
+        <h3>#3. Behavior + Environment Generalization</h3>
+        <p>Select a behavior and environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
+        <p><i>[Video selector will go here]</i></p>
+      </div>
+    </article>
   );
 }

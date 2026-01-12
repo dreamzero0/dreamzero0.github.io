@@ -4,8 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // If deploying to a subpath, add:
-  // basePath: '/dreamzero.github.io',
-}
+};
 
-module.exports = nextConfig
+export default nextConfig;
