@@ -1,0 +1,7 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10.125000,
+0_pick_the_onion_from_the_sink_and_place_it_on_the_plate_located_on_the_counter,_from_left,_right_and_wrist_view0.ts
+#EXT-X-ENDLIST

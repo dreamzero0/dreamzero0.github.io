@@ -1,0 +1,92 @@
+/* Font definitions */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/your-font-name.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* You can add more font faces as needed, for example: */
+/*
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/your-font-name-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* To use these fonts in your CSS, use:
+   font-family: 'CustomFont', sans-serif;
+*/
+
+/* NVIDIA Sans Font Family */
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_Rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_It.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_Lt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_LtIt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_Md.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_MdIt.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_Bd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NVIDIA Sans';
+  src: url('/fonts/NVIDIASans_BdIt.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* To use these fonts in your CSS, use:
+   font-family: 'NVIDIA Sans', sans-serif;
+*/ 
