@@ -32,9 +32,9 @@ export const combinedVideos = [
 export const platformVideos = {
   seen_1: {
     neural: [
-      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate.' },
-      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box.' },
-      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate.' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌' },
       { url: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8', caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.' },
       { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.' },
       { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.' },
@@ -259,6 +259,42 @@ export const platformVideos = {
     ],
   },
   unseen_10: {
+    neural: [
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Fold Towel' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Do Hammering' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Stack Bowls' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8', caption: 'Wipe Table' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Fold Towel' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Do Hammering' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Stack Bowls' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8', caption: 'Wipe Table' },
+    ],
+  },
+  droid_1: {
+    neural: [
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Fold Towel' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Do Hammering' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Stack Bowls' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8', caption: 'Wipe Table' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Fold Towel' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Do Hammering' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Stack Bowls' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8', caption: 'Wipe Table' },
+    ],
+  },
+  droid_2: {
+    neural: [
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Fold Towel' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Do Hammering' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Stack Bowls' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8', caption: 'Wipe Table' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Fold Towel' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Do Hammering' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8', caption: 'Stack Bowls' },
+      { url: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8', caption: 'Wipe Table' },
+    ],
+  },
+  droid_3: {
     neural: [
       { url: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8', caption: 'Fold Towel' },
       { url: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8', caption: 'Do Hammering' },

@@ -167,7 +167,7 @@ export default function FirstPost() {
           </div>
 
           <p style={{marginTop: '20px'}}>
-            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 4 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen & unseen tasks</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, and <em>#4 Emergent Capabilities from WAMs (tool use, human-robot-interaction, collision avoidance, and visual reasoning)</em>.
+            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 4 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks, unseen objects, and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, and <em>#4 Emergent Capabilities from WAMs (tool use, human-robot-interaction, collision avoidance, and visual reasoning)</em>.
           </p>
 
           {/* Behavior Generalization Videos */}
@@ -194,9 +194,11 @@ export default function FirstPost() {
         </div>
 
         {/* Neural Trajectories Row */}
-        <VideoCarousel 
-          videos={platformVideos[selectedPlatform].neural}
-        />
+        <div style={{ marginTop: '-4rem' }}>
+          <VideoCarousel 
+            videos={platformVideos[selectedPlatform].neural}
+          />
+        </div>
 
         {/* Environment Generalization */}
         <div className={styles.blogContent}>
@@ -221,27 +223,22 @@ export default function FirstPost() {
         </div>
         
         {/* Neural Trajectories Row */}
-        <VideoCarousel 
-          videos={platformVideos[selectedPlatform].neural}
-        />
+        <div style={{ marginTop: '-4rem' }}>
+          <VideoCarousel 
+            videos={platformVideos[selectedPlatform].neural}
+          />
+        </div>
 
         {/* Environment Generalization */}
         <div className={styles.blogContent}>
-          <h3>#2. DROID pretrain seen & unseen tasks​</h3>
+          <h3>#2. DROID pretrain seen tasks, unseen objects, and unseen verbs</h3>
           <p>Select an environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
           
           <ButtonSelector 
             options={[
-              { id: 'seen_1', label: 'Pick & Place Fruit' },
-              { id: 'seen_2', label: 'Take Fruit out of bag' },
-              { id: 'seen_3', label: 'Wipe the Mess' },
-              { id: 'seen_4', label: 'Pick & Place fork/spoon' },
-              { id: 'seen_5', label: 'Pen in Cup' },
-              { id: 'seen_6', label: 'Cup on coaster' },
-              { id: 'seen_7', label: 'Stacking bowls/cups together' },
-              { id: 'seen_8', label: 'Folding Shirts' },
-              { id: 'seen_9', label: 'Folding Shorts' },
-              { id: 'seen_10', label: 'Stacking clothes' },          
+              { id: 'droid_1', label: 'Seen Tasks' },
+              { id: 'droid_2', label: 'Unseen Objects' },
+              { id: 'droid_3', label: 'Unseen Verbs' },        
             ]}
             selectedId={selectedPlatform}
             onSelect={(option) => setSelectedPlatform(option.id)}
@@ -249,36 +246,11 @@ export default function FirstPost() {
         </div>
         
         {/* Neural Trajectories Row */}
-        <VideoCarousel 
-          videos={platformVideos[selectedPlatform].neural}
-        />
-
-        {/* Environment Generalization */}
-        <div className={styles.blogContent}>
-          <p>Here are rollouts of totally unseen tasks.</p>
-          
-          <ButtonSelector 
-            options={[
-              { id: 'unseen_1', label: 'Untie Shoe/gift' },
-              { id: 'unseen_2', label: 'Take Hat Off from Mannequin' },
-              { id: 'unseen_3', label: 'Draw a Circle' },
-              { id: 'unseen_4', label: 'Take out the Straw' },
-              { id: 'unseen_5', label: 'Stack the Cubes' },
-              { id: 'unseen_6', label: 'Paint with the Brush' },
-              { id: 'unseen_7', label: 'Iron the Clothes' },
-              { id: 'unseen_8', label: 'Shake Hands with the Human' },
-              { id: 'unseen_9', label: 'Fold the Map' },
-              { id: 'unseen_10', label: 'Pulling Cart' },          
-            ]}
-            selectedId={selectedPlatform}
-            onSelect={(option) => setSelectedPlatform(option.id)}
+        <div style={{ marginTop: '-4rem' }}>
+          <VideoCarousel 
+            videos={platformVideos[selectedPlatform].neural}
           />
         </div>
-
-        {/* Neural Trajectories Row */}
-        <VideoCarousel 
-          videos={platformVideos[selectedPlatform].neural}
-        />
 
         {/* Behavior + Environment Generalization */}
         <div className={styles.blogContent}>
@@ -302,7 +274,7 @@ export default function FirstPost() {
             width: '80%',
             maxWidth: '70%'
           }}>
-            <h3 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>10 consecutive evaluations (average 96% Task Progress)</h3>
+            <h3 style={{ textAlign: 'center', marginBottom: '0.5rem', marginTop: '-2rem' }}>10 consecutive evaluations (average 96% Task Progress)</h3>
             <div style={{ 
               width: '100%',
               aspectRatio: '16/9',
@@ -336,9 +308,11 @@ export default function FirstPost() {
         </div>
         
          {/* Neural Trajectories Row */}
-        <VideoCarousel 
-          videos={platformVideos[selectedPlatform].neural}
-        />
+        <div style={{ marginTop: '-4rem' }}>
+          <VideoCarousel 
+            videos={platformVideos[selectedPlatform].neural}
+          />
+        </div>
 
         <div className={styles.blogContent}>
           <h3>We are keeping track of all of the <a href="https://droid-dataset.github.io/visualizer/" style={{ color: 'blue' }}>unseen task rollouts (100+ tasks)!</a></h3>

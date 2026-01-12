@@ -457,7 +457,7 @@
   }
   
   .blogTitle {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     max-width: 100%;
     line-height: 1.2;
@@ -501,11 +501,11 @@
   
   .blogContent {
     width: 100%;
-    max-width: 50%;
+    max-width: 55%;
     margin: 0 auto;
     padding: 2rem 2rem;
     line-height: 1.6;
-    font-size: 1.5rem;
+    font-size: 1rem;    /* was 1.5rem */
   }
   
   /* Text content should be narrower for better readability */
@@ -559,8 +559,8 @@
   .behaviorButton {
     background-color: transparent;
     color: #111;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
     font-weight: 400;
     cursor: pointer;
     transition: all 0.25s ease;
@@ -1458,18 +1458,7 @@
   
   .textLink {
     color: #444;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-decoration: none;
-    position: relative;
-    padding: 0.2rem 0.4rem;
-    transition: all 0.3s ease;
-    letter-spacing: 0.02em;
-  }
-  
-  .textLink {
-    color: #444;
-    font-size: 1.15rem;       /* was 0.9rem */
+    font-size: 0.9rem;          /* was 1.15rem */
     font-weight: 500;
     text-decoration: none;
     position: relative;
@@ -1499,12 +1488,12 @@
   
   .borderedLink {
     border: 1px solid #000;
-    border-radius: 5px;
-    padding: 8px 28px;        /* was 4px 18px */
+    border-radius: 4px;
+    padding: 4px 14px;
     margin: 2px 1px;
     display: inline-block;
     transition: border-color 0.3s, background-color 0.3s;
-    font-size: 1.15rem;       /* was 1.0em */
+    font-size: 0.9rem;
   }
   
   .borderedLink:hover {
@@ -1847,7 +1836,7 @@
 }
 
 .authorName {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #333;
   font-weight: 400;
 }
@@ -1858,28 +1847,28 @@
 
 .authorName sup {
   color: #0070f3;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: 1px;
   vertical-align: super;    /* Add this */
   line-height: 0;     
 }
 
 .affiliation {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #1f8304;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .authorNote {
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   color: #666;
   margin-bottom: 0.5rem;
 }
 
 .authorNote sup {
   color: #666;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .lineBreak {
