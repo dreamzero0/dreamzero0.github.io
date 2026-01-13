@@ -14,7 +14,11 @@ import {
   behaviorVideos, 
   environmentVideos, 
   combinedVideos, 
-  platformVideos 
+  SeenVideos,
+  UnseenVideos,
+  DroidVideos,
+  EmergentVideos,
+  InferenceVideos
 } from '../data/videoData';
 import {
   getMainChartData,
@@ -34,28 +38,11 @@ const LazyVideo = dynamic(() => import('../components/LazyVideo'), { ssr: false 
 
 export default function FirstPost() {
   const [selectedCombinedVideo, setSelectedCombinedVideo] = useState(combinedVideos[0]);
-  const [selectedPlatform, setSelectedPlatform] = useState('seen_1');
-  
-  // Memoize chart data to prevent re-renders
-  const mainChartData = useMemo(() => getMainChartData(), []);
-  const mainChartOptions = useMemo(() => defaultBarChartOptions, []);
-  
-  // Memoize platform chart data
-  const gr1ChartData = useMemo(() => getPlatformChartData(neuralTrajectoryData.averageGR1), []);
-  const gr1ChartOptions = useMemo(() => getPlatformChartOptions('GR1 Performance', 50), []);
-  
-  const frankaChartData = useMemo(() => getPlatformChartData(neuralTrajectoryData.averageFranka), []);
-  const frankaChartOptions = useMemo(() => getPlatformChartOptions('Franka Performance', 40), []);
-  
-  const s100ChartData = useMemo(() => getPlatformChartData(neuralTrajectoryData.so100), []);
-  const s100ChartOptions = useMemo(() => getPlatformChartOptions('S-100 Performance', 70), []);
-  
-  // Memoize scaling chart data
-  const lapaChartData = useMemo(() => getScalingChartData('lapa'), []);
-  const lapaChartOptions = useMemo(() => getScalingChartOptions('Latent Actions'), []);
-  
-  const idmChartData = useMemo(() => getScalingChartData('idm'), []);
-  const idmChartOptions = useMemo(() => getScalingChartOptions('IDM Actions'), []);
+  const [selectedSeen, setSelectedSeen] = useState('seen_1');
+  const [selectedUnseen, setSelectedUnseen] = useState('unseen_1');
+  const [selectedDroid, setSelectedDroid] = useState('droid_1');
+  const [selectedEmergent, setSelectedEmergent] = useState('tool_use');
+  const [selectedInference, setSelectedInference] = useState('dreamzero');
 
   return (
     <>
@@ -167,7 +154,7 @@ export default function FirstPost() {
           </div>
 
           <p style={{marginTop: '20px'}}>
-            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 4 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks, unseen objects, and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, and <em>#4 Emergent Capabilities from WAMs (tool use, human-robot-interaction, collision avoidance, and visual reasoning)</em>.
+            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 5 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks, unseen objects, and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, <em>#4 Emergent Capabilities from WAMs (tool use, human-robot-interaction, collision avoidance, and visual reasoning)</em>, and <em>#5 Different variations and ablations of DreamZero for real-time inference.</em>.
           </p>
 
           {/* Behavior Generalization Videos */}
@@ -188,15 +175,15 @@ export default function FirstPost() {
               { id: 'seen_9', label: 'Folding Shorts' },
               { id: 'seen_10', label: 'Stacking clothes' },          
             ]}
-            selectedId={selectedPlatform}
-            onSelect={(option) => setSelectedPlatform(option.id)}
+            selectedId={selectedSeen}
+            onSelect={(option) => setSelectedSeen(option.id)}
           />
         </div>
 
         {/* Neural Trajectories Row */}
         <div style={{ marginTop: '-4rem' }}>
           <VideoCarousel 
-            videos={platformVideos[selectedPlatform].neural}
+            videos={SeenVideos[selectedSeen].neural}
           />
         </div>
 
@@ -217,15 +204,15 @@ export default function FirstPost() {
               { id: 'unseen_9', label: 'Fold the Map' },
               { id: 'unseen_10', label: 'Pulling Cart' },          
             ]}
-            selectedId={selectedPlatform}
-            onSelect={(option) => setSelectedPlatform(option.id)}
+            selectedId={selectedUnseen}
+            onSelect={(option) => setSelectedUnseen(option.id)}
           />
         </div>
         
         {/* Neural Trajectories Row */}
         <div style={{ marginTop: '-4rem' }}>
           <VideoCarousel 
-            videos={platformVideos[selectedPlatform].neural}
+            videos={UnseenVideos[selectedUnseen].neural}
           />
         </div>
 
@@ -240,15 +227,15 @@ export default function FirstPost() {
               { id: 'droid_2', label: 'Unseen Objects' },
               { id: 'droid_3', label: 'Unseen Verbs' },        
             ]}
-            selectedId={selectedPlatform}
-            onSelect={(option) => setSelectedPlatform(option.id)}
+            selectedId={selectedDroid}
+            onSelect={(option) => setSelectedDroid(option.id)}
           />
         </div>
         
         {/* Neural Trajectories Row */}
         <div style={{ marginTop: '-4rem' }}>
           <VideoCarousel 
-            videos={platformVideos[selectedPlatform].neural}
+            videos={DroidVideos[selectedDroid].neural}
           />
         </div>
 
@@ -302,20 +289,42 @@ export default function FirstPost() {
               { id: 'collision_avoidance', label: 'Collision Avoidance' },
               { id: 'visual_reasoning', label: 'Visual Reasoning' }
             ]}
-            selectedId={selectedPlatform}
-            onSelect={(option) => setSelectedPlatform(option.id)}
+            selectedId={selectedEmergent}
+            onSelect={(option) => setSelectedEmergent(option.id)}
           />
         </div>
         
          {/* Neural Trajectories Row */}
         <div style={{ marginTop: '-4rem' }}>
           <VideoCarousel 
-            videos={platformVideos[selectedPlatform].neural}
+            videos={EmergentVideos[selectedEmergent].neural}
           />
         </div>
 
         <div className={styles.blogContent}>
-          <h3>We are keeping track of all of the <a href="https://droid-dataset.github.io/visualizer/" style={{ color: 'blue' }}>unseen task rollouts (100+ tasks)!</a></h3>
+          <h3>#5. Inference Ablations​</h3>
+          <p>Different Ablations</p>
+
+          <ButtonSelector
+            options={[
+              { id: 'dreamzero', label: 'DreamZero' },
+              { id: 'dreamzero_flash', label: 'DreamZero-flash' },
+            ]}
+            selectedId={selectedInference}
+            onSelect={(option) => setSelectedInference(option.id)}
+          />
+        </div>
+        
+         {/* Neural Trajectories Row */}
+        <div style={{ marginTop: '-4rem' }}>
+          <VideoCarousel 
+            videos={InferenceVideos[selectedInference].neural}
+          />
+        </div>
+
+        <div className={styles.blogContent}>
+          <h3>The Age of Prompting</h3>
+          <p>The era of prompting robot foundation models has arrived. We're publicly sharing our <b><a href="https://droid-dataset.github.io/visualizer/" style={{ color: 'blue' }}>gallery of 100+ zero-shot task rollouts</a></b>—a living document that grows as we continue discovering what DreamZero can do.</p>
         </div>
 
         {/* Paper Information Section */}

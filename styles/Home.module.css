@@ -693,7 +693,14 @@
   margin-right: 20px;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
+}
+
+.carouselItem video {
+  width: 100%;
+  height: auto;              /* was height: 253px */
+  aspect-ratio: 16/9;
+  display: block;
 }
 
 .carouselItem:last-child {
@@ -756,12 +763,6 @@
 .videoPreview video {
   width: 100%;
   height: 100%;
-  display: block;
-}
-
-.carouselItem video {
-  width: 100%;
-  height: 253px; /* 16:9 aspect ratio */
   display: block;
 }
 
