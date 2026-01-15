@@ -50,16 +50,35 @@ const LazyVideo = ({ src, title, ...props }) => {
     });
   }, []);
 
-  // Auto-play video when it becomes visible
+  // Auto-play video when it becomes visible or when src changes
   useEffect(() => {
     if (!isVisible || !videoElementRef.current || typeof window === 'undefined') return;
 
+    // Clean up previous HLS instance before setting up new one
+    // This is critical when src changes to prevent race conditions
+    if (hlsRef.current) {
+      hlsRef.current.destroy();
+      hlsRef.current = null;
+    }
+    
+    // Reset loading state when src changes
+    setIsLoading(true);
+    
+    // Track if this effect is still current (not stale from rapid changes)
+    let isCurrent = true;
+
     const setupVideo = async () => {
+      // Check if effect was cancelled during async operations
+      if (!isCurrent || !videoElementRef.current) return;
+      
       // First check if we need to use HLS.js
       if (isHlsSource(src)) {
         try {
           // Import HLS.js
           const Hls = (await import('hls.js')).default;
+          
+          // Check again after async import
+          if (!isCurrent || !videoElementRef.current) return;
           
           if (Hls.isSupported()) {
             const hls = new Hls({
@@ -105,17 +124,45 @@ const LazyVideo = ({ src, title, ...props }) => {
         } catch (error) {
           console.error('Error initializing HLS:', error);
           // Fallback to regular video source
-          videoElementRef.current.src = src;
+          if (videoElementRef.current) {
+            videoElementRef.current.src = src;
+          }
         }
       } else {
         // Regular video source
-        videoElementRef.current.src = src;
+        if (videoElementRef.current) {
+          videoElementRef.current.src = src;
+        }
       }
       
-      // Continue with Plyr setup
+      // Check if effect was cancelled
+      if (!isCurrent || !videoElementRef.current) return;
+      
+      // If Plyr is already set up, just reload the video
+      if (playerRef.current) {
+        try {
+          videoElementRef.current.load();
+          videoElementRef.current.muted = true;
+          setIsLoading(false);
+          const playPromise = videoElementRef.current.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              console.log('Auto-play prevented:', error);
+            });
+          }
+        } catch (e) {
+          console.log('Error reloading video:', e);
+        }
+        return;
+      }
+      
+      // Continue with Plyr setup (first time only)
       const { default: Plyr } = await import('plyr');
       // Also import the CSS
       await import('plyr/dist/plyr.css');
+      
+      // Check again after async imports
+      if (!isCurrent || !videoElementRef.current) return;
       
       playerRef.current = new Plyr(videoElementRef.current, {
         controls: [
@@ -159,12 +206,17 @@ const LazyVideo = ({ src, title, ...props }) => {
         }
       });
 
+      // Check video element is still valid
+      if (!videoElementRef.current) return;
+      
       // Set muted to true to enable autoplay on most browsers
       videoElementRef.current.muted = true;
       
       // Handle video loading state
       videoElementRef.current.addEventListener('loadeddata', () => {
-        setIsLoading(false);
+        if (isCurrent) {
+          setIsLoading(false);
+        }
       });
       
       // Start playing the video
@@ -180,6 +232,15 @@ const LazyVideo = ({ src, title, ...props }) => {
     };
 
     setupVideo();
+    
+    // Cleanup function - runs when src changes or component unmounts
+    return () => {
+      isCurrent = false;
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
+    };
   }, [isVisible, src]);
 
   return (
@@ -209,4 +270,4 @@ const LazyVideo = ({ src, title, ...props }) => {
   );
 };
 
-export default LazyVideo; 
+export default LazyVideo;
