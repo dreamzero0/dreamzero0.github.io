@@ -83,7 +83,7 @@ const VideoCarousel = ({ videos, title }) => {
             <div key={index} className={styles.carouselItem}>
               {isPaired ? (
                 // Paired videos: Generated on top (if enabled), Execution below
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column-reverse', gap: '4px' }}>
                   {/* Generated Video - conditionally rendered */}
                   {showGenerated && (
                     <div style={{ position: 'relative' }}>
