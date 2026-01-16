@@ -165,15 +165,15 @@ export default function FirstPost() {
           <ButtonSelector 
             options={[
               { id: 'seen_1', label: 'Pick & Place Fruit' },
-              { id: 'seen_2', label: 'Take Fruit out of bag' },
-              { id: 'seen_3', label: 'Wipe the Mess' },
-              { id: 'seen_4', label: 'Pick & Place fork/spoon' },
-              { id: 'seen_5', label: 'Pen in Cup' },
-              { id: 'seen_6', label: 'Cup on coaster' },
-              { id: 'seen_7', label: 'Stacking bowls/cups together' },
-              { id: 'seen_8', label: 'Folding Shirts' },
-              { id: 'seen_9', label: 'Folding Shorts' },
-              { id: 'seen_10', label: 'Stacking clothes' },          
+              { id: 'seen_2', label: 'Folding Shirts' },
+              { id: 'seen_3', label: 'Folding Shorts' },
+              { id: 'seen_4', label: 'Stacking clothes' },
+              { id: 'seen_5', label: 'Pick & Place fork/spoon' },
+              { id: 'seen_6', label: 'Take Fruit out of bag' },
+              { id: 'seen_7', label: 'Pen in Cup' },
+              { id: 'seen_8', label: 'Cup on coaster' },
+              { id: 'seen_9', label: 'Wipe the Mess' },
+              { id: 'seen_10', label: 'Stacking bowls/cups together' },
             ]}
             selectedId={selectedSeen}
             onSelect={(option) => setSelectedSeen(option.id)}
