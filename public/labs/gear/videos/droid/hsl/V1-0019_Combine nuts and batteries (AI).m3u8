@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:11
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:11.000000,
+V1-0019_Combine nuts and batteries (AI)_000.ts
+#EXTINF:6.375000,
+V1-0019_Combine nuts and batteries (AI)_001.ts
+#EXT-X-ENDLIST

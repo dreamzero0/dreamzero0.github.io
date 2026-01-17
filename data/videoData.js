@@ -928,7 +928,7 @@ export const DroidVideos = {
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/arrange_marker (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/arrange_marker (real).m3u8',
-        caption: 'Droid |  | ❌'
+        caption: 'Droid | Put the marker in the blue box | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (AI).m3u8',
@@ -938,7 +938,7 @@ export const DroidVideos = {
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (real).m3u8',
-        caption: 'Droid |  | ❌'
+        caption: 'Droid | Pick up the apple and put it in the basket | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/towel_on_cup (AI).m3u8',
@@ -1025,88 +1025,208 @@ export const DroidVideos = {
   droid_2: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0002_Mayonnaise on plate (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0002_Mayonnaise on plate.m3u8',
+        caption: 'Droid | Put the mayonnaise on the plate | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0001_Hay in basket (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0001_Hay in basket.m3u8',
+        caption: 'Droid | Put the hay in the basket | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0003_Bok Choy (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0003_Bok Choy.m3u8',
+        caption: 'Droid | Put the bok choy on the plate | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Stack the dominoes (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Stack the dominoes.m3u8',
+        caption: 'Droid | Stack the dominoes  | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0005_Skittles in Bowl (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0005_Skittles in Bowl.m3u8',
+        caption: 'Droid | Put the skittles in the bowl | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0006_Balance on Spider (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0006_Balance on Spider.m3u8',
+        caption: 'Droid | Balance the blue piece on top of the spider | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0007_Insert pipe cleaner (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0007_Insert pipe cleaner.m3u8',
+        caption: 'Droid | Insert the pipe cleaner into the straw | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0008_Wrap gauze (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0008_Wrap gauze.m3u8',
+        caption: 'Droid | Wrap the gauze aroung the panhandle twice | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0009_Level on box (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0009_Level on box.m3u8',
+        caption: 'Droid | Put the level on the box | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0010_Toast Croissant (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0010_Toast Croissant.m3u8',
+        caption: 'Droid | Open the oven door, pickup the croissant, and place it in the oven | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0011_Birdhouse on box (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0011_Birdhouse on box.m3u8',
+        caption: 'Droid | Put the birdhouse on the box | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0012_Sunscreen in basket (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0012_Sunscreen in basket.m3u8',
+        caption: 'Droid | Put the sunscreen in the basket | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0013_Balloon on Plate (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0013_Balloon on Plate.m3u8',
+        caption: 'Droid | Pick up balloon and place on plate | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0014_Starfruit on Plate (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0014_Starfruit on Plate.m3u8',
+        caption: 'Droid | Pick up the starfruit and place on the plate | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0015_Darts in Cup (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0015_Darts in Cup.m3u8',
+        caption: 'Droid | Put the darts in the cup | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_Remove crown (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0016_Remove crown.m3u8',
+        caption: 'Droid | Remove the crown from the head  | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0017_Bus on train track (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0017_Bus on train track.m3u8',
+        caption: 'Droid | Put the bus on the train track | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0018_Pringles in basket (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0018_Pringles in basket.m3u8',
+        caption: 'Droid | Pick up the pringles and place it in the basket | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_Baguette in box (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_Baguette in box.m3u8',
+        caption: 'Droid | Put the baguette in the box  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_Food in Halloween Bucket (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_Food in Halloween Bucket.m3u8',
+        caption: 'Droid | Place the food items in the halloween bucket | ❌'
       },
     ],
   },
   droid_3: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_reveal_object (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_reveal_object.m3u8',
+        caption: 'Droid | reveal the object under the cup | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_combine_nuts_and_batteries (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_combine_nuts_and_batteries.m3u8',
+        caption: 'Droid | Combine the nuts and batteries into the bowl | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0018_hook_the_hat (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0018_hook_the_hat.m3u8',
+        caption: 'Droid | V1-0018_Hook the hat onto the tripod | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0017_Fry vegetables (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0017_Fry vegetables.m3u8',
+        caption: 'Droid | Fry the vegetables in the pan with the spatula | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_elevate_block (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0016_elevate_block.m3u8',
+        caption: 'Droid | elevate the yellow block to the highest platform | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0001_Orient the cup (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0001_Orient the cup.m3u8',
+        caption: 'Droid | Orient the mug so the handle is to the right | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0002_Fan the food (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0002_Fan the food.m3u8',
+        caption: 'Droid | Fan the burger | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0003_Slice bread (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0003_Slice bread.m3u8',
+        caption: 'Droid | slice the bread with the knife | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type 'hi' (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type 'hi'.m3u8',
+        caption: 'Droid | Type \'hi\' on the keyboard | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0005_Extricate straw (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0005_Extricate straw.m3u8',
+        caption: 'Droid | Extricate the straw from the cup | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0006_Match the Objects (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0006_Match the Objects.m3u8',
+        caption: 'Droid | Match the objects to their corresponding bowl | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0007_Maneuver shape (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0007_Maneuver shape.m3u8',
+        caption: 'Droid | Maneuver the blocks through the matching hole | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0008_Affix magnet (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0008_Affix magnet.m3u8',
+        caption: 'Droid | Affix the magnet to the tray | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0009_Pinch binder clip (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0009_Pinch binder clip.m3u8',
+        caption: 'Droid | Pinch the binder clip to release the papers | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0010_Withdraw toast (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0010_Withdraw toast.m3u8',
+        caption: 'Droid | Withdraw the bread from the toaster and place on the plate | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever.m3u8',
+        caption: 'Droid | Cinch the drawstring of the bag | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0012_Dispense mustard (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0012_Dispense mustard.m3u8',
+        caption: 'Droid | Dispense the mustard onto the bread | ❌'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0013_Bake the croissant (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0013_Bake the croissant.m3u8',
+        caption: 'Droid | Bake the croissant in the oven | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever.m3u8',
+        caption: 'Droid | Depress the lever on the toaster | ⚠️'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0015_Weave wire (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0015_Weave wire.m3u8',
+        caption: 'Droid | Weave the wire through the holes of the box | ⚠️'
       },
     ],
   },
