@@ -1129,18 +1129,18 @@ export const DroidVideos = {
   droid_3: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_reveal_object (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_reveal_object.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal_object (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal_object.m3u8',
         caption: 'Droid | reveal the object under the cup | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_combine_nuts_and_batteries (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_combine_nuts_and_batteries.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine_nuts_and_batteries (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine_nuts_and_batteries.m3u8',
         caption: 'Droid | Combine the nuts and batteries into the bowl | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0018_hook_the_hat (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0018_hook_the_hat.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook_the_hat (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook_the_hat.m3u8',
         caption: 'Droid | V1-0018_Hook the hat onto the tripod | ⚠️'
       },
       {
@@ -1149,8 +1149,8 @@ export const DroidVideos = {
         caption: 'Droid | Fry the vegetables in the pan with the spatula | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_elevate_block (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0016_elevate_block.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_Elevate_block (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0016_Elevate_block.m3u8',
         caption: 'Droid | elevate the yellow block to the highest platform | ✅'
       },
       {
@@ -1169,8 +1169,8 @@ export const DroidVideos = {
         caption: 'Droid | slice the bread with the knife | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type \'hi\' (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type \'hi\'.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type _hi_ (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type _hi_.m3u8',
         caption: 'Droid | Type \'hi\' on the keyboard | ⚠️'
       },
       {
