@@ -1169,8 +1169,8 @@ export const DroidVideos = {
         caption: 'Droid | slice the bread with the knife | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type 'hi' (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type 'hi'.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type \'hi\' (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type \'hi\'.m3u8',
         caption: 'Droid | Type \'hi\' on the keyboard | ⚠️'
       },
       {
