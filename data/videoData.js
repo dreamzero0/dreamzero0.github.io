@@ -24,7 +24,7 @@ export const combinedVideos = [
     id: 'shirt_folding',
     label: 'Shirt Folding',
     neuralTrajectoryVideo: '/labs/gear/videos//environment/dreams/hsl/soup_fast.m3u8',
-    policyRolloutVideo: '/labs/gear/videos/agi_post_train/hsl/DreanZero_AgiBotPostTrain_ShirtFolding_2x.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_post_train/hsl/DreamZero_AgiBotPostTrain_ShirtFolding_2x.m3u8',
   },
 ];
 
@@ -546,9 +546,9 @@ export const UnseenVideos = {
         caption: 'Robot #2 | The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_014.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_014.m3u8',
-        caption: 'Robot #3 | The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_015_AI.m3u8',
@@ -570,7 +570,7 @@ export const UnseenVideos = {
         caption: 'Robot #4 | The robot reaches its left arm to pick up the red marker and the left arm moves the marker to draw a circle on the book. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_018.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_018_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_018.m3u8',
         caption: 'Robot #1 | The robot reaches its right arm to pick up the blue marker and the right arm moves the marker to draw a circle on the book. | ⚠️'
       },
@@ -653,7 +653,7 @@ export const UnseenVideos = {
   unseen_5: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_033.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_033_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_033.m3u8',
         caption: 'Robot #1 | The robot reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to stack. It then reaches its right arm to pick up the yellow cube, moves it over the stack, and releases it onto the green cube to finish the task. | ✅'
       },
@@ -697,12 +697,12 @@ export const UnseenVideos = {
   unseen_6: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041.m3u8',
         caption: 'Robot #1 | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042.m3u8',
         caption: 'Robot #1 | The right arm grabs the brush. Then right arm paints with the brush on the notebook | ❌'
       },
@@ -741,12 +741,12 @@ export const UnseenVideos = {
   unseen_7: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049.m3u8',
         caption: 'Robot #1 | The robot reaches its left arm to grasp the iron and moves it across the shorts to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_050.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_050_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_050.m3u8',
         caption: 'Robot #1 | The robot reaches its right arm to grasp the iron and moves it across the shirt to iron it. | ✅'
       },
@@ -810,7 +810,7 @@ export const UnseenVideos = {
         caption: 'Robot #2 | The right arm shakes the hand of the human up and down | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_062.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_062_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_062.m3u8',
         caption: 'Robot #3 | The left arm shakes the hand of the human up and down | ✅'
       },
@@ -820,7 +820,7 @@ export const UnseenVideos = {
         caption: 'Robot #1 | The left arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_064.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_064_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_064.m3u8',
         caption: 'Robot #3 | The right arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ⚠️'
       },
@@ -849,7 +849,7 @@ export const UnseenVideos = {
         caption: 'Robot #1 | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069.m3u8',
         caption: 'Robot #3 | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
       },
