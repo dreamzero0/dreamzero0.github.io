@@ -102,9 +102,9 @@ export const SeenVideos = {
         caption: 'Robot #3 | Both arms fold the bottom of the logo short sleeve to the middle. They then pull the shirt toward the edge of the table. Next, both arms fold the top of the shirt down to the middle. Finally, the right arm grasps the collar and folds it down to complete the task. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_014_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_014.m3u8',
-        caption: 'Robot #3 | Both arms fold the bottom of the teal short sleeve to the middle. They then pull the shirt toward the edge of the table. Next, both arms fold the top of the shirt down to the middle. Finally, the right arm grasps the collar and folds it down to complete the task. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_015_AI.m3u8',
@@ -477,440 +477,440 @@ export const UnseenVideos = {
   unseen_1: { // Untie Shoe/gift
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/UNSEEN_003_ai.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/UNSEEN_003.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_001_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_001.m3u8',
+        caption: 'Robot #2 | The robot coordinates both arms to simultaneously grasp the two loops of the shoelace. It then moves both arms outward in synchronized, opposing directions until the shoelace is fully untied. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_002_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_002.m3u8',
+        caption: 'Robot #2 | The robot coordinates both arms to simultaneously grasp the two loops of the black rope. It then moves both arms outward in synchronized, opposing directions until the black rope is fully untied. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_003_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_003.m3u8',
         caption: 'Robot #2 | The robot reaches its left arm to grasp the blue box and hold it steady. It then reaches its right arm toward the blue ribbon and moves it to untie the knot. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/UNSEEN_004_ai.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/UNSEEN_004.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_004_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_004.m3u8',
         caption: 'Robot #2 | The robot reaches its left arm to grasp the white box and hold it steady. It then reaches its right arm toward the red ribbon and moves it to untie the knot. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_005_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_005.m3u8',
+        caption: 'Robot #2 | The robot coordinates both arms to simultaneously grasp the two loops of the knot of the box. It then moves both arms outward in synchronized, opposing directions until the knot of the box is fully untied. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_006_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_006.m3u8',
+        caption: 'Robot #2 | The robot coordinates both arms to simultaneously grasp the two loops of the shoe. It then moves both arms outward in synchronized, opposing directions until the knot of the shoe is fully untied. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_007_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_007.m3u8',
+        caption: 'Robot #2 | The robot coordinates both arms to simultaneously grasp the two loops of the knot of the package. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
-      },
-      {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
-      },
-      {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_008_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_008.m3u8',
+        caption: 'Robot #2 | The robot coordinates both arms to simultaneously grasp the two loops of the knot of the present box. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
       },
     ],
   },
   unseen_2: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to gasp the crown and lifts it to remove it from the mannequin\'s head. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_010_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_010.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to gasp the hat and lifts it to put it on the mannequin\'s head. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_011_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_011.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_012_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_012.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to lift the hat & place it on the mannequin\'s head. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_013_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_013.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_014.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_014.m3u8',
+        caption: 'Robot #3 | The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_015_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_015.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_016_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_016.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to lift the hat & place it on the mannequin\'s head. | ⚠️'
       },
     ],
   },
   unseen_3: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_017_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_017.m3u8',
+        caption: 'Robot #4 | The robot reaches its left arm to pick up the red marker and the left arm moves the marker to draw a circle on the book. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_018.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_018.m3u8',
+        caption: 'Robot #1 | The robot reaches its right arm to pick up the blue marker and the right arm moves the marker to draw a circle on the book. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_019_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_019.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the marker and the right arm  draws a circle on the whiteboard with the marker. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_020_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_020.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to pick up the marker and the left arm  draws a circle on the whiteboard with the marker.  | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_021_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_021.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to pick up the black marker and the left arm moves the marker to draw a circle on the paper | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_022_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_022.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm arm to pick up the red marker and the right arm moves the marker to draw a circle on the paper | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_023_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_023.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the black marker and the right arm moves the marker to draw a llne on the whiteboard. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_024_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_024.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the red marker placed on the desk and the right arm uses the marker to draw a llne on the notebook. | ❌'
       },
     ],
   },
   unseen_4: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_025_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_025.m3u8',
+        caption: 'Robot #2 | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_026_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_026.m3u8',
+        caption: 'Robot #2 | The right arm holds the McDonalds cup on the table. Then the left arm pulls the straw out of the cup. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_027_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_027.m3u8',
+        caption: 'Robot #2 | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_028_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_028.m3u8',
+        caption: 'Robot #2 | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup.  | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_029_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_029.m3u8',
+        caption: 'Robot #2 | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_030_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_030.m3u8',
+        caption: 'Robot #2 | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_031_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_031.m3u8',
+        caption: 'Robot #4 | The right arm holds the cup on the table. Then the left arm pulls the straw out of the cup. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_032_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_032.m3u8',
+        caption: 'Robot #4 | The right arm holds the cup on the table. Then the left arm pulls the straw out of the cup. | ⚠️'
       },
     ],
   },
   unseen_5: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_033.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_033.m3u8',
+        caption: 'Robot #1 | The robot reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to stack. It then reaches its right arm to pick up the yellow cube, moves it over the stack, and releases it onto the green cube to finish the task. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_034_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_034.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the pink lego, moves it over the red lego, and releases it to stack. It then reaches its right arm to pick up the blue lego, moves it over the stack, and releases it onto the pink lego to finish the task. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_035_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_035.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the red cube, moves it over the colorful cube, and releases it to stack. It then reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to finish the tower. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_036_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_036.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to pick up the green cube, moves it over the red cube, and releases it to stack. It then reaches its left arm to pick up the orange cube, moves it over the green cube, and releases it to finish the tower. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_037_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_037.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the white cube, moves it over the green cube, and releases it to stack. It then reaches its left arm to pick up the blue cube, moves it over the stack, and releases it onto the white cube to finish the task. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_038_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_038.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the blue cube, moves it over the light green cube, and releases it to stack. It then reaches its left arm to pick up the dark green cube, moves it over the light green cube, and releases it to finish the tower. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_039_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_039.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the red cube, moves it over the blue cube, and releases it to begin the stack. It then reaches its left arm to pick up the orange cube, moves it over the stack, and releases it onto the red cube to complete the three-tier structure. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_040_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_040.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to pick up the orange cube, moves it over the blue cube, and releases it to begin the stack. It then reaches its left arm to pick up the triangle puzzle, moves it over the stack, and releases it onto the orange cube to complete the three-tier structure. | ⚠️'
       },
     ],
   },
   unseen_6: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041.m3u8',
+        caption: 'Robot #1 | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042.m3u8',
+        caption: 'Robot #1 | The right arm grabs the brush. Then right arm paints with the brush on the notebook | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_043_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_043.m3u8',
+        caption: 'Robot #2 | The right arm grabs the brush. Then right arm paints with the brush on the paper | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_044_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_044.m3u8',
+        caption: 'Robot #2 | The left arm grabs the brush. Then left arm paints with the brush on the paper | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_045_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_045.m3u8',
+        caption: 'Robot #2 | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_046_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_046.m3u8',
+        caption: 'Robot #2 | The right arm grabs the brush. Then right arm paints with the brush on the notebook | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_047_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_047.m3u8',
+        caption: 'Robot #2 | The right arm grabs the brush. Then right arm paints with the brush on the notebook | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_048_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_048.m3u8',
+        caption: 'Robot #2 | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ⚠️'
       },
     ],
   },
   unseen_7: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049.m3u8',
+        caption: 'Robot #1 | The robot reaches its left arm to grasp the iron and moves it across the shorts to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_050.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_050.m3u8',
+        caption: 'Robot #1 | The robot reaches its right arm to grasp the iron and moves it across the shirt to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_051_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_051.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to grasp the iron and moves it across the shirt to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it.  | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_053_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_053.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_054_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_054.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the iron and moves it across the shorts to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_055_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_055.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_056_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_056.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ❌'
       },
     ],
   },
   unseen_8: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_057_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_057.m3u8',
+        caption: 'Robot #2 | The right arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_058_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_058.m3u8',
+        caption: 'Robot #2 | The left arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_059_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_059.m3u8',
+        caption: 'Robot #2 | The left arm shakes the hand of the human up and down | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_060_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_060.m3u8',
+        caption: 'Robot #2 | The right arm shakes the hand of the human up and down  | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_061_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_061.m3u8',
+        caption: 'Robot #2 | The right arm shakes the hand of the human up and down | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_062.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_062.m3u8',
+        caption: 'Robot #3 | The left arm shakes the hand of the human up and down | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_063_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_063.m3u8',
+        caption: 'Robot #1 | The left arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_064.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_064.m3u8',
+        caption: 'Robot #3 | The right arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ⚠️'
       },
     ],
   },
   unseen_9: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_065_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_065.m3u8',
+        caption: 'Robot #1 | The left arm grabs the left side of the map. The right arm folds the right side of the map. The left arm folds the left side of the map. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_066_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_066.m3u8',
+        caption: 'Robot #1 | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_067_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_067.m3u8',
+        caption: 'Robot #1 | The left arm grabs the left side of the map. The right arm folds the right side of the map. The left arm folds the left side of the map. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_068_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_068.m3u8',
+        caption: 'Robot #1 | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069.m3u8',
+        caption: 'Robot #3 | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_070_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_070.m3u8',
+        caption: 'Robot #1 | The left arm grabs the right side of the map. The right arm folds the left side of the map. The right arm folds the left side of the map. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_071_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_071.m3u8',
+        caption: 'Robot #1 | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_072_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_072.m3u8',
+        caption: 'Robot #1 | The left arm grabs the right side of the map. The right arm folds the left side of the map. The right arm folds the left side of the map. | ❌'
       },
     ],
   },
   unseen_10: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot#1 | The left arm picks up the Banana on the table and places it in the Blue Plate. | ✅'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_073_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_073.m3u8',
+        caption: 'Robot #2 | The robot reaches its right arm to grasp the cart and pulls it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #1 | The right arm picks up the Mango on the table and places it inside the Cardboard Box. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_074_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_074.m3u8',
+        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pushes it forward. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the lime on the table and places it on the light green plate. | ❌'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_075_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_075.m3u8',
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the cart and pulls it forward. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #2 | The right arm picks up the red apple on the table and places it on the gray towel.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076.m3u8',
+        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pulls it.  | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/folding_example.m3u8',
-        caption: 'Robot #3 | The left arm picks up the peach on the table and places it on the baking pan.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_077_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_077.m3u8',
+        caption: 'Robot #1 | The robot reaches its right arm to grasp the cart and pulls it forward. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/hammering_example.m3u8',
-        caption: 'Robot #3 | The right arm picks up the red apple on the table and places it on the cutting board.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_078_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_078.m3u8',
+        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pulls it forward. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/stacking_example.m3u8',
-        caption: 'Robot #4 | The left arm picks up the green pear on the table and places it on the blue checkered bowl.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_079_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_079.m3u8',
+        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pulls it back. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        executionUrl: '/labs/gear/videos//mimicgen/dreams/hsl/wiping_example.m3u8',
-        caption: 'Robot #4 | The right arm picks up the starfruit on the table and places it on the cloth basket.'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_080_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_080.m3u8',
+        caption: 'Robot #1 | The robot reaches its right arm to grasp the cart and pulls it back. | ⚠️'
       },
     ],
   },
