@@ -1129,18 +1129,18 @@ export const DroidVideos = {
   droid_3: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal_object (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal_object.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal object (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal object.m3u8',
         caption: 'Droid | reveal the object under the cup | ❌'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine_nuts_and_batteries (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine_nuts_and_batteries.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine nuts and batteries (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine nuts and batteries.m3u8',
         caption: 'Droid | Combine the nuts and batteries into the bowl | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook_the_hat (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook_the_hat.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook the hat (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook the hat.m3u8',
         caption: 'Droid | V1-0018_Hook the hat onto the tripod | ⚠️'
       },
       {
@@ -1149,8 +1149,8 @@ export const DroidVideos = {
         caption: 'Droid | Fry the vegetables in the pan with the spatula | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_Elevate_block (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0016_Elevate_block.m3u8',
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_Elevate block (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-00016_Elevate block.m3u8',
         caption: 'Droid | elevate the yellow block to the highest platform | ✅'
       },
       {
