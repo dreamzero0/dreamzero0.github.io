@@ -123,12 +123,12 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_017_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_017.m3u8',
-        caption: 'Robot #3 | Both arms fold the bottom of the tan shorts toward the middle. Then, the right arm folds the shorts in half from right to left to complete the fold. | ⚠️'
+        caption: 'Robot #3 | Both arms fold the bottom of the tan shorts toward the middle. Then, the right arm folds the shorts in half from right to left to complete the fold. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_018_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_018.m3u8',
-        caption: 'Robot #3 | Both arms fold the bottom of the camo-grey shorts toward the middle. Then, the right arm folds the shorts in half from right to left to complete the task. | ⚠️'
+        caption: 'Robot #3 | Both arms fold the bottom of the camo-grey shorts toward the middle. Then, the right arm folds the shorts in half from right to left to complete the task. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_019_AI.m3u8',
@@ -143,7 +143,7 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_021_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_021.m3u8',
-        caption: 'Robot #3 | Both arms fold the bottom of the white shorts toward the middle. Then, the right arm folds the shorts in half from right to left to complete the task. | ⚠️'
+        caption: 'Robot #3 | Both arms fold the bottom of the white shorts toward the middle. Then, the right arm folds the shorts in half from right to left to complete the task. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_022_AI.m3u8',
@@ -182,7 +182,7 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_028_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_028.m3u8',
-        caption: 'Robot #3 | Both arms pick up the green shirt and place it on the stack of clothes. | ⚠️'
+        caption: 'Robot #3 | Both arms pick up the green shirt and place it on the stack of clothes. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_029_AI.m3u8',
@@ -197,12 +197,12 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_031_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_031.m3u8',
-        caption: 'Robot #3 | Both arms pick up the dark gray shirt and place it on the stack of clothes. | ❌'
+        caption: 'Robot #3 | Both arms pick up the dark gray shirt and place it on the stack of clothes. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_032_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_032.m3u8',
-        caption: 'Robot #3 | Both arms pick up the blue shirt and place it on the stack of clothes. | ⚠️'
+        caption: 'Robot #3 | Both arms pick up the blue shirt and place it on the stack of clothes. | ✅'
       },
     ],
   },
@@ -211,7 +211,7 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_033_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_033.m3u8',
-        caption: 'Robot #3 | The left arm picks up the Pink Fork from the table and places it onto the blue plate. | ❌'
+        caption: 'Robot #3 | The left arm picks up the Pink Fork from the table and places it onto the blue plate. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_034_AI.m3u8',
@@ -324,12 +324,12 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_054_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_054.m3u8',
-        caption: 'Robot #3 | The right arm picked up the purple pen from the table and placed it into the pen holder. | ⚠️'
+        caption: 'Robot #3 | The right arm picked up the purple pen from the table and placed it into the pen holder. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_055_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_055.m3u8',
-        caption: 'Robot #3 | The left arm picked up the mechanical pencil from the table and placed it into the pen holder. | ❌'
+        caption: 'Robot #3 | The left arm picked up the mechanical pencil from the table and placed it into the pen holder. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_056_AI.m3u8',
@@ -343,7 +343,7 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_057_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_057.m3u8',
-        caption: 'Robot #3 | The left arm picks up the clear cup from the table and places it on the grey coaster. | ❌'
+        caption: 'Robot #3 | The left arm picks up the clear cup from the table and places it on the grey coaster. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_058_AI.m3u8',
@@ -368,7 +368,7 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_062_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_062.m3u8',
-        caption: 'Robot #3 | The right arm picks up the paper cup from the table and places it on the white coaster. | ⚠️'
+        caption: 'Robot #3 | The right arm picks up the paper cup from the table and places it on the white coaster. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_063_AI.m3u8',
@@ -387,7 +387,7 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_065_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_065.m3u8',
-        caption: 'Robot #2 | The left arm uses a sponge to wipe the coffee spill off the table. | ⚠️'
+        caption: 'Robot #2 | The left arm uses a sponge to wipe the coffee spill off the table. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_066_AI.m3u8',
@@ -402,12 +402,12 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_068_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_068.m3u8',
-        caption: 'Robot #2 | The right arm used a board eraser to wipe the red marking off the table. | ❌'
+        caption: 'Robot #2 | The right arm used a board eraser to wipe the red marking off the table. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_069_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_069.m3u8',
-        caption: 'Robot #2 | The left arm uses a napkin to wipe the creamer spill off the table. | ❌'
+        caption: 'Robot #2 | The left arm uses a napkin to wipe the creamer spill off the table. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_070_AI.m3u8',
@@ -431,12 +431,12 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_073_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_073.m3u8',
-        caption: 'Robot #2 | The robot reaches to grip the green bowl, moves it to the middle wooden bowl, and releases it to stack. It then reaches to grip the white bowl, moves it to the same location, and releases it onto the stack. | ⚠️'
+        caption: 'Robot #2 | The robot reaches to grip the green bowl, moves it to the middle wooden bowl, and releases it to stack. It then reaches to grip the white bowl, moves it to the same location, and releases it onto the stack. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_074_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_074.m3u8',
-        caption: 'Robot #2 | The robot reaches its right arm to grip the red cup, moves it over the middle clear cup, and releases it to stack. It then reaches its right arm to grip the pink cup, moves it over the stack, and releases it to finish the task. | ⚠️'
+        caption: 'Robot #2 | The robot reaches its right arm to grip the red cup, moves it over the middle clear cup, and releases it to stack. It then reaches its right arm to grip the pink cup, moves it over the stack, and releases it to finish the task. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_075_AI.m3u8',
@@ -446,12 +446,12 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_076_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_076.m3u8',
-        caption: 'Robot #2 | The robot reaches its right arm to grip the green cup, moves it over the middle blue tray, and releases it to stack. It then reaches its right arm to grip the paper cup, moves it over the stack, and releases it to finish the task. | ❌'
+        caption: 'Robot #2 | The robot reaches its right arm to grip the green cup, moves it over the middle blue tray, and releases it to stack. It then reaches its right arm to grip the paper cup, moves it over the stack, and releases it to finish the task. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_077_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_077.m3u8',
-        caption: 'Robot #2 | The robot reaches its left arm to grip the paper bowl, moves it over the middle white bowl, and releases it to stack. It then reaches its left arm to grip the blue checkered bowl, moves it over the stack, and releases it to finish the task. | ❌'
+        caption: 'Robot #2 | The robot reaches its left arm to grip the paper bowl, moves it over the middle white bowl, and releases it to stack. It then reaches its left arm to grip the blue checkered bowl, moves it over the stack, and releases it to finish the task. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_078_AI.m3u8',
