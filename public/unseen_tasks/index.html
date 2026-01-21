@@ -74,7 +74,25 @@
     <div class="row">
       <div class="col-md-2 px-1 col-12">
         
-      
+
+        <div class="mb-2" id="scene-checkbox-group">
+          <h5 class="mb-1">Scene Types</h5>
+
+          <div class="checkbox-container">
+            <label for="scene-3">
+              <input type="checkbox" class="scene-checkbox" id="scene-3">
+              Office (<span id="scene-3-count">0</span>)
+            </label>
+          </div>
+
+          <div class="checkbox-container">
+            <label for="object-10">
+              <input type="checkbox" class="object-checkbox" id="object-10">
+              Other (<span id="object-10-count">0</span>)
+            </label>
+          </div>
+        </div>  
+
         <div class="mb-2" id="object-checkbox-group">
           <h5 class="mb-1">Object Types</h5>
 
@@ -184,7 +202,7 @@
           <div class="checkbox-container">
             <label for="task-3">
               <input type="checkbox" class="task-checkbox" id="task-3">
-              Human Robot Interaction (<span id="task-3-count">0</span>)
+              Human Interaction (<span id="task-3-count">0</span>)
             </label>
           </div>
         
@@ -398,15 +416,14 @@
     // Video metadata
     const videos = [
       // JSON.parse('{"info": "Pick up something", "object_id": "object-1", "poster":"videos/Unseen3WebsiteEdited-27.jpg", "scene_id": "scene-3", "src": "videos/Unseen3WebsiteEdited-27.mp4", "task_id": "task-1"}'),
-      // JSON.parse('{"info": "Untie shoelaces or gifts\u003cbr\u003e\u003cbr\u003eRibbon/Tie / Visual Reasoning", "object_id": "object-3"", "poster":"videos/ASYNCUNSEEN_003_small.jpg", "src": "videos/ASYNCUNSEEN_003_small.mp4", "task_id": "task-1"}'),
-      JSON.parse('{"info": "Removing hat from Mannequin\u003cbr\u003e\u003cbr\u003eHat / Other", "object_id": "object-5", "poster":"videos/ASYNCUNSEEN_012_small.jpg", "src": "videos/ASYNCUNSEEN_012_small.mp4", "task_id": "task-6"}'),
-      JSON.parse('{"info": "Take out the straw\u003cbr\u003e\u003cbr\u003eStraw / Visual Reasoning", "object_id": "object-6", "poster":"videos/ASYNCUNSEEN_027_small.jpg", "src": "videos/ASYNCUNSEEN_027_small.mp4", "task_id": "task-1"}'),
-      JSON.parse('{"info": "Take out the straw\u003cbr\u003e\u003cbr\u003eStraw / Visual Reasoning", "object_id": "object-6", "poster":"videos/ASYNCUNSEEN_028_small.jpg", "src": "videos/ASYNCUNSEEN_028_small.mp4", "task_id": "task-1"}'),
-      JSON.parse('{"info": "Cube Stacking \u003cbr\u003e\u003cbr\u003eCube / Visual Reasoning", "object_id": "object-7", "poster":"videos/SYNCUNSEEN_033_small.jpg", "src": "videos/SYNCUNSEEN_033_small.mp4", "task_id": "task-1"}'),
-      JSON.parse('{"info": "Right arm picks up the mango and places it in the brown wooden bowl without knocking down the books\u003cbr\u003e\u003cbr\u003eObject / Pick", "object_id": "object-4", "poster": "videos/EMERGENTSYNC_011_small.jpg", "src": "videos/EMERGENTSYNC_011_small.mp4", "task_id": "task-3"}'),
-      JSON.parse('{"info": "The right arm takes the backpack that the human is holding \u003cbr\u003e\u003cbr\u003eOther / Human Robot Interaction", "object_id": "object-8", "poster":"videos/EMERGENTSYNC_014_small.jpg", "src": "videos/EMERGENTSYNC_014_small.mp4", "task_id": "task-3"}'),
-      JSON.parse('{"info": "The right arm grabs the starfruit the human is holding and places into the pink bowl that the human is also holding\u003cbr\u003e\u003cbr\u003eFruit / Human Robot Interaction", "object_id": "object-2", "poster":"videos/EMERGENTSYNC_015_small.jpg", "src": "videos/EMERGENTSYNC_015_small.mp4", "task_id": "task-3"}'),
-  
+      JSON.parse('{"info": "Untie shoelaces or gifts\u003cbr\u003e\u003cbr\u003eRibbon/Tie / Visual Reasoning", "object_id": "object-3", "poster":"videos/ASYNCUNSEEN_003_small.jpg", "scene_id": "Scene-0", "src": "videos/ASYNCUNSEEN_003_small.mp4", "task_id": "task-1"}'),
+      JSON.parse('{"info": "Removing hat from Mannequin\u003cbr\u003e\u003cbr\u003eHat / Other", "object_id": "object-5", "poster":"videos/ASYNCUNSEEN_012_small.jpg", "scene_id": "Scene-0", "src": "videos/ASYNCUNSEEN_012_small.mp4", "task_id": "task-6"}'),
+      JSON.parse('{"info": "Take out the straw\u003cbr\u003e\u003cbr\u003eStraw / Visual Reasoning", "object_id": "object-6", "poster":"videos/ASYNCUNSEEN_027_small.jpg", "scene_id": "Scene-0", "src": "videos/ASYNCUNSEEN_027_small.mp4", "task_id": "task-1"}'),
+      JSON.parse('{"info": "Take out the straw\u003cbr\u003e\u003cbr\u003eStraw / Visual Reasoning", "object_id": "object-6", "poster":"videos/ASYNCUNSEEN_028_small.jpg", "scene_id": "Scene-0", "src": "videos/ASYNCUNSEEN_028_small.mp4", "task_id": "task-1"}'),
+      JSON.parse('{"info": "Cube Stacking \u003cbr\u003e\u003cbr\u003eCube / Visual Reasoning", "object_id": "object-7", "poster":"videos/SYNCUNSEEN_033_small.jpg", "scene_id": "Scene-0", "src": "videos/SYNCUNSEEN_033_small.mp4", "task_id": "task-1"}'),
+      JSON.parse('{"info": "Right arm picks up the mango and places it in the brown wooden bowl without knocking down the books\u003cbr\u003e\u003cbr\u003eFruit / Pick/Place", "object_id": "object-2", "poster":"videos/EMERGENTSYNC_011_small.jpg", "scene_id": "Scene-0", "src": "videos/EMERGENTSYNC_011_small.mp4", "task_id": "task-4"}'),
+      JSON.parse('{"info": "The right arm takes the backpack that the human is holding \u003cbr\u003e\u003cbr\u003eOther / Human Robot Interaction", "object_id": "object-8", "poster":"videos/EMERGENTSYNC_014_small.jpg", "scene_id": "Scene-0", "src": "videos/EMERGENTSYNC_014_small.mp4", "task_id": "task-6"}'),
+      JSON.parse('{"info": "The right arm grabs the starfruit the human is holding and places into the pink bowl that the human is also holding\u003cbr\u003e\u003cbr\u003eFruit / Human Robot Interaction", "object_id": "object-2", "poster":"videos/EMERGENTSYNC_015_small.jpg", "scene_id": "Scene-0", "src": "videos/EMERGENTSYNC_015_small.mp4", "task_id": "task-6"}'),
     ];
 
     const filters = [
