@@ -102,11 +102,6 @@ export const SeenVideos = {
         caption: 'Robot #3 | Both arms fold the bottom of the logo short sleeve to the middle. They then pull the shirt toward the edge of the table. Next, both arms fold the top of the shirt down to the middle. Finally, the right arm grasps the collar and folds it down to complete the task. | ⚠️'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014.m3u8',
-        caption: 'Robot #2 | The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
-      },
-      {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_015_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_015.m3u8',
         caption: 'Robot #3 | Both arms fold the bottom of the gray short sleeve to the middle. They then pull the shirt toward the edge of the table. Next, both arms fold the top of the shirt down to the middle. Finally, the left arm grasps the collar and folds it down to finish. | ⚠️'
