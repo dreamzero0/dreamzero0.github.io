@@ -518,7 +518,7 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009.m3u8',
-        caption: 'Robot #2 | The robot reaches its right arm to gasp the crown and lifts it to remove it from the mannequin\'s head. | ❌'
+        caption: 'Robot #2 | The robot reaches its right arm to gasp the crown and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_010_AI.m3u8',
@@ -611,7 +611,7 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_026_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_026.m3u8',
-        caption: 'Robot #2 | The right arm holds the McDonalds cup on the table. Then the left arm pulls the straw out of the cup. | ❌'
+        caption: 'Robot #2 | The right arm holds the McDonalds cup on the table. Then the left arm pulls the straw out of the cup. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_027_AI.m3u8',
@@ -694,7 +694,7 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041.m3u8',
-        caption: 'Robot #1 | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ⚠️'
+        caption: 'Robot #1 | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042_AI.m3u8',
@@ -709,7 +709,7 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_044_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_044.m3u8',
-        caption: 'Robot #2 | The left arm grabs the brush. Then left arm paints with the brush on the paper | ❌'
+        caption: 'Robot #2 | The left arm grabs the brush. Then left arm paints with the brush on the paper | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_045_AI.m3u8',
@@ -773,7 +773,7 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_056_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_056.m3u8',
-        caption: 'Robot #2 | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ❌'
+        caption: 'Robot #2 | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅s'
       },
     ],
   },
@@ -875,7 +875,7 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_074_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_074.m3u8',
-        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pushes it forward. | ⚠️'
+        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pushes it forward. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_075_AI.m3u8',
@@ -900,12 +900,12 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_079_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_079.m3u8',
-        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pulls it back. | ⚠️'
+        caption: 'Robot #1 | The robot reaches its left arm to grasp the cart and pulls it back. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_080_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_080.m3u8',
-        caption: 'Robot #1 | The robot reaches its right arm to grasp the cart and pulls it back. | ⚠️'
+        caption: 'Robot #1 | The robot reaches its right arm to grasp the cart and pulls it back. | ✅'
       },
     ],
   },
