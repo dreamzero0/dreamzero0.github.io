@@ -330,7 +330,7 @@ export default function FirstPost() {
 
         <div className={styles.blogContent}>
           <h3>The Age of Prompting</h3>
-          <p>The era of prompting robot foundation models has arrived. We're publicly sharing our <b><a href="https://dreamzero0.github.io/unseen_tasks/" style={{ color: 'blue' }}>gallery of 100+ zero-shot task rollouts</a></b>—a living document that grows as we continue discovering what DreamZero can do.</p>
+          <p>The era of prompting robot foundation models has arrived. We're publicly sharing our <b><a href="https://dreamzero0.github.io/evals_gallery/" style={{ color: 'blue' }}>gallery of 100+ zero-shot task rollouts</a></b>—a living document that grows as we continue discovering what DreamZero can do.</p>
         </div>
 
         {/* Paper Information Section */}
