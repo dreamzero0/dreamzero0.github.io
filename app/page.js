@@ -17,7 +17,8 @@ import {
   SeenVideos,
   UnseenVideos,
   DroidVideos,
-  EmergentVideos,
+  //EmergentVideos,
+  InteractivePromptingVideos,
   InferenceVideos
 } from '../data/videoData';
 import {
@@ -41,7 +42,8 @@ export default function FirstPost() {
   const [selectedSeen, setSelectedSeen] = useState('seen_1');
   const [selectedUnseen, setSelectedUnseen] = useState('unseen_1');
   const [selectedDroid, setSelectedDroid] = useState('droid_1');
-  const [selectedEmergent, setSelectedEmergent] = useState('tool_use');
+  //const [selectedEmergent, setSelectedEmergent] = useState('tool_use');
+  const [selectedInteractivePrompting, setSelectedInteractivePrompting] = useState(InteractivePromptingVideos[0]);
   const [selectedInference, setSelectedInference] = useState('dreamzero');
 
   return (
@@ -159,8 +161,12 @@ export default function FirstPost() {
             />
           </div>
 
-          <p style={{marginTop: '20px'}}>
+          {/* <p style={{marginTop: '20px'}}>
             We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 5 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks, unseen objects, and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, <em>#4 Emergent Capabilities from WAMs (tool use, human-robot-interaction, collision avoidance, and visual reasoning)</em>, and <em>#5 Different variations and ablations of DreamZero for real-time inference.</em>.
+          </p> */}
+
+          <p style={{marginTop: '20px'}}>
+            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 5 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks, unseen objects, and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, <em>#4 Interactive Prompting</em>, and <em>#5 Different variations and ablations of DreamZero for real-time inference.</em>.
           </p>
 
           {/* Behavior Generalization Videos */}
@@ -285,26 +291,54 @@ export default function FirstPost() {
         </div>
 
         <div className={styles.blogContent}>
-          <h3>#4. Emergent Capabilities from WAMs​</h3>
-          <p>Leveraging the priors of WAMs, we observe that DreamZero some <em>emergent</em> capabilities and is able to accomplish tasks that previously required task-specific methods.</p>
+          <h3>#4. Interactive Prompting​</h3>
+          {/* <p>Leveraging the priors of WAMs, we observe that DreamZero some <em>emergent</em> capabilities and is able to accomplish tasks that previously required task-specific methods.</p> */}
 
-          <ButtonSelector
+          {/* <ButtonSelector
             options={[
-              { id: 'tool_use', label: 'Tool Use' },
-              { id: 'hri', label: 'Human-Robot-Interaction' },
-              { id: 'collision_avoidance', label: 'Collision Avoidance' },
-              { id: 'visual_reasoning', label: 'Visual Reasoning' }
+              { id: 'push_elevator', label: 'Push Elevator Button' },
+              { id: 'pull_cart', label: 'Pull Cart' },
+              { id: 'insert_lab', label: 'Insert Lab Equipment' },
+              { id: 'water_plant', label: 'Water Plant' },
+              { id: 'lost_found', label: 'Place in Lost & Found' },
+              { id: 'match_shape', label: 'Match Shape' },
+              { id: 'open_door', label: 'Open the Door' },
+              { id: 'whisk_bowl', label: 'Whisk the Bowl' }
             ]}
-            selectedId={selectedEmergent}
-            onSelect={(option) => setSelectedEmergent(option.id)}
+            selectedId={selectedInteractivePrompting}
+            onSelect={(option) => setSelectedInteractivePrompting(option.id)}
+          /> */}
+          <ButtonSelector
+            options={InteractivePromptingVideos}
+            selectedId={selectedInteractivePrompting.id}
+            onSelect={setSelectedInteractivePrompting}
           />
         </div>
         
-         {/* Neural Trajectories Row */}
-        <div style={{ marginTop: '-4rem' }}>
-          <VideoCarousel 
-            videos={EmergentVideos[selectedEmergent].neural}
-          />
+        <div style={{ 
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <div style={{ 
+            width: '80%',
+            maxWidth: '70%'
+          }}>
+            <div style={{ 
+              width: '100%',
+              aspectRatio: '16/9',
+              borderRadius: '6px',
+              overflow: 'hidden',
+              backgroundColor: '#0f0f0f',
+              marginTop: '-2rem'
+            }}>
+              <LazyVideo
+                src={selectedInteractivePrompting.policyRolloutVideo}
+                title="Interactive Prompting Video"
+                style={{ width: '100%', height: '100%' }}
+              />
+            </div>
+          </div>
         </div>
 
         <div className={styles.blogContent}>

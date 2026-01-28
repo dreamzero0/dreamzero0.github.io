@@ -1228,104 +1228,50 @@ export const DroidVideos = {
 };
 
 // Platform videos for carousel
-export const EmergentVideos = {
-  tool_use: {
-    neural: [
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_005_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_005.m3u8',
-        caption: 'Robot #3 | Use the right arm picks up a bell and ring it | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_006_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_006.m3u8',
-        caption: 'Robot #3 | Use the right arm to clean the tray with the brush | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_007_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_007.m3u8',
-        caption: 'Robot #3 | The left arm uses the mallet to play the xylophone | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_008_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_008.m3u8',
-        caption: 'Robot #3 | The left arm uses the tong to pick up the pear. | ❌'
-      },
-    ],
+// Interactive Prompting videos
+export const InteractivePromptingVideos = [
+  {
+    id: 'push_elevator',
+    label: 'Push Elevator Button',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_001.m3u8',
   },
-  hri: {
-    neural: [
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_013_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_013.m3u8',
-        caption: 'Robot #3 | The right arm pulls the shirt the human is holding. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_014_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_014.m3u8',
-        caption: 'Robot #3 | The right arm takes the backpack that the human is holding  | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_015_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_015.m3u8',
-        caption: 'Robot #3 | The left arm picks a card from the deck that the human is holding | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_016_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_016.m3u8',
-        caption: 'Robot #3 | The right arm grabs the starfruit the human is holding and places into the pink bowl that the human is also holding | ❌'
-      },
-    ],
+  {
+    id: 'pull_cart',
+    label: 'Pull Cart',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_002.m3u8',
   },
-  collision_avoidance: {
-    neural: [
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_009_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_009.m3u8',
-        caption: 'Robot #3 | The left arm picks up the green pear while avoiding knocking over the dominos. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_010_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_010.m3u8',
-        caption: 'Robot #3 | Left arm picks up green skittles while avoiding to knock down the stacked cups. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_011_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_011.m3u8',
-        caption: 'Robot #3 | Right arm picks up the mango and places it in the brown wooden bowl without knocking down the books | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_012_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_012.m3u8',
-        caption: 'Robot #3 | The right arm passes the pear to the left arm while avoiding to touch the book.  | ⚠️'
-      },
-    ],
+  {
+    id: 'insert_lab',
+    label: 'Insert Lab Equipment',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_003.m3u8',
   },
-  visual_reasoning: {
-    neural: [
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_001_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_001.m3u8',
-        caption: 'Robot #3 | The left arm moves the pear in the direction the arrow is pointing. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_002_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_002.m3u8',
-        caption: 'Robot #3 | The left arm moves the pear in the direction the arrow is pointing. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_003_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_003.m3u8',
-        caption: 'Robot #3 | The left arm picks up the pear. On the table, there is a math problem is written on the paper. The left arm places the pear on the correct answer to the math problem. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_004_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_004.m3u8',
-        caption: 'Robot #3 | there are 3 buttons on table. the robot presses the emergency button using the right arm | ⚠️'
-      },
-    ],
+  {
+    id: 'water_plant',
+    label: 'Water Plant',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_004.m3u8',
   },
-};
+  {
+    id: 'lost_found',
+    label: 'Place in Lost & Found',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_005.m3u8',
+  },
+  {
+    id: 'match_shape',
+    label: 'Match Shape',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_006.m3u8',
+  },
+  {
+    id: 'open_door',
+    label: 'Open the Door',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_007.m3u8',
+  },
+  {
+    id: 'whisk_bowl',
+    label: 'Whisk the Bowl',
+    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_008.m3u8',
+  },
+];
+
 
 // Platform videos for carousel
 export const InferenceVideos = {
