@@ -42,7 +42,6 @@ export default function FirstPost() {
   const [selectedSeen, setSelectedSeen] = useState('seen_1');
   const [selectedUnseen, setSelectedUnseen] = useState('unseen_1');
   const [selectedDroid, setSelectedDroid] = useState('droid_1');
-  //const [selectedEmergent, setSelectedEmergent] = useState('tool_use');
   const [selectedInteractivePrompting, setSelectedInteractivePrompting] = useState(InteractivePromptingVideos[0]);
   const [selectedInference, setSelectedInference] = useState('dreamzero');
 
@@ -161,12 +160,8 @@ export default function FirstPost() {
             />
           </div>
 
-          {/* <p style={{marginTop: '20px'}}>
-            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 5 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks, unseen objects, and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, <em>#4 Emergent Capabilities from WAMs (tool use, human-robot-interaction, collision avoidance, and visual reasoning)</em>, and <em>#5 Different variations and ablations of DreamZero for real-time inference.</em>.
-          </p> */}
-
           <p style={{marginTop: '20px'}}>
-            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 5 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks, unseen objects, and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, <em>#4 Interactive Prompting</em>, and <em>#5 Different variations and ablations of DreamZero for real-time inference.</em>.
+            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 5 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, <em>#4 Interactive Prompting</em>, and <em>#5 Different variations and ablations of DreamZero for real-time inference.</em>.
           </p>
 
           {/* Behavior Generalization Videos */}
@@ -230,14 +225,13 @@ export default function FirstPost() {
 
         {/* Environment Generalization */}
         <div className={styles.blogContent}>
-          <h3>#2. DROID pretrain seen tasks, unseen objects, and unseen verbs</h3>
+          <h3>#2. DROID pretrain seen tasks and unseen verbs</h3>
           <p>Select an environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
           
           <ButtonSelector 
             options={[
               { id: 'droid_1', label: 'Seen Tasks' },
-              { id: 'droid_2', label: 'Unseen Objects' },
-              { id: 'droid_3', label: 'Unseen Verbs' },        
+              { id: 'droid_2', label: 'Unseen Verbs' },        
             ]}
             selectedId={selectedDroid}
             onSelect={(option) => setSelectedDroid(option.id)}
@@ -294,20 +288,6 @@ export default function FirstPost() {
           <h3>#4. Interactive Prompting​</h3>
           {/* <p>Leveraging the priors of WAMs, we observe that DreamZero some <em>emergent</em> capabilities and is able to accomplish tasks that previously required task-specific methods.</p> */}
 
-          {/* <ButtonSelector
-            options={[
-              { id: 'push_elevator', label: 'Push Elevator Button' },
-              { id: 'pull_cart', label: 'Pull Cart' },
-              { id: 'insert_lab', label: 'Insert Lab Equipment' },
-              { id: 'water_plant', label: 'Water Plant' },
-              { id: 'lost_found', label: 'Place in Lost & Found' },
-              { id: 'match_shape', label: 'Match Shape' },
-              { id: 'open_door', label: 'Open the Door' },
-              { id: 'whisk_bowl', label: 'Whisk the Bowl' }
-            ]}
-            selectedId={selectedInteractivePrompting}
-            onSelect={(option) => setSelectedInteractivePrompting(option.id)}
-          /> */}
           <ButtonSelector
             options={InteractivePromptingVideos}
             selectedId={selectedInteractivePrompting.id}

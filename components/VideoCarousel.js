@@ -78,7 +78,7 @@ const VideoCarousel = ({ videos, title }) => {
       )}
 
       <div className={styles.carousel}>
-        <div className={styles.carouselContainer} ref={carouselRef}>
+        <div className={`${styles.carouselContainer} ${videos.length <= 6 ? styles.carouselContainerCentered : ''}`} ref={carouselRef}>
           {videos.map((video, index) => (
             <div key={index} className={styles.carouselItem}>
               {isPaired ? (
