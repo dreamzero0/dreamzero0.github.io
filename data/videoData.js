@@ -918,102 +918,107 @@ export const DroidVideos = {
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/cup_holder (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/cup_holder (real).m3u8',
-        caption: 'Droid | Move the cup forward then put the marker inside the cup | ⚠️'
+        caption: 'Prompt: Move the cup forward then put the marker inside the cup | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/arrange_marker (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/arrange_marker (real).m3u8',
-        caption: 'Droid | Put the marker in the blue box | ❌'
+        caption: 'Prompt: Put the marker in the blue box | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/remove_gloves_and_place_on_table (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/remove_gloves_and_place_on_table (real).m3u8',
+        caption: 'Prompt: Remove the pair of gloves from the open drawer and put it on the table | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/place_marker_on_table (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/place_marker_on_table (real).m3u8',
+        caption: 'Prompt: Put the marker on table | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (real).m3u8',
-        caption: 'Droid | Put the marker on table | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (real).m3u8',
-        caption: 'Droid | Pick up the apple and put it in the basket | ❌'
+        caption: 'Prompt: Pick up the apple and put it in the basket | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/towel_on_cup (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/towel_on_cup (real).m3u8',
-        caption: 'Droid | Put the towel on the white cup | ✅'
+        caption: 'Prompt: Put the towel on the white cup | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/towel_on_pan (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/towel_on_pan (real).m3u8',
-        caption: 'Droid | Put the towel in the pan | ⚠️'
+        caption: 'Prompt: Put the towel in the pan | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/put_the_hat_on_the_table (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/put_the_hat_on_the_table (real).m3u8',
-        caption: 'Droid | Put the hat on the table | ⚠️'
+        caption: 'Prompt: Put the hat on the table | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/put_the_pair_of_scissors_in_the_drawer (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/put_the_pair_of_scissors_in_the_drawer (real).m3u8',
-        caption: 'Droid | Put the pair of scissors into the drawer | ⚠️'
+        caption: 'Prompt: Put the pair of scissors into the drawer | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/towel_in_basket (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/towel_in_basket (real).m3u8',
-        caption: 'Droid | Put the towel in the basket | ✅'
+        caption: 'Prompt: Put the towel in the basket | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/move_bowl_to_right (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/move_bowl_to_right (real).m3u8',
-        caption: 'Droid | Move the bowl on the left to the right side of the table. | ✅'
+        caption: 'Prompt: Move the bowl on the left to the right side of the table. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/pencil_in_bowl (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/pencil_in_bowl (real).m3u8',
-        caption: 'Droid | Pick up the pencil and put it on the bowl | ✅'
+        caption: 'Prompt: Pick up the pencil and put it on the bowl | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/marker_in_bowl (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/marker_in_bowl (real).m3u8',
-        caption: 'Droid | Pick the marker up from the table and put it in the bowl | ✅'
+        caption: 'Prompt: Pick the marker up from the table and put it in the bowl | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/bowl_next_to_marker (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/bowl_next_to_marker (real).m3u8',
-        caption: 'Droid | Place the bowl next to the marker | ⚠️'
+        caption: 'Prompt: Place the bowl next to the marker | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/remove_lemon_from_bowl (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/remove_lemon_from_bowl (real).m3u8',
-        caption: 'Droid | Remove a lemon from the bowl | ✅'
+        caption: 'Prompt: Remove a lemon from the bowl | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/move_grapes_to_the_left (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/move_grapes_to_the_left (real).m3u8',
-        caption: 'Droid | Move the grapes to the left | ✅'
+        caption: 'Prompt: Move the grapes to the left | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/move_green_grapes_backward (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/move_green_grapes_backward (real).m3u8',
-        caption: 'Droid | Move the green grapes backwards | ✅'
+        caption: 'Prompt: Move the green grapes backwards | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/toast_bread (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/toast_bread (real).m3u8',
-        caption: 'Droid | Put the bread inside the toaster | ❌'
+        caption: 'Prompt: Put the bread inside the toaster | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/serve_banana (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/serve_banana (real).m3u8',
-        caption: 'Droid | Put the banana on the green plate | ✅'
+        caption: 'Prompt: Put the banana on the green plate | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/stack_cubes (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/stack_cubes (real).m3u8',
-        caption: 'Droid | Put the ‘red’ cube on ‘top’ of the yellow cube | ✅'
+        caption: 'Prompt: Put the ‘red’ cube on ‘top’ of the yellow cube | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/slide_plate (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/slide_plate (real).m3u8',
-        caption: 'Droid | slide plate to left side of table | ✅'
+        caption: 'Prompt: Slide plate to left side of table | ✅'
       },
     ],
   },
@@ -1021,103 +1026,108 @@ export const DroidVideos = {
     neural: [
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal object (AI).m3u8',
+        executionUrl: '/labs/gear/videos/droid/hsl/stack_cups (real).m3u8',
+        caption: 'Prompt: Pick up the cup from the bowl and put it in the other cups | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal object (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal object.m3u8',
-        caption: 'Droid | reveal the object under the cup | ❌'
+        caption: 'Prompt: Reveal the object under the cup | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine nuts and batteries (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine nuts and batteries.m3u8',
-        caption: 'Droid | Combine the nuts and batteries into the bowl | ⚠️'
+        caption: 'Prompt: Combine the nuts and batteries into the bowl | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook the hat (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0018_Hook the hat.m3u8',
-        caption: 'Droid | V1-0018_Hook the hat onto the tripod | ⚠️'
+        caption: 'Prompt: Hook the hat onto the tripod | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0017_Fry vegetables (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0017_Fry vegetables.m3u8',
-        caption: 'Droid | Fry the vegetables in the pan with the spatula | ✅'
+        caption: 'Prompt: Fry the vegetables in the pan with the spatula | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_Elevate block (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-00016_Elevate block.m3u8',
-        caption: 'Droid | elevate the yellow block to the highest platform | ✅'
+        caption: 'Prompt: Elevate the yellow block to the highest platform | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0001_Orient the cup (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0001_Orient the cup.m3u8',
-        caption: 'Droid | Orient the mug so the handle is to the right | ⚠️'
+        caption: 'Prompt: Orient the mug so the handle is to the right | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0002_Fan the food (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0002_Fan the food.m3u8',
-        caption: 'Droid | Fan the burger | ✅'
+        caption: 'Prompt: Fan the burger | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0003_Slice bread (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0003_Slice bread.m3u8',
-        caption: 'Droid | slice the bread with the knife | ❌'
+        caption: 'Prompt: Slice the bread with the knife | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type _hi_ (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type _hi_.m3u8',
-        caption: 'Droid | Type \'hi\' on the keyboard | ⚠️'
+        caption: 'Prompt: Type \'hi\' on the keyboard | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0005_Extricate straw (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0005_Extricate straw.m3u8',
-        caption: 'Droid | Extricate the straw from the cup | ✅'
+        caption: 'Prompt: Extricate the straw from the cup | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0006_Match the Objects (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0006_Match the Objects.m3u8',
-        caption: 'Droid | Match the objects to their corresponding bowl | ❌'
+        caption: 'Prompt: Match the objects to their corresponding bowl | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0007_Maneuver shape (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0007_Maneuver shape.m3u8',
-        caption: 'Droid | Maneuver the blocks through the matching hole | ❌'
+        caption: 'Prompt: Maneuver the blocks through the matching hole | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0008_Affix magnet (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0008_Affix magnet.m3u8',
-        caption: 'Droid | Affix the magnet to the tray | ❌'
+        caption: 'Prompt: Affix the magnet to the tray | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0009_Pinch binder clip (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0009_Pinch binder clip.m3u8',
-        caption: 'Droid | Pinch the binder clip to release the papers | ⚠️'
+        caption: 'Prompt: Pinch the binder clip to release the papers | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0010_Withdraw toast (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0010_Withdraw toast.m3u8',
-        caption: 'Droid | Withdraw the bread from the toaster and place on the plate | ✅'
+        caption: 'Prompt: Withdraw the bread from the toaster and place on the plate | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever.m3u8',
-        caption: 'Droid | Cinch the drawstring of the bag | ⚠️'
+        executionUrl: '/labs/gear/videos/droid/hsl/push_the_lever_on_the_bread_toaster_downwards (real).m3u8',
+        caption: 'Prompt: Depress the lever on the toaster | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0012_Dispense mustard (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0012_Dispense mustard.m3u8',
-        caption: 'Droid | Dispense the mustard onto the bread | ❌'
+        caption: 'Prompt: Dispense the mustard onto the bread | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0013_Bake the croissant (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0013_Bake the croissant.m3u8',
-        caption: 'Droid | Bake the croissant in the oven | ⚠️'
+        caption: 'Prompt: Bake the croissant in the oven | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever (AI).m3u8',
-        executionUrl: '/labs/gear/videos/droid/hsl/V1-0014_Depress lever.m3u8',
-        caption: 'Droid | Depress the lever on the toaster | ⚠️'
+        executionUrl: '/labs/gear/videos/droid/hsl/V1-0011_Cinch drawstring.m3u8',
+        caption: 'Prompt: Cinch the drawstring of the bag | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0015_Weave wire (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0015_Weave wire.m3u8',
-        caption: 'Droid | Weave the wire through the holes of the box | ⚠️'
+        caption: 'Prompt: Weave the wire through the holes of the box | ⚠️'
       },
     ],
   },
@@ -1129,7 +1139,7 @@ export const InteractivePromptingVideos = [
   {
     id: 'push_elevator',
     label: 'Push Elevator Button',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/EMERGENTSYNC_001.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_elevator.m3u8',
   },
   {
     id: 'pull_cart',
@@ -1154,7 +1164,7 @@ export const InteractivePromptingVideos = [
   {
     id: 'match_shape',
     label: 'Match Shape',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/EMERGENTSYNC_006.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Maneuver_shape.m3u8',
   },
   {
     id: 'open_door',
