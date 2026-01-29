@@ -1129,42 +1129,42 @@ export const InteractivePromptingVideos = [
   {
     id: 'push_elevator',
     label: 'Push Elevator Button',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_001.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/EMERGENTSYNC_001.m3u8',
   },
   {
     id: 'pull_cart',
     label: 'Pull Cart',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_002.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Pull_the_cart.m3u8',
   },
   {
     id: 'insert_lab',
     label: 'Insert Lab Equipment',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_003.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lab_Equipment_Insertion.m3u8',
   },
   {
     id: 'water_plant',
     label: 'Water Plant',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_004.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Water_the_plant.m3u8',
   },
   {
     id: 'lost_found',
     label: 'Place in Lost & Found',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_005.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lost_and_Found.m3u8',
   },
   {
     id: 'match_shape',
     label: 'Match Shape',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_006.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/EMERGENTSYNC_006.m3u8',
   },
   {
     id: 'open_door',
     label: 'Open the Door',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_007.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_door.m3u8',
   },
   {
     id: 'whisk_bowl',
     label: 'Whisk the Bowl',
-    policyRolloutVideo: '/labs/gear/videos/agi_emergent/hsl/EMERGENTSYNC_008.m3u8',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Whisk_the_bowl.m3u8',
   },
 ];
 
