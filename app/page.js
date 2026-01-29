@@ -136,6 +136,7 @@ export default function FirstPost() {
               src={mainVideo}
               title="DreamGen Overview"
               className={styles.videoElement}
+              defaultVolume={1.0}
               controls
             />
           </div>
@@ -499,6 +500,19 @@ export default function FirstPost() {
               />
             </div>
           </div>
+        </div>
+
+        <div className={styles.blogContent}>
+          <p style={{ 
+            fontSize: '0.9rem', 
+            opacity: 0.85, 
+            fontStyle: 'italic',
+            marginTop: '1rem',
+            marginBottom: '2rem',
+            textAlign: 'center'
+          }}>
+            Prompt: "{selectedInteractivePrompting.prompt}"
+          </p>
         </div>
 
         <div className={styles.blogContent}>
