@@ -138,6 +138,20 @@
           </div>
 
           <div class="checkbox-container">
+            <label for="scene-5">
+              <input type="checkbox" class="scene-checkbox" id="scene-5">
+              Store (<span id="scene-5-count">0</span>)
+            </label>
+          </div>
+
+          <div class="checkbox-container">
+            <label for="scene-6">
+              <input type="checkbox" class="scene-checkbox" id="scene-6">
+              Home (<span id="scene-6-count">0</span>)
+            </label>
+          </div>
+
+          <div class="checkbox-container">
             <label for="scene-20">
               <input type="checkbox" class="scene-checkbox" id="scene-20">
               Other (<span id="scene-20-count">0</span>)
@@ -159,14 +173,14 @@
           <div class="checkbox-container">
             <label for="object-1">
               <input type="checkbox" class="object-checkbox" id="object-1">
-              Fruit (<span id="object-1-count">0</span>)
+              Food (<span id="object-1-count">0</span>)
             </label>
           </div>
         
           <div class="checkbox-container">
             <label for="object-2">
               <input type="checkbox" class="object-checkbox" id="object-2">
-              Brush (<span id="object-2-count">0</span>)
+              Stationery (<span id="object-2-count">0</span>)
             </label>
           </div>
         
@@ -271,14 +285,21 @@
           <div class="checkbox-container">
             <label for="object-17">
               <input type="checkbox" class="object-checkbox" id="object-17">
-              Sponge (<span id="object-17-count">0</span>)
+              Cleaning Tool (<span id="object-17-count">0</span>)
             </label>
           </div>
 
           <div class="checkbox-container">
             <label for="object-18">
               <input type="checkbox" class="object-checkbox" id="object-18">
-              Brush (<span id="object-18-count">0</span>)
+              Tissue (<span id="object-18-count">0</span>)
+            </label>
+          </div>
+
+          <div class="checkbox-container">
+            <label for="object-18">
+              <input type="checkbox" class="object-checkbox" id="object-18">
+              Umbrella (<span id="object-18-count">0</span>)
             </label>
           </div>
         
@@ -423,6 +444,20 @@
             <label for="task-18">
               <input type="checkbox" class="task-checkbox" id="task-18">
               Close (<span id="task-18-count">0</span>)
+            </label>
+          </div>
+
+          <div class="checkbox-container">
+            <label for="task-21">
+              <input type="checkbox" class="task-checkbox" id="task-21">
+              Arrange (<span id="task-21-count">0</span>)
+            </label>
+          </div>
+
+          <div class="checkbox-container">
+            <label for="task-22">
+              <input type="checkbox" class="task-checkbox" id="task-22">
+              Clean (<span id="task-22-count">0</span>)
             </label>
           </div>
         
@@ -593,15 +628,13 @@
   <script>
     // Video metadata
     const videos = [
-      // JSON.parse('{"info": "Pick up something", "object_id": "object-1", "poster":"videos/Unseen3WebsiteEdited-27.jpg", "scene_id": "scene-3", "src": "videos/Unseen3WebsiteEdited-27.mp4", "task_id": "task-1"}'),
-
       JSON.parse('{"info": "Untie shoelaces or gifts\u003cbr\u003e\u003cbr\u003eGift / Untie", "object_id": "object-3", "poster": "videos/ASYNCUNSEEN_003_small.jpg", "scene_id": "scene-1", "src": "videos/ASYNCUNSEEN_003_small.mp4", "task_id": "task-1"}'),
       JSON.parse('{"info": "Remove hat from mannequin\u003cbr\u003e\u003cbr\u003eClothes / Remove", "object_id": "object-4", "poster": "videos/ASYNCUNSEEN_012_small.jpg", "scene_id": "scene-1", "src": "videos/ASYNCUNSEEN_012_small.mp4", "task_id": "task-10"}'),
       JSON.parse('{"info": "Take out the straw\u003cbr\u003e\u003cbr\u003eStraw / Take", "object_id": "object-6", "poster": "videos/ASYNCUNSEEN_027_small.jpg", "scene_id": "scene-1", "src": "videos/ASYNCUNSEEN_027_small.mp4", "task_id": "task-3"}'),
       JSON.parse('{"info": "Stack the cube\u003cbr\u003e\u003cbr\u003eCube / Stack", "object_id": "object-7", "poster": "videos/SYNCUNSEEN_033_small.jpg", "scene_id": "scene-1", "src": "videos/SYNCUNSEEN_033_small.mp4", "task_id": "task-12"}'),
-      JSON.parse('{"info": "Place mango in bowl\u003cbr\u003e\u003cbr\u003eFruit / Pick", "object_id": "object-1", "poster": "videos/EMERGENTSYNC_011_small.jpg", "scene_id": "scene-1", "src": "videos/EMERGENTSYNC_011_small.mp4", "task_id": "task-6"}'),
+      JSON.parse('{"info": "Place mango in bowl\u003cbr\u003e\u003cbr\u003eFood / Pick", "object_id": "object-1", "poster": "videos/EMERGENTSYNC_011_small.jpg", "scene_id": "scene-1", "src": "videos/EMERGENTSYNC_011_small.mp4", "task_id": "task-6"}'),
       JSON.parse('{"info": "Take the backpack\u003cbr\u003e\u003cbr\u003eBag / Take", "object_id": "object-13", "poster": "videos/EMERGENTSYNC_014_small.jpg", "scene_id": "scene-1", "src": "videos/EMERGENTSYNC_014_small.mp4", "task_id": "task-3"}'),
-      JSON.parse('{"info": "Grab the star fruit and place in bowl\u003cbr\u003e\u003cbr\u003eFruit / Place", "object_id": "object-1", "poster": "videos/EMERGENTSYNC_015_small.jpg", "scene_id": "scene-1", "src": "videos/EMERGENTSYNC_015_small.mp4", "task_id": "task-9"}'),
+      JSON.parse('{"info": "Grab the star fruit and place in bowl\u003cbr\u003e\u003cbr\u003eFood / Place", "object_id": "object-1", "poster": "videos/EMERGENTSYNC_015_small.jpg", "scene_id": "scene-1", "src": "videos/EMERGENTSYNC_015_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Unplug the cable\u003cbr\u003e\u003cbr\u003eCable / Other", "object_id": "object-16", "poster": "videos/DATAVIZ_001_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_001_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Open the drawer\u003cbr\u003e\u003cbr\u003eOther / Open", "object_id": "object-20", "poster": "videos/DATAVIZ_002_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_002_small.mp4", "task_id": "task-15"}'),
       JSON.parse('{"info": "Slide the box\u003cbr\u003e\u003cbr\u003eOther / Other", "object_id": "object-20", "poster": "videos/DATAVIZ_003_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_003_small.mp4", "task_id": "task-20"}'),
@@ -615,12 +648,12 @@
       JSON.parse('{"info": "Grab eraser and wipe whiteboard\u003cbr\u003e\u003cbr\u003eEraser / Wipe", "object_id": "object-8", "poster": "videos/DATAVIZ_015_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_015_small.mp4", "task_id": "task-16"}'),
       JSON.parse('{"info": "Pull the shirt\u003cbr\u003e\u003cbr\u003eClothes / Pull", "object_id": "object-4", "poster": "videos/DATAVIZ_017_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_017_small.mp4", "task_id": "task-11"}'),
       JSON.parse('{"info": "Wipe the ketchup stain three times with a napkin\u003cbr\u003e\u003cbr\u003eOther / Wipe", "object_id": "object-20", "poster": "videos/DATAVIZ_018_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_018_small.mp4", "task_id": "task-16"}'),
-      JSON.parse('{"info": "Reach inside box to grab pear without touching the box\u003cbr\u003e\u003cbr\u003eFruit / Pick", "object_id": "object-1", "poster": "videos/DATAVIZ_021_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_021_small.mp4", "task_id": "task-6"}'),
+      JSON.parse('{"info": "Reach inside box to grab pear without touching the box\u003cbr\u003e\u003cbr\u003eFood / Pick", "object_id": "object-1", "poster": "videos/DATAVIZ_021_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_021_small.mp4", "task_id": "task-6"}'),
       JSON.parse('{"info": "Squeeze the ketchup bottle twice\u003cbr\u003e\u003cbr\u003eOther / Other", "object_id": "object-20", "poster": "videos/DATAVIZ_022_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_022_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Pull white book out\u003cbr\u003e\u003cbr\u003eOther / Pull", "object_id": "object-20", "poster": "videos/DATAVIZ_024_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_024_small.mp4", "task_id": "task-11"}'),
       JSON.parse('{"info": "Pull the cart\u003cbr\u003e\u003cbr\u003eCart / Pull", "object_id": "object-9", "poster": "videos/DATAVIZ_027_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_027_small.mp4", "task_id": "task-11"}'),
       JSON.parse('{"info": "Press the emergency button\u003cbr\u003e\u003cbr\u003eOther / Push", "object_id": "object-20", "poster": "videos/DATAVIZ_031_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_031_small.mp4", "task_id": "task-14"}'),
-      JSON.parse('{"info": "Pick up cube with left arm and place the pear on the correct answer with right arm\u003cbr\u003e\u003cbr\u003eFruit / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_032_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_032_small.mp4", "task_id": "task-9"}'),
+      JSON.parse('{"info": "Pick up cube with left arm and place the pear on the correct answer with right arm\u003cbr\u003e\u003cbr\u003eFood / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_032_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_032_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Clean the glass with brush\u003cbr\u003e\u003cbr\u003eKitchenware / Other", "object_id": "object-11", "poster": "videos/DATAVIZ_034_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_034_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Whisk the bowl\u003cbr\u003e\u003cbr\u003eKitchenware / Other", "object_id": "object-11", "poster": "videos/DATAVIZ_035_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_035_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Play the xylophone using mallet\u003cbr\u003e\u003cbr\u003eOther / Other", "object_id": "object-20", "poster": "videos/DATAVIZ_039_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_039_small.mp4", "task_id": "task-20"}'),
@@ -631,10 +664,10 @@
       JSON.parse('{"info": "Grab the sauce bottle and pour it into the cup\u003cbr\u003e\u003cbr\u003eKitchenware / Pour", "object_id": "object-11", "poster": "videos/DATAVIZ_047_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_047_small.mp4", "task_id": "task-13"}'),
       JSON.parse('{"info": "Move cube in the direction of the arrow\u003cbr\u003e\u003cbr\u003eCube / Other", "object_id": "object-7", "poster": "videos/DATAVIZ_048_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_048_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Shake the tambourine\u003cbr\u003e\u003cbr\u003eOther / Shake", "object_id": "object-20", "poster": "videos/DATAVIZ_049_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_049_small.mp4", "task_id": "task-8"}'),
-      JSON.parse('{"info": "Pick up the watermelon\u003cbr\u003e\u003cbr\u003eFruit / Pick", "object_id": "object-1", "poster": "videos/DATAVIZ_050_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_050_small.mp4", "task_id": "task-6"}'),
+      JSON.parse('{"info": "Pick up the watermelon\u003cbr\u003e\u003cbr\u003eFood / Pick", "object_id": "object-1", "poster": "videos/DATAVIZ_050_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_050_small.mp4", "task_id": "task-6"}'),
       JSON.parse('{"info": "Pick up the can and pour it into the cup\u003cbr\u003e\u003cbr\u003eKitchenware / Pour", "object_id": "object-11", "poster": "videos/DATAVIZ_051_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_051_small.mp4", "task_id": "task-13"}'),
       JSON.parse('{"info": "Place the blue sock into the bag\u003cbr\u003e\u003cbr\u003eClothes / Place", "object_id": "object-4", "poster": "videos/DATAVIZ_052_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_052_small.mp4", "task_id": "task-9"}'),
-      JSON.parse('{"info": "Grab the mango from the basket and place it on the tray\u003cbr\u003e\u003cbr\u003eFruit / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_053_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_053_small.mp4", "task_id": "task-9"}'),
+      JSON.parse('{"info": "Grab the mango from the basket and place it on the tray\u003cbr\u003e\u003cbr\u003eFood / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_053_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_053_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Move forward and open door\u003cbr\u003e\u003cbr\u003eDoor / Open", "object_id": "object-12", "poster": "videos/DATAVIZ_FREEFORM_MOBILE_001_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_FREEFORM_MOBILE_001_small.mp4", "task_id": "task-15"}'),
       JSON.parse('{"info": "Place bag in basket\u003cbr\u003e\u003cbr\u003eBag / Place", "object_id": "object-13", "poster": "videos/DATAVIZ_FREEFORM_MOBILE_003_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_FREEFORM_MOBILE_003_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Push rolling chair back under desk\u003cbr\u003e\u003cbr\u003eChair / Push", "object_id": "object-14", "poster": "videos/DATAVIZ_FREEFORM_MOBILE_004_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_FREEFORM_MOBILE_004_small.mp4", "task_id": "task-14"}'),
@@ -648,17 +681,17 @@
       JSON.parse('{"info": "Pick up tool and hand to human\u003cbr\u003e\u003cbr\u003eOther / Pick", "object_id": "object-20", "poster": "videos/DATAVIZ_LOBBY_004_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_004_small.mp4", "task_id": "task-6"}'),
       JSON.parse('{"info": "Stack green bowl on the blue bowl on the shelf\u003cbr\u003e\u003cbr\u003eKitchenware / Stack", "object_id": "object-11", "poster": "videos/DATAVIZ_LOBBY_005_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_005_small.mp4", "task_id": "task-12"}'),
       JSON.parse('{"info": "Grab and unzip pouch\u003cbr\u003e\u003cbr\u003eOther / Other", "object_id": "object-20", "poster": "videos/DATAVIZ_LOBBY_006_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_006_small.mp4", "task_id": "task-20"}'),
-      JSON.parse('{"info": "Grab and place orange into green bowl\u003cbr\u003e\u003cbr\u003eFruit / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_LOBBY_007_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_007_small.mp4", "task_id": "task-9"}'),
+      JSON.parse('{"info": "Grab and place orange into green bowl\u003cbr\u003e\u003cbr\u003eFood / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_LOBBY_007_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_007_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Pick up juice box and insert into cup\u003cbr\u003e\u003cbr\u003eOther / Pick", "object_id": "object-20", "poster": "videos/DATAVIZ_LOBBY_008_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_008_small.mp4", "task_id": "task-6"}'),
       JSON.parse('{"info": "Wipe spill with napkin\u003cbr\u003e\u003cbr\u003eOther / Wipe", "object_id": "object-20", "poster": "videos/DATAVIZ_LOBBY_009_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_009_small.mp4", "task_id": "task-16"}'),
       JSON.parse('{"info": "Pull wipe with right hand and wipe the table\u003cbr\u003e\u003cbr\u003eOther / Wipe", "object_id": "object-20", "poster": "videos/DATAVIZ_LOBBY_010_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_010_small.mp4", "task_id": "task-16"}'),
       JSON.parse('{"info": "Pick up pink bowl and place in yellow bowl\u003cbr\u003e\u003cbr\u003eKitchenware / Place", "object_id": "object-11", "poster": "videos/DATAVIZ_LOBBY_011_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_011_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Pick up bottle and place in bowl\u003cbr\u003e\u003cbr\u003eKitchenware / Place", "object_id": "object-11", "poster": "videos/DATAVIZ_LOBBY_012_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_012_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Pick up bottle and pour into cup\u003cbr\u003e\u003cbr\u003eKitchenware / Pour", "object_id": "object-11", "poster": "videos/DATAVIZ_LOBBY_013_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_LOBBY_013_small.mp4", "task_id": "task-13"}'),
-      JSON.parse('{"info": "Pick up mango and place in cardboard box\u003cbr\u003e\u003cbr\u003eFruit / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_SEEN_002_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_SEEN_002_small.mp4", "task_id": "task-9"}'),
+      JSON.parse('{"info": "Pick up mango and place in cardboard box\u003cbr\u003e\u003cbr\u003eFood / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_SEEN_002_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_SEEN_002_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Fold the shorts\u003cbr\u003e\u003cbr\u003eClothes / Fold", "object_id": "object-4", "poster": "videos/DATAVIZ_SEEN_021_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_SEEN_021_small.mp4", "task_id": "task-5"}'),
       JSON.parse('{"info": "Pick up shirt and place it on the stack\u003cbr\u003e\u003cbr\u003eClothes / Place", "object_id": "object-4", "poster": "videos/DATAVIZ_SEEN_032_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_SEEN_032_small.mp4", "task_id": "task-9"}'),
-      JSON.parse('{"info": "Pick up apple from bag and place into tray\u003cbr\u003e\u003cbr\u003eFruit / Pick", "object_id": "object-1", "poster": "videos/DATAVIZ_SEEN_044_small.jpg", "scene_id": "scene-20", "src": "videos/DATAVIZ_SEEN_044_small.mp4", "task_id": "task-6"}'),
+      JSON.parse('{"info": "Pick up apple from bag and place into tray\u003cbr\u003e\u003cbr\u003eFood / Pick", "object_id": "object-1", "poster": "videos/DATAVIZ_SEEN_044_small.jpg", "scene_id": "scene-20", "src": "videos/DATAVIZ_SEEN_044_small.mp4", "task_id": "task-6"}'),
       JSON.parse('{"info": "Pick up pen and place into pen holder\u003cbr\u003e\u003cbr\u003eStationery / Place", "object_id": "object-2", "poster": "videos/DATAVIZ_SEEN_054_small.jpg", "scene_id": "scene-3", "src": "videos/DATAVIZ_SEEN_054_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Pick up paper cup and place on coaster\u003cbr\u003e\u003cbr\u003eKitchenware / Place", "object_id": "object-11", "poster": "videos/DATAVIZ_SEEN_060_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_SEEN_060_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Wipe brown sugar off table using towel\u003cbr\u003e\u003cbr\u003eTowel / Wipe", "object_id": "object-5", "poster": "videos/DATAVIZ_SEEN_066_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_SEEN_066_small.mp4", "task_id": "task-16"}'),
@@ -667,9 +700,9 @@
       JSON.parse('{"info": "Stack pink bowl on beige bowl and stack white bowl on pink bowl\u003cbr\u003e\u003cbr\u003eKitchenware / Stack", "object_id": "object-11", "poster": "videos/DATAVIZ_SEEN_079_small.jpg", "scene_id": "scene-2", "src": "videos/DATAVIZ_SEEN_079_small.mp4", "task_id": "task-12"}'),
       JSON.parse('{"info": "Put the marker in the blue box\u003cbr\u003e\u003cbr\u003eStationery / Place", "object_id": "object-2", "poster": "videos/DATAVIZ_DROID_001_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_001_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Move the bowl on the left to the right side of the table.\u003cbr\u003e\u003cbr\u003eKitchenware / Other", "object_id": "object-11", "poster": "videos/DATAVIZ_DROID_004_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_004_small.mp4", "task_id": "task-20"}'),
-      JSON.parse('{"info": "Remove a lemon from the bowl\u003cbr\u003e\u003cbr\u003eFruit / Remove", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_007_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_007_small.mp4", "task_id": "task-10"}'),
-      JSON.parse('{"info": "Move the grapes to the left\u003cbr\u003e\u003cbr\u003eFruit / Other", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_008_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_008_small.mp4", "task_id": "task-20"}'),
-      JSON.parse('{"info": "Put the banana on the green plate and then the blue plate\u003cbr\u003e\u003cbr\u003eFruit / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_012_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_012_small.mp4", "task_id": "task-9"}'),
+      JSON.parse('{"info": "Remove a lemon from the bowl\u003cbr\u003e\u003cbr\u003eFood / Remove", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_007_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_007_small.mp4", "task_id": "task-10"}'),
+      JSON.parse('{"info": "Move the grapes to the left\u003cbr\u003e\u003cbr\u003eFood / Other", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_008_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_008_small.mp4", "task_id": "task-20"}'),
+      JSON.parse('{"info": "Put the banana on the green plate and then the blue plate\u003cbr\u003e\u003cbr\u003eFood / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_012_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_012_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Put the red cube on top of the yellow cube\u003cbr\u003e\u003cbr\u003eCube / Stack", "object_id": "object-7", "poster": "videos/DATAVIZ_DROID_013_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_013_small.mp4", "task_id": "task-12"}'),
       JSON.parse('{"info": "Put the banana on the blue plate\u003cbr\u003e\u003cbr\u003eKitchenware / Place", "object_id": "object-11", "poster": "videos/DATAVIZ_DROID_014_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_014_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Put the marker in the drawer and close the drawer\u003cbr\u003e\u003cbr\u003eStationery / Close", "object_id": "object-2", "poster": "videos/DATAVIZ_DROID_015_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_015_small.mp4", "task_id": "task-18"}'),
@@ -677,7 +710,7 @@
       JSON.parse('{"info": "Slide plate to left side of table\u003cbr\u003e\u003cbr\u003eKitchenware / Other", "object_id": "object-11", "poster": "videos/DATAVIZ_DROID_017_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_017_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Center cup on plate\u003cbr\u003e\u003cbr\u003eKitchenware / Place", "object_id": "object-11", "poster": "videos/DATAVIZ_DROID_018_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_018_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Remove all objects from basket\u003cbr\u003e\u003cbr\u003eOther / Remove", "object_id": "object-20", "poster": "videos/DATAVIZ_DROID_019_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_019_small.mp4", "task_id": "task-10"}'),
-      JSON.parse('{"info": "Separate bowls and place grapes in red bowl\u003cbr\u003e\u003cbr\u003eFruit / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_020_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_020_small.mp4", "task_id": "task-9"}'),
+      JSON.parse('{"info": "Separate bowls and place grapes in red bowl\u003cbr\u003e\u003cbr\u003eFood / Place", "object_id": "object-1", "poster": "videos/DATAVIZ_DROID_020_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_020_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Put all objects into the box\u003cbr\u003e\u003cbr\u003eOther / Place", "object_id": "object-20", "poster": "videos/DATAVIZ_DROID_021_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_021_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Place cube on sandwich\u003cbr\u003e\u003cbr\u003eCube / Place", "object_id": "object-7", "poster": "videos/DATAVIZ_DROID_022_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_022_small.mp4", "task_id": "task-9"}'),
       JSON.parse('{"info": "Fold the towel\u003cbr\u003e\u003cbr\u003eTowel / Fold", "object_id": "object-5", "poster": "videos/DATAVIZ_DROID_023_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_023_small.mp4", "task_id": "task-5"}'),
@@ -689,7 +722,7 @@
       JSON.parse('{"info": "brew the teabag in the cup\u003cbr\u003e\u003cbr\u003eKitchenware / Other", "object_id": "object-11", "poster": "videos/DATAVIZ_DROID_030_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_030_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Fry the vegetables in the pan with the spatula\u003cbr\u003e\u003cbr\u003eKitchenware / Other", "object_id": "object-11", "poster": "videos/DATAVIZ_DROID_031_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_031_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "elevate the yellow block to the highest platform\u003cbr\u003e\u003cbr\u003eCube / Place", "object_id": "object-7", "poster": "videos/DATAVIZ_DROID_032_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_032_small.mp4", "task_id": "task-9"}'),
-      JSON.parse('{"info": "tidy the objects on the table into the yellow bowl\u003cbr\u003e\u003cbr\u003eOther / Other", "object_id": "object-20", "poster": "videos/DATAVIZ_DROID_033_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_033_small.mp4", "task_id": "task-20"}'),
+      JSON.parse('{"info": "tidy the objects on the table into the yellow bowl\u003cbr\u003e\u003cbr\u003eOther / Arrange", "object_id": "object-20", "poster": "videos/DATAVIZ_DROID_033_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_033_small.mp4", "task_id": "task-21"}'),
       JSON.parse('{"info": "Collect the nuts into the bowl\u003cbr\u003e\u003cbr\u003eOther / Pour", "object_id": "object-20", "poster": "videos/DATAVIZ_DROID_036_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_036_small.mp4", "task_id": "task-13"}'),
       JSON.parse('{"info": "Fan the burger\u003cbr\u003e\u003cbr\u003eOther / Other", "object_id": "object-20", "poster": "videos/DATAVIZ_DROID_042_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_042_small.mp4", "task_id": "task-20"}'),
       JSON.parse('{"info": "Extricate the straw from the cup\u003cbr\u003e\u003cbr\u003eKitchenware / Remove", "object_id": "object-11", "poster": "videos/DATAVIZ_DROID_043_small.jpg", "scene_id": "scene-1", "src": "videos/DATAVIZ_DROID_043_small.mp4", "task_id": "task-10"}'),
