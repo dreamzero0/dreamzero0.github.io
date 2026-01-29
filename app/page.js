@@ -415,8 +415,8 @@ export default function FirstPost() {
           justifyContent: 'center'
         }}>
           <div style={{ 
-            width: '80%',
-            maxWidth: '70%'
+            width: '60%',
+            maxWidth: '50%'
           }}>
             <h3 style={{ textAlign: 'center', marginBottom: '0.5rem', marginTop: '-2rem' }}>
               {selectedCombinedVideo.label}: 10 consecutive evaluations | {selectedCombinedVideo.progress}
@@ -472,8 +472,8 @@ export default function FirstPost() {
           justifyContent: 'center'
         }}>
           <div style={{ 
-            width: '80%',
-            maxWidth: '70%'
+            width: '60%',
+            maxWidth: '50%'
           }}>
             <div style={{ 
               width: '100%',

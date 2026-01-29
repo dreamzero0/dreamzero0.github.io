@@ -82,7 +82,7 @@ export const SeenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_012_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_012.m3u8',
-        caption: 'Both arms fold the bottom of the white short sleeve to the middle. They then pull the shirt toward the edge of the table. Next, both arms fold the top of the shirt down to the middle. Finally, the right arm grasps the collar and folds it down to complete the task. | ✅'
+        caption: 'Both arms fold the bottom of the white short sleeve to the middle. They then pull the shirt toward the edge of the table. Next, both arms fold the top of the shirt down to the middle. Finally, the right arm grasps the collar and folds it down to complete the task. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENASYNC_009_AI.m3u8',
@@ -173,7 +173,7 @@ export const SeenVideos = {
         caption: 'Both arms pick up the folded yellow shirt and place it on the stack of clothes. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_027_AI.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_036_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_027.m3u8',
         caption: 'Both arms pick up the white shirt and place it on the gray towel. | ✅'
       },
@@ -217,7 +217,7 @@ export const SeenVideos = {
         caption: 'The right arm picks up the Pink Spoon from the table and places it into the brown packing box. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_036_AI.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_027_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_seen/hsl/SEENSYNC_036.m3u8',
         caption: 'The right arm picks up the  orange spoon from the table and places it into the green plastic mug | ✅'
       },
