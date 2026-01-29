@@ -1140,25 +1140,25 @@ export const InteractivePromptingVideos = [
     id: 'push_elevator',
     label: 'Push Elevator Button',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_elevator.m3u8',
-    prompt: 'Push the elevator button',
+    prompt: 'Move forward and press the elevator button with right arm',
   },
   {
     id: 'pop_balloon',
     label: 'Pop the Balloon',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Balloon_pop.m3u8',
-    prompt: 'Pop the balloon',
+    prompt: 'Pick up the knife with right arm and pop the balloon with the knife',
   },
   {
     id: 'pull_cart',
     label: 'Pull Cart',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Pull_the_cart.m3u8',
-    prompt: 'Pull the cart',
+    prompt: 'Grab the cart with both arms and move backwards.',
   },
   {
     id: 'insert_lab',
     label: 'Insert Lab Equipment',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lab_Equipment_Insertion.m3u8',
-    prompt: 'Insert the test tube',
+    prompt: 'Take the tube from the human\'s hand and place it into the tube holder.',
   },
   {
     id: 'water_plant',
@@ -1170,19 +1170,19 @@ export const InteractivePromptingVideos = [
     id: 'lost_found',
     label: 'Place in Lost & Found',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lost_and_Found.m3u8',
-    prompt: 'Place the glasses in the Lost & Found',
+    prompt: 'Pick up a forgotten pair of glasses and bring them to the \"Lost and Found\" box.',
   },
   {
     id: 'open_door',
     label: 'Open the Door',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_door.m3u8',
-    prompt: 'Open the Door',
+    prompt: 'Move forward and open the door.',
   },
   {
     id: 'whisk_bowl',
     label: 'Whisk the Bowl',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Whisk_the_bowl.m3u8',
-    prompt: 'Whisk the Bowl',
+    prompt: 'Right arm whisks the bowl',
   },
 ];
 
