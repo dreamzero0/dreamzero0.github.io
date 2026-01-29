@@ -505,6 +505,19 @@ export default function FirstPost() {
         </div>
 
         <div className={styles.blogContent}>
+          <p style={{ 
+            fontSize: '0.9rem', 
+            opacity: 0.85, 
+            fontStyle: 'italic',
+            marginTop: '1rem',
+            marginBottom: '2rem',
+            textAlign: 'center'
+          }}>
+            Prompt: "{selectedInteractivePrompting.prompt}"
+          </p>
+        </div>
+
+        <div className={styles.blogContent}>
           <h3 style={{ 
             display: 'flex', 
             alignItems: 'center', 

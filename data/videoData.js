@@ -1140,41 +1140,49 @@ export const InteractivePromptingVideos = [
     id: 'push_elevator',
     label: 'Push Elevator Button',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_elevator.m3u8',
+    prompt: 'Push the elevator button',
   },
   {
     id: 'pop_balloon',
     label: 'Pop the Balloon',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Balloon_pop.m3u8',
+    prompt: 'Pop the balloon',
   },
   {
     id: 'pull_cart',
     label: 'Pull Cart',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Pull_the_cart.m3u8',
+    prompt: 'Pull the cart',
   },
   {
     id: 'insert_lab',
     label: 'Insert Lab Equipment',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lab_Equipment_Insertion.m3u8',
+    prompt: 'Insert the test tube',
   },
   {
     id: 'water_plant',
     label: 'Water Plant',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Water_the_plant.m3u8',
+    prompt: 'Water the plant',
   },
   {
     id: 'lost_found',
     label: 'Place in Lost & Found',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lost_and_Found.m3u8',
+    prompt: 'Place the glasses in the Lost & Found',
   },
   {
     id: 'open_door',
     label: 'Open the Door',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_door.m3u8',
+    prompt: 'Open the Door',
   },
   {
     id: 'whisk_bowl',
     label: 'Whisk the Bowl',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Whisk_the_bowl.m3u8',
+    prompt: 'Whisk the Bowl',
   },
 ];
 
