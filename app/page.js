@@ -67,7 +67,7 @@ export default function FirstPost() {
 
       <article className={styles.blogPost}>
         <div className={styles.center}>
-          <h1 className={styles.blogTitle}>
+          <h1 className={styles.blogTitle} style={{ color: '#76b900' }}>
             <br /> 
             DreamZero: World Action Models are Zero-shot Policies
             <br />
@@ -110,7 +110,7 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://jimfan.me/' className={styles.authorLink}>Linxi "Jim" Fan</a></b><sup>†</sup></span>
                   <span className={styles.authorName}><b><a href='https://joeljang.github.io/' className={styles.authorLink}>Joel Jang</a></b><sup>†</sup></span>
                 </div>
-                <div className={styles.affiliation}><b>NVIDIA</b></div>
+                <div className={styles.affiliation} style={{ color: '#76b900' }}><b>NVIDIA</b></div>
                 <div className={styles.authorNote}>
                   <sup>†</sup>Project Leads &nbsp;&nbsp; <sup>*</sup>Core Contributors
                 </div>
@@ -147,7 +147,7 @@ export default function FirstPost() {
           <p>
             State-of-the-art <b>Vision-Language-Action (VLA)</b> models excel at <em>semantic generalization</em> but struggle to generalize to unseen physical motions in novel environments.
             We introduce <b>DreamZero</b>, a <em>World Action Model (WAM)</em> built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by jointly predicting future world states and actions, using video as a dense representation of how the world evolves.
-            By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to <b>new tasks and environments</b> compared to state-of-the-art VLAs in real-robot experiments and achieves <b>1st place on the RoboArena benchmark</b>. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time <em>closed-loop control at 5Hz.</em>
+            By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to <b>new tasks and environments</b> compared to state-of-the-art VLAs in real-robot experiments and achieves <b>1st place on the RoboArena benchmark</b>. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time <em>closed-loop control at 7Hz.</em>
           <br></br>
           </p>
 
@@ -209,7 +209,7 @@ export default function FirstPost() {
               {
                 num: '5',
                 title: 'Real-Time Inference',
-                desc: '40× speedup through model and system optimizations, enabling 5Hz closed-loop control'
+                desc: '40× speedup through model and system optimizations, enabling 7Hz closed-loop control'
               }
             ].map((item) => (
               <div key={item.num} style={{
@@ -251,7 +251,25 @@ export default function FirstPost() {
           </div>
 
           {/* Behavior Generalization Videos */}
-          <h3>#1. AgiBot Pretraining: Seen & Unseen Tasks</h3>
+          <h3 style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.75rem' 
+          }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              color: 'white',
+              borderRadius: '50%',
+              width: '28px',
+              height: '28px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              fontSize: '0.85rem'
+            }}>1</span>
+            AgiBot Pretraining: Seen & Unseen Tasks
+          </h3>
           <p>
             We evaluate pretrained models out-of-the-box on tasks present in the pretraining data, but in <em>zero-shot environments with unseen objects</em>. DreamZero achieves 62.2% average task progress—over 2× higher than the best pretrained VLA baseline (27.4%). For unseen tasks entirely absent from training, DreamZero reaches 39.5% task progress while VLAs achieve near-zero, demonstrating that WAMs can generalize to novel motions like untying shoelaces and shaking hands.
           </p>
@@ -318,7 +336,25 @@ export default function FirstPost() {
 
         {/* Environment Generalization */}
         <div className={styles.blogContent}>
-        <h3>#2. DROID: Seen Tasks & Unseen Verbs</h3>
+          <h3 style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.75rem' 
+          }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              color: 'white',
+              borderRadius: '50%',
+              width: '28px',
+              height: '28px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              fontSize: '0.85rem'
+            }}>2</span>
+            DROID: Seen Tasks & Unseen Verbs
+          </h3>
         <p>
           To validate on publicly available data, we train DreamZero on <em>DROID</em>—one of the most heterogeneous open-source robotic datasets. We evaluate on 20 seen tasks and 20 tasks with <em>unseen verbs</em> (actions absent from DROID). DreamZero significantly outperforms pretrained baselines, achieving 49% task progress on unseen verbs compared to 25-32% for state-of-the-art VLAs, and securing <b>1st place on the RoboArena benchmark</b>.
         </p>
@@ -342,7 +378,25 @@ export default function FirstPost() {
 
         {/* Behavior + Environment Generalization */}
         <div className={styles.blogContent}>
-        <h3>#3. Post-Training: Out-of-Distribution Generalization</h3>
+          <h3 style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.75rem' 
+          }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              color: 'white',
+              borderRadius: '50%',
+              width: '28px',
+              height: '28px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              fontSize: '0.85rem'
+            }}>3</span>
+            Post-Training: Out-of-Distribution Generalization
+          </h3>
         <p>
           We investigate whether WAMs retain their generalization advantage after fine-tuning on task-specific data. We post-train on three downstream tasks with varying distribution diversity: <em>shirt folding</em> (lowest diversity), <em>fruit packing</em> (medium), and <em>table bussing</em> (highest). DreamZero's improvement over VLAs correlates positively with dataset diversity—confirming that WAMs learn effectively from heterogeneous distributions even during post-training.
         </p>
@@ -384,8 +438,26 @@ export default function FirstPost() {
         </div>
 
         <div className={styles.blogContent}>
-          <h3>#4. Interactive Prompting​</h3>
-          <p>The era of prompting robot foundation models have arrived. In this section, we show some rollouts of interactive prompting in action, where we take the robot around, and just ask people to <b>prompt</b> the robot to do new things. Here are some cool tasks that we found the robot is able to do.</p>
+          <h3 style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.75rem' 
+          }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              color: 'white',
+              borderRadius: '50%',
+              width: '28px',
+              height: '28px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              fontSize: '0.85rem'
+            }}>4</span>
+            Interactive Prompting
+          </h3>
+          <p>The era of prompting robot foundation models has arrived. In this section, we show some rollouts of interactive prompting in action, where we take the robot around, and just ask people to <b>prompt</b> the robot to do new things. Here are some cool tasks that we found the robot is able to do.</p>
 
           <ButtonSelector
             options={InteractivePromptingVideos}
@@ -421,10 +493,25 @@ export default function FirstPost() {
         </div>
 
         <div className={styles.blogContent}>
-          <h3>#5. Real-Time Inference & DreamZero-Flash</h3>
-          <p>
-            A key challenge for video diffusion models is computational cost—iterative denoising over high-dimensional latent spaces is prohibitively slow for closed-loop control. We introduce a suite of optimizations spanning three levels: (1) <em>algorithmic</em>—decoupled video and action denoising schedules (DreamZero-Flash), (2) <em>system-level</em>—parallelism and KV caching, and (3) <em>implementation-level</em>—quantization, CUDA kernel tuning, and async execution. Together, these achieve a <b>40× inference speedup</b>, enabling a 14B autoregressive model to generate 1.6-second action chunks at 5Hz for smooth, real-time robotic control.
-          </p>
+          <h3 style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.75rem' 
+          }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #4a90d9 0%, #357abd 100%)',
+              color: 'white',
+              borderRadius: '50%',
+              width: '28px',
+              height: '28px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              fontSize: '0.85rem'
+            }}>5</span>
+            Real-Time Inference & DreamZero-Flash
+          </h3>
 
           <ButtonSelector
             options={[
@@ -444,9 +531,9 @@ export default function FirstPost() {
         </div>
 
         <div className={styles.blogContent}>
-          <h3>The Age of Prompting</h3>
+          <h3>What's Next</h3>
           <p>
-            How far can zero-shot generalization go? We've been stress-testing DreamZero with tasks we never trained on, in environments we've never seen. From fanning burgers to pressing elevator buttons, playing xylophones to shaking tambourines, we keep discovering surprising new capabilities.
+            How far can zero-shot generalization go? We've been stress-testing DreamZero with tasks we never trained on, in environments we've never seen. From fanning burgers to pressing elevator buttons, playing xylophones to shaking tambourines, we keep discovering surprising new capabilities. DreamZero is just the beginning of the new wave of robot foundation models built on video world models!
           </p>
           
           <div style={{
