@@ -81,18 +81,19 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://sihyun.me/' className={styles.authorLink}>Sihyun Yu</a></b><sup>*</sup></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?hl=en&user=40-EBscAAAAJ&view_op=list_works&sortby=pubdate' className={styles.authorLink}>George Kurian</a></b><sup>*</sup></span>
                   <span className={styles.authorName}><b><a href='https://www.linkedin.com/in/suneel-indupuru-13b787/' className={styles.authorLink}>Suneel Indupuru</a></b><sup>*</sup></span>
+                  <span className={styles.authorName}><b><a href='https://youliangtan.github.io/' className={styles.authorLink}>You Liang Tan</a></b><sup>*</sup></span>
                   <div className={styles.lineBreak}></div>
                   <span className={styles.authorName}><b><a href='https://homes.cs.washington.edu/~zchuning/' className={styles.authorLink}>Chuning Zhu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://szxiangjn.github.io/' className={styles.authorLink}>Jiannan Xiang</a></b></span>
                   <span className={styles.authorName}><b><a href='https://www.linkedin.com/in/ayaannaveedmalik/' className={styles.authorLink}>Ayaan Malik</a></b></span>
                   <span className={styles.authorName}><b><a href='https://kyungmnlee.github.io/' className={styles.authorLink}>Kyungmin Lee</a></b></span>
                   <span className={styles.authorName}><b><a href='https://willjhliang.github.io/' className={styles.authorLink}>William Liang</a></b></span>
-                  <span className={styles.authorName}><b><a href='https://youliangtan.github.io/' className={styles.authorLink}>You Liang Tan</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=lJth6jwAAAAJ&hl=en' className={styles.authorLink}>Nadun Ranawaka</a></b></span>
                   <span className={styles.authorName}><b><a href='https://jiashenggu.github.io/' className={styles.authorLink}>Jiasheng Gu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=VaFCcJ8AAAAJ&hl=en' className={styles.authorLink}>Yinzhen Xu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://guanzhi.me/' className={styles.authorLink}>Guanzhi Wang</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=cGs1BrAAAAAJ&hl=en' className={styles.authorLink}>Fengyuan Hu</a></b></span>
+                  <div className={styles.lineBreak}></div>
                   <span className={styles.authorName}><b><a href='https://www.linkedin.com/in/avnishn/' className={styles.authorLink}>Avnish Narayan</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=Q_YY6OMAAAAJ&hl=en' className={styles.authorLink}>Johan Bjorck</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=cdL5PqgAAAAJ&hl=en' className={styles.authorLink}>Jing Wang</a></b></span>
@@ -122,8 +123,8 @@ export default function FirstPost() {
               Paper
             </a>
             <span className={styles.linkDivider}>•</span>
-            <a href="http://github.com/nvidia/GR00T-dreams" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
-              GitHub
+            <a href="https://github.com/dreamzero0/dreamzero" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+              Code
             </a>
             <span className={styles.linkDivider}>•</span>
             <a href="http://github.com/nvidia/GR00T-dreams" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
@@ -144,7 +145,9 @@ export default function FirstPost() {
 
         <div id="content" className={styles.blogContent}>
           <p>
-            <b>Traditional Vision-Language-Action (VLA) models</b> require thousands of repetitive, in-the-lab demonstrations per task and rely solely on linguistic priors, which limits their ability to generalize to unseen tasks and environments. <b>DreamZero</b> introduces a paradigm shift toward <b>World Action Models (WAMs)</b>—robotic foundation models built upon pretrained video diffusion models. Unlike VLAs that directly map observations to actions, DreamZero jointly predicts video and actions, leveraging the rich spatiotemporal priors and world physics understanding inherent in video models. This enables DreamZero to learn from diverse, "on-the-job" robot data where each demonstration is unique, rather than requiring dense coverage of repetitive behaviors. As a result, DreamZero achieves <b>zero-shot generalization</b> to both unseen tasks and unseen environments—capabilities that traditional VLAs fundamentally lack. Through system optimizations, we enable a 14B autoregressive video diffusion model to perform <em>real-time video generation and closed-loop motor control at 5Hz</em>.
+            State-of-the-art <b>Vision-Language-Action (VLA)</b> models excel at <em>semantic generalization</em> but struggle to generalize to unseen physical motions in novel environments.
+            We introduce <b>DreamZero</b>, a <em>World Action Model (WAM)</em> built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by jointly predicting future world states and actions, using video as a dense representation of how the world evolves.
+            By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to <b>new tasks and environments</b> compared to state-of-the-art VLAs in real-robot experiments and achieves <b>1st place on the RoboArena benchmark</b>. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time <em>closed-loop control at 5Hz.</em>
           <br></br>
           </p>
 
@@ -167,12 +170,95 @@ export default function FirstPost() {
           </div>
 
           <p style={{marginTop: '20px'}}>
-            We validate DreamZero on two robot embodiments: <em>AgiBot G1</em> (mobile bimanual manipulator) and <em>Franka</em> (single-arm robot). For AgiBot, we pretrain on ~500 hours of diverse "on-the-job" (data collected maximizing utility) teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets. Below, we demonstrate DreamZero's capabilities across 5 evaluations: <em>#1 AgiBot pretrain seen & unseen tasks</em>, <em>#2 DROID pretrain seen tasks and unseen verbs</em>, <em>#3 AgiBot post-train out-of-distribution (3 tasks)</em>, <em>#4 Interactive Prompting</em>, and <em>#5 Different variations and ablations of DreamZero for real-time inference.</em>.
+            We validate DreamZero on two robot embodiments: the <em>AgiBot G1</em> mobile bimanual manipulator and the <em>Franka</em> single-arm robot. For AgiBot, we pretrain on ~500 hours of diverse, non-repetitive teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices—prioritizing task diversity and real-world utility over repetition. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets, achieving <b>1st place on the RoboArena benchmark</b>. Below, we demonstrate DreamZero's zero-shot generalization through five evaluation settings: (1) seen tasks in unseen environments, (2) completely unseen tasks and motions, (3) DROID benchmark performance, (4) post-training on downstream tasks, and (5) real-time inference optimizations.
           </p>
 
+          <p style={{marginTop: '20px'}}>
+            We validate DreamZero on two robot embodiments: the <em>AgiBot G1</em> mobile bimanual manipulator and the <em>Franka</em> single-arm robot. For AgiBot, we pretrain on ~500 hours of diverse, non-repetitive teleoperation data collected across 22 real-world environments—prioritizing task diversity and real-world utility over repetition. For Franka, we train on <em>DROID</em>, achieving <b>1st place on the RoboArena benchmark</b>.
+          </p>
+          
+          <p style={{marginTop: '1rem', marginBottom: '0.5rem'}}>
+            We evaluate DreamZero across five settings—four testing generalization, and one demonstrating real-time deployment:
+          </p>
+
+          {/* Evaluation cards grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '1rem',
+            margin: '1.5rem 0 3rem 0',
+            padding: '0'
+          }}>
+            {[
+              {
+                num: '1',
+                title: 'AgiBot Pretraining',
+                desc: '10 seen tasks + 10 unseen tasks, evaluated zero-shot in novel environments with unseen objects'
+              },
+              {
+                num: '2', 
+                title: 'DROID Pretraining',
+                desc: 'Franka: 40 tasks—achieving 1st place on RoboArena'
+              },
+              {
+                num: '3',
+                title: 'Post-Training Generalization',
+                desc: 'AgiBot: Fine-tuning on 3 downstream tasks while retaining out-of-distribution robustness'
+              },
+              {
+                num: '4',
+                title: 'Interactive Prompting',
+                desc: 'Zero-shot prompting in the wild—taking the robot around and asking people to prompt new tasks'
+              },
+              {
+                num: '5',
+                title: 'Real-Time Inference',
+                desc: '40× speedup through model and system optimizations, enabling 5Hz closed-loop control'
+              }
+            ].map((item) => (
+              <div key={item.num} style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                borderRadius: '12px',
+                padding: '1.25rem',
+                display: 'flex',
+                gap: '1rem',
+                alignItems: 'flex-start'
+              }}>
+                <div style={{
+                  background: item.num === '5' 
+                    ? 'linear-gradient(135deg, #4a90d9 0%, #357abd 100%)' 
+                    : 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+                  color: 'white',
+                  borderRadius: '50%',
+                  width: '32px',
+                  height: '32px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontWeight: 'bold',
+                  fontSize: '0.9rem',
+                  flexShrink: 0
+                }}>
+                  {item.num}
+                </div>
+                <div>
+                  <div style={{ fontWeight: '600', marginBottom: '0.25rem', fontSize: '0.95rem' }}>
+                    {item.title}
+                  </div>
+                  <div style={{ fontSize: '0.85rem', opacity: 0.7, lineHeight: 1.4 }}>
+                    {item.desc}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Behavior Generalization Videos */}
-          <h3>#1. AgiBot pretrain seen & unseen tasks​</h3>
-          <p>Select a behavior to see the corresponding neural trajectory and real-robot execution videos:</p>
+          <h3>#1. AgiBot Pretraining: Seen & Unseen Tasks</h3>
+          <p>
+            We evaluate pretrained models out-of-the-box on tasks present in the pretraining data, but in <em>zero-shot environments with unseen objects</em>. DreamZero achieves 62.2% average task progress—over 2× higher than the best pretrained VLA baseline (27.4%). For unseen tasks entirely absent from training, DreamZero reaches 39.5% task progress while VLAs achieve near-zero, demonstrating that WAMs can generalize to novel motions like untying shoelaces and shaking hands.
+          </p>
           
           {/* Robot platform selector buttons */}
           <ButtonSelector 
@@ -231,8 +317,10 @@ export default function FirstPost() {
 
         {/* Environment Generalization */}
         <div className={styles.blogContent}>
-          <h3>#2. DROID pretrain seen tasks and unseen verbs</h3>
-          <p>Select an environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
+        <h3>#2. DROID: Seen Tasks & Unseen Verbs</h3>
+        <p>
+          To validate on publicly available data, we train DreamZero on <em>DROID</em>—one of the most heterogeneous open-source robotic datasets. We evaluate on 20 seen tasks and 20 tasks with <em>unseen verbs</em> (actions absent from DROID). DreamZero significantly outperforms pretrained baselines, achieving 49% task progress on unseen verbs compared to 25-32% for state-of-the-art VLAs, and securing <b>1st place on the RoboArena benchmark</b>.
+        </p>
           
           <ButtonSelector 
             options={[
@@ -253,8 +341,10 @@ export default function FirstPost() {
 
         {/* Behavior + Environment Generalization */}
         <div className={styles.blogContent}>
-          <h3>#3. AgiBot post-train out-of-distribution</h3>
-          <p>Select a behavior and environment task to see the corresponding neural trajectory and real-robot execution videos:</p>
+        <h3>#3. Post-Training: Out-of-Distribution Generalization</h3>
+        <p>
+          We investigate whether WAMs retain their generalization advantage after fine-tuning on task-specific data. We post-train on three downstream tasks with varying distribution diversity: <em>shirt folding</em> (lowest diversity), <em>fruit packing</em> (medium), and <em>table bussing</em> (highest). DreamZero's improvement over VLAs correlates positively with dataset diversity—confirming that WAMs learn effectively from heterogeneous distributions even during post-training.
+        </p>
           
           <ButtonSelector 
             options={combinedVideos}
@@ -273,7 +363,9 @@ export default function FirstPost() {
             width: '80%',
             maxWidth: '70%'
           }}>
-            <h3 style={{ textAlign: 'center', marginBottom: '0.5rem', marginTop: '-2rem' }}>10 consecutive evaluations (average 96% Task Progress)</h3>
+            <h3 style={{ textAlign: 'center', marginBottom: '0.5rem', marginTop: '-2rem' }}>
+              {selectedCombinedVideo.label}: 10 consecutive evaluations | {selectedCombinedVideo.progress}
+            </h3>
             <div style={{ 
               width: '100%',
               aspectRatio: '16/9',
@@ -292,7 +384,7 @@ export default function FirstPost() {
 
         <div className={styles.blogContent}>
           <h3>#4. Interactive Prompting​</h3>
-          {/* <p>Leveraging the priors of WAMs, we observe that DreamZero some <em>emergent</em> capabilities and is able to accomplish tasks that previously required task-specific methods.</p> */}
+          <p>The era of prompting robot foundation models have arrived. In this section, we show some rollouts of interactive prompting in action, where we take the robot around, and just ask people to <b>prompt</b> the robot to do new things. Here are some cool tasks that we found the robot is able to do.</p>
 
           <ButtonSelector
             options={InteractivePromptingVideos}
@@ -328,8 +420,10 @@ export default function FirstPost() {
         </div>
 
         <div className={styles.blogContent}>
-          <h3>#5. Inference Ablations​</h3>
-          <p>Different Ablations</p>
+          <h3>#5. Real-Time Inference & DreamZero-Flash</h3>
+          <p>
+            A key challenge for video diffusion models is computational cost—iterative denoising over high-dimensional latent spaces is prohibitively slow for closed-loop control. We introduce a suite of optimizations spanning three levels: (1) <em>algorithmic</em>—decoupled video and action denoising schedules (DreamZero-Flash), (2) <em>system-level</em>—parallelism and KV caching, and (3) <em>implementation-level</em>—quantization, CUDA kernel tuning, and async execution. Together, these achieve a <b>40× inference speedup</b>, enabling a 14B autoregressive model to generate 1.6-second action chunks at 5Hz for smooth, real-time robotic control.
+          </p>
 
           <ButtonSelector
             options={[
@@ -350,7 +444,81 @@ export default function FirstPost() {
 
         <div className={styles.blogContent}>
           <h3>The Age of Prompting</h3>
-          <p>The era of prompting robot foundation models has arrived. We're publicly sharing our <b><a href="https://dreamzero0.github.io/evals_gallery/" style={{ color: 'blue' }}>gallery of 100+ zero-shot task rollouts</a></b>—a living document that grows as we continue discovering what DreamZero can do.</p>
+          <p>
+            How far can zero-shot generalization go? We've been stress-testing DreamZero with tasks we never trained on, in environments we've never seen. From fanning burgers to pressing elevator buttons, playing xylophones to shaking tambourines, we keep discovering surprising new capabilities.
+          </p>
+          
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '0.5rem',
+            margin: '1rem 0'
+          }}>
+            {[
+              'Fan the burger', 'Press elevator button', 'Play xylophone', 
+              'Shake tambourine', 'Pour into human-held cup', 'Open laptop',
+              'Ring the bell', 'Flip the pancake', 'Water the plant'
+            ].map((task) => (
+              <span key={task} style={{
+                background: 'rgba(118, 185, 0, 0.1)',
+                border: '1px solid rgba(118, 185, 0, 0.2)',
+                borderRadius: '20px',
+                padding: '0.35rem 0.75rem',
+                fontSize: '0.85rem'
+              }}>
+                {task}
+              </span>
+            ))}
+            <span style={{
+              background: 'rgba(118, 185, 0, 0.2)',
+              border: '1px solid rgba(118, 185, 0, 0.3)',
+              borderRadius: '20px',
+              padding: '0.35rem 0.75rem',
+              fontSize: '0.85rem',
+              fontWeight: '600'
+            }}>
+              +90 more...
+            </span>
+          </div>
+          
+          <a 
+            href="https://dreamzero0.github.io/evals_gallery/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
+          >
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(118, 185, 0, 0.15) 0%, rgba(118, 185, 0, 0.05) 100%)',
+              border: '1px solid rgba(118, 185, 0, 0.3)',
+              borderRadius: '12px',
+              padding: '1.5rem',
+              marginTop: '1.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1rem',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease'
+            }}>
+              <div style={{
+                fontSize: '2.5rem'
+              }}>
+                🎬
+              </div>
+              <div>
+                <div style={{ 
+                  fontWeight: '600', 
+                  fontSize: '1.1rem', 
+                  color: '#76b900',
+                  marginBottom: '0.25rem'
+                }}>
+                  Explore 100+ Zero-Shot Task Rollouts →
+                </div>
+                <div style={{ fontSize: '0.9rem', opacity: 0.7 }}>
+                  A living gallery that grows as we discover what DreamZero can do
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
 
         {/* Paper Information Section */}

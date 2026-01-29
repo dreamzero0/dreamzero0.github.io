@@ -10,19 +10,22 @@
 // Combined behavior + environment videos
 export const combinedVideos = [
   {
-    id: 'fruit_packing',
-    label: 'Fruit packing (10 fruits)',
-    policyRolloutVideo: '/labs/gear/videos/agi_post_train/hsl/DreamZero_AgiBotPostTrain_FruitPacking_2x.m3u8',
-  },
-  {
     id: 'table_bussing',
     label: 'Table Bussing (5 trash & 5 dishware)',
+    progress: 'Task Progress: 83%',
     neuralTrajectoryVideo: '/labs/gear/videos//environment/dreams/hsl/lift_fast.m3u8',
     policyRolloutVideo: '/labs/gear/videos/agi_post_train/hsl/DreamZero_AgiBotPostTrain_Tidying_2x.m3u8',
   },
   {
+    id: 'fruit_packing',
+    label: 'Fruit packing (10 fruits)',
+    progress: 'Task Progress: 96%',
+    policyRolloutVideo: '/labs/gear/videos/agi_post_train/hsl/DreamZero_AgiBotPostTrain_FruitPacking_2x.m3u8',
+  },
+  {
     id: 'shirt_folding',
     label: 'Shirt Folding',
+    progress: 'Task Progress: 92.5%',
     neuralTrajectoryVideo: '/labs/gear/videos//environment/dreams/hsl/soup_fast.m3u8',
     policyRolloutVideo: '/labs/gear/videos/agi_post_train/hsl/DreamZero_AgiBotPostTrain_ShirtFolding_2x.m3u8',
   },
