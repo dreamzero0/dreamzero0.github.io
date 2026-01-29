@@ -170,10 +170,6 @@ export default function FirstPost() {
           </div>
 
           <p style={{marginTop: '20px'}}>
-            We validate DreamZero on two robot embodiments: the <em>AgiBot G1</em> mobile bimanual manipulator and the <em>Franka</em> single-arm robot. For AgiBot, we pretrain on ~500 hours of diverse, non-repetitive teleoperation data collected across 22 real-world environments—homes, restaurants, supermarkets, coffee shops, and offices—prioritizing task diversity and real-world utility over repetition. For Franka, we train on <em>DROID</em>, one of the most heterogeneous publicly available robotic datasets, achieving <b>1st place on the RoboArena benchmark</b>. Below, we demonstrate DreamZero's zero-shot generalization through five evaluation settings: (1) seen tasks in unseen environments, (2) completely unseen tasks and motions, (3) DROID benchmark performance, (4) post-training on downstream tasks, and (5) real-time inference optimizations.
-          </p>
-
-          <p style={{marginTop: '20px'}}>
             We validate DreamZero on two robot embodiments: the <em>AgiBot G1</em> mobile bimanual manipulator and the <em>Franka</em> single-arm robot. For AgiBot, we pretrain on ~500 hours of diverse, non-repetitive teleoperation data collected across 22 real-world environments—prioritizing task diversity and real-world utility over repetition. For Franka, we train on <em>DROID</em>, achieving <b>1st place on the RoboArena benchmark</b>.
           </p>
           
@@ -260,6 +256,9 @@ export default function FirstPost() {
             We evaluate pretrained models out-of-the-box on tasks present in the pretraining data, but in <em>zero-shot environments with unseen objects</em>. DreamZero achieves 62.2% average task progress—over 2× higher than the best pretrained VLA baseline (27.4%). For unseen tasks entirely absent from training, DreamZero reaches 39.5% task progress while VLAs achieve near-zero, demonstrating that WAMs can generalize to novel motions like untying shoelaces and shaking hands.
           </p>
           
+          <p style={{ marginTop: '2rem', fontWeight: '500' }}>
+            Seen Tasks:
+          </p>
           {/* Robot platform selector buttons */}
           <ButtonSelector 
             options={[
@@ -288,7 +287,9 @@ export default function FirstPost() {
 
         {/* Environment Generalization */}
         <div className={styles.blogContent}>
-          <p>Here are rollouts of totally unseen tasks.</p>
+          <p style={{ marginTop: '2rem', fontWeight: '500' }}>
+            Unseen Tasks:
+          </p>
           
           <ButtonSelector 
             options={[
