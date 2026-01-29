@@ -147,7 +147,8 @@ export default function FirstPost() {
           <p>
             State-of-the-art <b>Vision-Language-Action (VLA)</b> models excel at <em>semantic generalization</em> but struggle to generalize to unseen physical motions in novel environments.
             We introduce <b>DreamZero</b>, a <em>World Action Model (WAM)</em> built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by jointly predicting future world states and actions, using video as a dense representation of how the world evolves.
-            By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to <b>new tasks and environments</b> compared to state-of-the-art VLAs in real-robot experiments and achieves <b>1st place on the RoboArena benchmark</b>. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time <em>closed-loop control at 7Hz.</em>
+            By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to <b>new tasks and environments</b> compared to state-of-the-art VLAs in real-robot experiments and achieves <b>1st place on the <a href='https://robo-arena.github.io/leaderboard' className={styles.authorLink}>RoboArena leaderboard</a></b>. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time <em>closed-loop control at 7Hz.</em>
+            Finally, DreamZero improves unseen task performance by over 35% with just 10–20 minutes of video-only cross-embodiment demonstrations.
           <br></br>
           </p>
 
@@ -168,10 +169,6 @@ export default function FirstPost() {
               }}
             />
           </div>
-
-          <p style={{marginTop: '20px'}}>
-            We validate DreamZero on two robot embodiments: the <em>AgiBot G1</em> mobile bimanual manipulator and the <em>Franka</em> single-arm robot. For AgiBot, we pretrain on ~500 hours of diverse, non-repetitive teleoperation data collected across 22 real-world environments—prioritizing task diversity and real-world utility over repetition. For Franka, we train on <em>DROID</em>, achieving <b>1st place on the RoboArena benchmark</b>.
-          </p>
           
           <p style={{marginTop: '1rem', marginBottom: '0.5rem'}}>
             We evaluate DreamZero across five settings—four testing generalization, and one demonstrating real-time deployment:
@@ -194,7 +191,7 @@ export default function FirstPost() {
               {
                 num: '2', 
                 title: 'DROID Pretraining',
-                desc: 'Franka: 40 tasks—achieving 1st place on RoboArena'
+                desc: 'Franka: 40 tasks—achieving 1st place on RoboArena Leaderboard'
               },
               {
                 num: '3',
@@ -271,7 +268,7 @@ export default function FirstPost() {
             AgiBot Pretraining: Seen & Unseen Tasks
           </h3>
           <p>
-            We evaluate pretrained models out-of-the-box on tasks present in the pretraining data, but in <em>zero-shot environments with unseen objects</em>. DreamZero achieves 62.2% average task progress—over 2× higher than the best pretrained VLA baseline (27.4%). For unseen tasks entirely absent from training, DreamZero reaches 39.5% task progress while VLAs achieve near-zero, demonstrating that WAMs can generalize to novel motions like untying shoelaces and shaking hands.
+            We evaluate pretrained models out-of-the-box on tasks present in the pretraining data, but in <em>zero-shot environments with unseen objects</em>. DreamZero achieves 62.2% average task progress—over 2× higher than the best pretrained VLA baseline (27.4%). For unseen tasks entirely absent from training, DreamZero reaches 39.5% task progress while VLAs achieve near-zero, demonstrating that WAMs can generalize to novel motions like untying shoelaces and shaking hands. Both seen and unseen tasks were evaluated on 80 evaluation rollouts on unique objects for each checkpoint.
           </p>
           
           <p style={{ marginTop: '2rem', fontWeight: '500' }}>
@@ -332,6 +329,13 @@ export default function FirstPost() {
           <VideoCarousel 
             videos={UnseenVideos[selectedUnseen].neural}
           />
+        </div>
+
+        {/* Add disclaimer here */}
+        <div className={styles.blogContent}>
+          <p style={{ fontSize: '0.85rem', opacity: 0.6, fontStyle: 'italic', marginTop: '-1rem' }}>
+            * Some videos were recorded before final inference optimization integration. See Section 3 for our smoothest real-time rollouts.
+          </p>
         </div>
 
         {/* Environment Generalization */}
@@ -398,7 +402,7 @@ export default function FirstPost() {
             Post-Training: Out-of-Distribution Generalization
           </h3>
         <p>
-          We investigate whether WAMs retain their generalization advantage after fine-tuning on task-specific data. We post-train on three downstream tasks with varying distribution diversity: <em>shirt folding</em> (lowest diversity), <em>fruit packing</em> (medium), and <em>table bussing</em> (highest). DreamZero's improvement over VLAs correlates positively with dataset diversity—confirming that WAMs learn effectively from heterogeneous distributions even during post-training.
+          We investigate whether WAMs retain their generalization advantage after fine-tuning on task-specific data. We post-train on three downstream tasks with varying distribution diversity: <em>shirt folding</em> (lowest diversity), <em>fruit packing</em> (medium), and <em>table bussing</em> (highest). DreamZero's improvement over VLAs correlates positively with dataset diversity—confirming that WAMs learn effectively from heterogeneous distributions even during post-training. 
         </p>
           
           <ButtonSelector 
@@ -435,6 +439,13 @@ export default function FirstPost() {
               />
             </div>
           </div>
+        </div>
+
+        {/* Add disclaimer here */}
+        <div className={styles.blogContent}>
+          <p style={{ fontSize: '0.85rem', opacity: 0.6, fontStyle: 'italic', marginTop: '-1rem' }}>
+            * This is a uncut recording of a single evaluation session.
+          </p>
         </div>
 
         <div className={styles.blogContent}>
