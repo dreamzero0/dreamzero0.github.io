@@ -95,6 +95,12 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=cGs1BrAAAAAJ&hl=en' className={styles.authorLink}>Fengyuan Hu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://www.linkedin.com/in/avnishn/' className={styles.authorLink}>Avnish Narayan</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=Q_YY6OMAAAAJ&hl=en' className={styles.authorLink}>Johan Bjorck</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=cdL5PqgAAAAJ&hl=en' className={styles.authorLink}>Jing Wang</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://gwang-kim.github.io/' className={styles.authorLink}>Gwanghyun Kim</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://dantong88.github.io/' className={styles.authorLink}>Dantong Niu</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://ruijiezheng.com/' className={styles.authorLink}>Ruijie Zheng</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://faculty.cc.gatech.edu/~danfei/' className={styles.authorLink}>Danfei Xu</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://yilundu.github.io/' className={styles.authorLink}>Yilun Du</a></b></span>
                   <span className={styles.authorName}><b><a href='https://ryanjulian.me/' className={styles.authorLink}>Ryan Julian</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=ADkiClQAAAAJ&hl=en' className={styles.authorLink}>Yevgen Chebotar</a></b></span>
                   <span className={styles.authorName}><b><a href='https://reedscot.github.io/' className={styles.authorLink}>Scott Reed</a></b></span>
