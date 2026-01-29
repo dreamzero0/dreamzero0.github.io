@@ -138,6 +138,7 @@ export default function FirstPost() {
               src={mainVideo}
               title="DreamGen Overview"
               className={styles.videoElement}
+              defaultVolume={1.0}
               controls
             />
           </div>

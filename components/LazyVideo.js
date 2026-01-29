@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from '../styles/Home.module.css';
 
-const LazyVideo = ({ src, title, ...props }) => {
+const LazyVideo = ({ src, title, defaultVolume, ...props }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef(null);
@@ -205,6 +205,15 @@ const LazyVideo = ({ src, title, ...props }) => {
           exitFullscreen: 'Exit fullscreen',
         }
       });
+            
+      // Set custom volume if specified
+      if (playerRef.current && defaultVolume <= 1.0) {
+        playerRef.current.volume = defaultVolume;
+        // Also set it directly on the video element
+        if (videoElementRef.current) {
+          videoElementRef.current.volume = defaultVolume;
+        }
+      }
 
       // Check video element is still valid
       if (!videoElementRef.current) return;

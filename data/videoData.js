@@ -1167,11 +1167,6 @@ export const InteractivePromptingVideos = [
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lost_and_Found.m3u8',
   },
   {
-    id: 'match_shape',
-    label: 'Match Shape',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Maneuver_shape.m3u8',
-  },
-  {
     id: 'open_door',
     label: 'Open the Door',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_door.m3u8',
