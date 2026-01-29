@@ -32,7 +32,7 @@ import {
 } from '../data/chartData';
 
 // Main S3 sample video for hero section
-const mainVideo = '/labs/gear/videos/dreamgen_teaser/hsl/DreamGen_New.m3u8';
+const mainVideo = '/labs/gear/videos/dreamgen_teaser/hsl/DreamZero_overview.m3u8';
 
 // Import LazyVideo component dynamically with ssr set to false
 const LazyVideo = dynamic(() => import('../components/LazyVideo'), { ssr: false });
