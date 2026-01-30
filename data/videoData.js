@@ -1140,13 +1140,19 @@ export const InteractivePromptingVideos = [
     id: 'push_elevator',
     label: 'Push Elevator Button',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_elevator.m3u8',
-    prompt: 'Move forward and press the elevator button with right arm',
+    prompt: 'Move forward and press the elevator button with right arm.',
   },
   {
     id: 'pop_balloon',
     label: 'Pop the Balloon',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Balloon_pop.m3u8',
-    prompt: 'Pick up the knife with right arm and pop the balloon with the knife',
+    prompt: 'Pick up the knife with right arm and pop the balloon with the knife.',
+  },
+  {
+    id: 'play_foosball',
+    label: 'Play Foosball',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Play_foosball.m3u8',
+    prompt: 'Play foosball with right arm.',
   },
   {
     id: 'pull_cart',
@@ -1164,7 +1170,7 @@ export const InteractivePromptingVideos = [
     id: 'water_plant',
     label: 'Water Plant',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Water_the_plant.m3u8',
-    prompt: 'Water the plant',
+    prompt: 'Water the plant.',
   },
   {
     id: 'lost_found',
@@ -1182,7 +1188,7 @@ export const InteractivePromptingVideos = [
     id: 'whisk_bowl',
     label: 'Whisk the Bowl',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Whisk_the_bowl.m3u8',
-    prompt: 'Right arm whisks the bowl',
+    prompt: 'Right arm whisks the bowl.',
   },
 ];
 
@@ -1205,6 +1211,36 @@ export const InferenceVideos = {
         generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/6.484_ai.m3u8',
         executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/6.484_DZ_async_chunk.m3u8',
         caption: 'DreamZero (1 diffusion step) + async & action chunk smoothing'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_nochunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_nochunk+sync.m3u8',
+        caption: 'DreamZero (4 diffusion step)'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_chunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_chunk+sync.m3u8',
+        caption: 'DreamZero (4 diffusion step) + action chunk smoothing'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_chunk+async_drop_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_chunk+async_drop.m3u8',
+        caption: 'DreamZero (4 diffusion step) + async & action chunk smoothing'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_nochunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_nochunk+sync.m3u8',
+        caption: 'DreamZero (16 diffusion step)'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+sync.m3u8',
+        caption: 'DreamZero (16 diffusion step) + action chunk smoothing'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+async_drop_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+async_drop.m3u8',
+        caption: 'DreamZero (16 diffusion step) + async & action chunk smoothing'
       },
     ],
   },
