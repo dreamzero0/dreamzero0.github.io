@@ -511,7 +511,7 @@ export default function FirstPost() {
             marginBottom: '2rem',
             textAlign: 'center'
           }}>
-            Prompt: "{selectedInteractivePrompting.prompt}"
+            Prompt | "{selectedInteractivePrompting.prompt}"
           </p>
         </div>
 
