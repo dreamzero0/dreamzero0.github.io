@@ -1152,7 +1152,7 @@ export const InteractivePromptingVideos = [
     id: 'play_foosball',
     label: 'Play Foosball',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Play_foosball.m3u8',
-    prompt: 'Right arm plays foosball.',
+    prompt: 'Play foosball with right arm.',
   },
   {
     id: 'pull_cart',
