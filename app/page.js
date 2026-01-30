@@ -203,7 +203,7 @@ export default function FirstPost() {
               {
                 num: '5',
                 title: 'Real-Time Inference',
-                desc: '40× speedup through model and system optimizations, enabling 7Hz closed-loop control'
+                desc: '38× speedup through model and system optimizations, enabling 7Hz closed-loop control'
               }
             ].map((item) => (
               <div key={item.num} style={{
