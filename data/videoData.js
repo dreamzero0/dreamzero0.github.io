@@ -1189,19 +1189,19 @@ export const InferenceVideos = {
   dreamzero: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/4.465_DZ_sync_no_chunk.m3u8',
-        caption: 'DreamZero (1 diffusion step)'
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_nochunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_nochunk+sync.m3u8',
+        caption: 'DreamZero (16 diffusion step)'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/5.483_ai.m3u8',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/5.483_DZ_sync_chunk.m3u8',
-        caption: 'DreamZero (1 diffusion step) + action chunk smoothing'
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+sync.m3u8',
+        caption: 'DreamZero (16 diffusion step) + action chunk smoothing'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/6.484_ai.m3u8',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/6.484_DZ_async_chunk.m3u8',
-        caption: 'DreamZero (1 diffusion step) + async & action chunk smoothing'
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+async_drop_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+async_drop.m3u8',
+        caption: 'DreamZero (16 diffusion step) + async & action chunk smoothing'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_nochunk+sync_AI.m3u8',
@@ -1216,22 +1216,22 @@ export const InferenceVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_chunk+async_drop_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_4step_chunk+async_drop.m3u8',
-        caption: 'DreamZero (4 diffusion step) + async & action chunk smoothing'
+        caption: 'DreamZero (4 diffusion step) + async & action chunk smoothing (DEFAULT)'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_nochunk+sync_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_nochunk+sync.m3u8',
-        caption: 'DreamZero (16 diffusion step)'
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/4.465_DZ_sync_no_chunk.m3u8',
+        caption: 'DreamZero (1 diffusion step)'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+sync_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+sync.m3u8',
-        caption: 'DreamZero (16 diffusion step) + action chunk smoothing'
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/5.483_ai.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/5.483_DZ_sync_chunk.m3u8',
+        caption: 'DreamZero (1 diffusion step) + action chunk smoothing'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+async_drop_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_16step_chunk+async_drop.m3u8',
-        caption: 'DreamZero (16 diffusion step) + async & action chunk smoothing'
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/6.484_ai.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/6.484_DZ_async_chunk.m3u8',
+        caption: 'DreamZero (1 diffusion step) + async & action chunk smoothing'
       },
     ],
   },

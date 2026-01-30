@@ -586,7 +586,7 @@ export default function FirstPost() {
               fontSize: '0.85rem',
               fontWeight: '600'
             }}>
-              +90 more...
+              <a href="https://dreamzero0.github.io/evals_gallery/">+90 more...</a>
             </span>
           </div>
           
