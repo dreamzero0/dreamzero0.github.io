@@ -17,7 +17,7 @@ import {
   SeenVideos,
   UnseenVideos,
   DroidVideos,
-  //EmergentVideos,
+  YamVideos,
   InteractivePromptingVideos,
   InferenceVideos
 } from '../data/videoData';
@@ -43,6 +43,7 @@ export default function FirstPost() {
   const [selectedUnseen, setSelectedUnseen] = useState('unseen_1');
   const [selectedDroid, setSelectedDroid] = useState('droid_1');
   const [selectedInteractivePrompting, setSelectedInteractivePrompting] = useState(InteractivePromptingVideos[0]);
+  const [selectedYam, setSelectedYam] = useState(YamVideos[0]);
   const [selectedInference, setSelectedInference] = useState('dreamzero');
 
   return (
@@ -99,6 +100,7 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://dantong88.github.io/' className={styles.authorLink}>Dantong Niu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://ruijiezheng.com/' className={styles.authorLink}>Ruijie Zheng</a></b></span>
                   <span className={styles.authorName}><b><a href='https://xieleo5.github.io/' className={styles.authorLink}>Yuqi Xie</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=0zjxt5gAAAAJ&hl=en' className={styles.authorLink}>Qi Wang</a></b></span>
                   <span className={styles.authorName}><b><a href='https://faculty.cc.gatech.edu/~danfei/' className={styles.authorLink}>Danfei Xu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://yilundu.github.io/' className={styles.authorLink}>Yilun Du</a></b></span>
                   <span className={styles.authorName}><b><a href='https://ryanjulian.me/' className={styles.authorLink}>Ryan Julian</a></b></span>
@@ -200,11 +202,16 @@ export default function FirstPost() {
               },
               {
                 num: '4',
+                title: 'New Embodiment Adaptation',
+                desc: 'With only 30 minutes of play data (50 trajectories), DreamZero performs zero-shot unseen tasks on the YAM robot'
+              },
+              {
+                num: '5',
                 title: 'Interactive Prompting',
                 desc: 'Zero-shot prompting in the wild—taking the robot around and asking people to prompt new tasks'
               },
               {
-                num: '5',
+                num: '6',
                 title: 'Real-Time Inference',
                 desc: '38× speedup through model and system optimizations, enabling 7Hz closed-loop control'
               }
@@ -219,7 +226,7 @@ export default function FirstPost() {
                 alignItems: 'flex-start'
               }}>
                 <div style={{
-                  background: item.num === '5' 
+                  background: item.num === '6' 
                     ? 'linear-gradient(135deg, #4a90d9 0%, #357abd 100%)' 
                     : 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
                   color: 'white',
@@ -445,6 +452,74 @@ export default function FirstPost() {
         <div className={styles.blogContent}>
           <p style={{ fontSize: '0.85rem', opacity: 0.6, fontStyle: 'italic', marginTop: '-1rem' }}>
             * This is a uncut recording of a single evaluation session.
+          </p>
+        </div>
+
+        <div className={styles.blogContent}>
+          <h3 style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.75rem' 
+          }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              color: 'white',
+              borderRadius: '50%',
+              width: '28px',
+              height: '28px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              fontSize: '0.85rem'
+            }}>4</span>
+            New Embodiment Adaptation
+          </h3>
+          <p>New embodiment adaptation</p>
+
+          <ButtonSelector
+            options={YamVideos}
+            selectedId={selectedYam.id}
+            onSelect={setSelectedYam} 
+          />
+        </div>
+        
+        <div style={{ 
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <div style={{ 
+            width: '60%',
+            maxWidth: '50%'
+          }}>
+            <div style={{ 
+              width: '100%',
+              aspectRatio: '16/9',
+              borderRadius: '6px',
+              overflow: 'hidden',
+              backgroundColor: '#0f0f0f',
+              marginTop: '-2rem'
+            }}>
+              <LazyVideo
+                src={selectedYam.policyRolloutVideo}
+                title="New Embodiment Adaptation Videos"
+                style={{ width: '100%', height: '100%' }}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.blogContent}>
+          <p style={{ 
+            fontSize: '0.9rem', 
+            opacity: 0.85, 
+            fontStyle: 'italic',
+            marginTop: '1rem',
+            marginBottom: '2rem',
+            textAlign: 'center'
+          }}>
+            {selectedYam.prompt}
           </p>
         </div>
 
