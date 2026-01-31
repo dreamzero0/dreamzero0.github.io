@@ -1214,6 +1214,12 @@ export const InteractivePromptingVideos = [
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Whisk_the_bowl.m3u8',
     prompt: 'Right arm whisks the bowl.',
   },
+  {
+    id: 'scan_snack',
+    label: 'Scan the Snack',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Scan_snack.m3u8',
+    prompt: 'Pick up the snack with right arm and scan it.',
+  },
 ];
 
 
