@@ -1128,33 +1128,33 @@ export const DroidVideos = {
 // Interactive Prompting videos
 export const YamVideos = [
   {
-    id: 'push_elevator',
-    label: 'Teddy Bear',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_elevator.m3u8',
-    prompt: 'Pick up the teddy bear | ✅',
-  },
-  {
-    id: 'pop_balloon',
-    label: 'Pumpkin',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Balloon_pop.m3u8',
-    prompt: 'Pick up the orange and put it in the pumpkin | ✅',
-  },
-  {
-    id: 'play_foosball',
-    label: 'Cup Noodle',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Play_foosball.m3u8',
+    id: 'noodle',
+    label: 'Cup Noodle to Pumpkin',
+    policyRolloutVideo: '/labs/gear/videos/yam/hsl/3_noodle.m3u8',
     prompt: 'Put the cup noodle in the box | ✅',
   },
   {
-    id: 'pull_cart',
-    label: 'Banana',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Pull_the_cart.m3u8',
+    id: 'banana',
+    label: 'Banana to Shelf',
+    policyRolloutVideo: '/labs/gear/videos/yam/hsl/4_banana.m3u8',
     prompt: 'Pick up the banana and put it in the wooden shelf | ✅',
   },
   {
-    id: 'insert_lab',
-    label: 'Marker Pen',
-    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lab_Equipment_Insertion.m3u8',
+    id: 'teddy',
+    label: 'Pick up Teddy Bear',
+    policyRolloutVideo: '/labs/gear/videos/yam/hsl/1_teddy.m3u8',
+    prompt: 'Pick up the teddy bear | ✅',
+  },
+  {
+    id: 'orange',
+    label: 'Orange to Pumpkin',
+    policyRolloutVideo: '/labs/gear/videos/yam/hsl/2_orange.m3u8',
+    prompt: 'Pick up the orange and put it in the pumpkin | ✅',
+  },
+  {
+    id: 'marker',
+    label: 'Marker to Cup',
+    policyRolloutVideo: '/labs/gear/videos/yam/hsl/5_marker.m3u8',
     prompt: 'Pick marker pen into cup | ⚠️',
   },
 ];

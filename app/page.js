@@ -100,6 +100,7 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://dantong88.github.io/' className={styles.authorLink}>Dantong Niu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://ruijiezheng.com/' className={styles.authorLink}>Ruijie Zheng</a></b></span>
                   <span className={styles.authorName}><b><a href='https://xieleo5.github.io/' className={styles.authorLink}>Yuqi Xie</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://jimmyyhwu.github.io/' className={styles.authorLink}>Jimmy Wu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=0zjxt5gAAAAJ&hl=en' className={styles.authorLink}>Qi Wang</a></b></span>
                   <span className={styles.authorName}><b><a href='https://faculty.cc.gatech.edu/~danfei/' className={styles.authorLink}>Danfei Xu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://yilundu.github.io/' className={styles.authorLink}>Yilun Du</a></b></span>
@@ -203,7 +204,7 @@ export default function FirstPost() {
               {
                 num: '4',
                 title: 'New Embodiment Adaptation',
-                desc: 'With only 30 minutes of play data (50 trajectories), DreamZero performs zero-shot unseen tasks on the YAM robot'
+                desc: 'Post-trained on just 30 minutes of data (50 trajectories), DreamZero achieves zero-shot generalization to unseen tasks on a new embodiment (YAM robot)'
               },
               {
                 num: '5',
@@ -475,7 +476,9 @@ export default function FirstPost() {
             }}>4</span>
             New Embodiment Adaptation
           </h3>
-          <p>New embodiment adaptation</p>
+          <p>
+            With only <b>30 minutes</b> of play data (50 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes.
+          </p>
 
           <ButtonSelector
             options={YamVideos}
@@ -540,7 +543,7 @@ export default function FirstPost() {
               justifyContent: 'center',
               fontWeight: 'bold',
               fontSize: '0.85rem'
-            }}>4</span>
+            }}>5</span>
             Interactive Prompting
           </h3>
           <p>The era of prompting robot foundation models has arrived. In this section, we show some rollouts of interactive prompting in action, where we take the robot around, and just ask people to <b>prompt</b> the robot to do new things. Here are some cool tasks that we found the robot is able to do.</p>
