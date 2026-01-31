@@ -611,7 +611,7 @@ export default function FirstPost() {
               justifyContent: 'center',
               fontWeight: 'bold',
               fontSize: '0.85rem'
-            }}>5</span>
+            }}>6</span>
             Real-Time Inference & DreamZero-Flash
           </h3>
 
