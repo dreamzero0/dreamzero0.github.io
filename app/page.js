@@ -66,7 +66,7 @@ export default function FirstPost() {
 
       <article className={styles.blogPost}>
         <div className={styles.center}>
-          <h1 className={styles.blogTitle} style={{ color: '#76b900' }}>
+          <h1 className={styles.blogTitle} style={{ color: '#2d6555' }}>
             <br /> 
             DreamZero: World Action Models are Zero-shot Policies
             <br />
@@ -112,7 +112,7 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://jimfan.me/' className={styles.authorLink}>Linxi "Jim" Fan</a></b><sup>†</sup></span>
                   <span className={styles.authorName}><b><a href='https://joeljang.github.io/' className={styles.authorLink}>Joel Jang</a></b><sup>†</sup></span>
                 </div>
-                <div className={styles.affiliation} style={{ color: '#76b900' }}><b>NVIDIA</b></div>
+                <div className={styles.affiliation} style={{ color: '#2d6555' }}><b>NVIDIA</b></div>
                 <div className={styles.authorNote}>
                   <sup>†</sup>Project Leads &nbsp;&nbsp; <sup>*</sup>Core Contributors
                 </div>
@@ -174,7 +174,7 @@ export default function FirstPost() {
           </div>
           
           <p style={{marginTop: '1rem', marginBottom: '0.5rem'}}>
-            We evaluate DreamZero across five settings—four testing generalization, and one demonstrating real-time deployment:
+            We evaluate DreamZero across six settings—five testing generalization, and one demonstrating real-time deployment:
           </p>
 
           {/* Evaluation cards grid */}
@@ -229,7 +229,7 @@ export default function FirstPost() {
                 <div style={{
                   background: item.num === '6' 
                     ? 'linear-gradient(135deg, #4a90d9 0%, #357abd 100%)' 
-                    : 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+                    : 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
                   color: 'white',
                   borderRadius: '50%',
                   width: '32px',
@@ -262,8 +262,8 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
-              color: 'white',
+                background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
+                color: 'white',
               borderRadius: '50%',
               width: '28px',
               height: '28px',
@@ -354,7 +354,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -396,7 +396,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -463,7 +463,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -477,7 +477,7 @@ export default function FirstPost() {
             New Embodiment Adaptation
           </h3>
           <p>
-            With only <b>30 minutes</b> of play data (50 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes. See the full 30-minute play dataset <a href="https://dreamzero0.github.io/training_data_gallery_yam/" style={{color: '#4a90d9'}}>here</a>.
+            With only <b>30 minutes</b> of play data (50 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes.See the full 30-minute play dataset <a href="https://dreamzero0.github.io/training_data_gallery_yam/" style={{color: '#4a90d9'}}>here</a>.
           </p>
 
           <ButtonSelector
@@ -533,7 +533,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -698,7 +698,7 @@ export default function FirstPost() {
                 <div style={{ 
                   fontWeight: '600', 
                   fontSize: '1.1rem', 
-                  color: '#76b900',
+                  color: '#2d6555',
                   marginBottom: '0.25rem'
                 }}>
                   Explore 100+ Zero-Shot Task Rollouts →
