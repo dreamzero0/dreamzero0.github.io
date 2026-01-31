@@ -66,7 +66,7 @@ export default function FirstPost() {
 
       <article className={styles.blogPost}>
         <div className={styles.center}>
-          <h1 className={styles.blogTitle} style={{ color: '#76b900' }}>
+          <h1 className={styles.blogTitle} style={{ color: '#2d6555' }}>
             <br /> 
             DreamZero: World Action Models are Zero-shot Policies
             <br />
@@ -100,6 +100,7 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://dantong88.github.io/' className={styles.authorLink}>Dantong Niu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://ruijiezheng.com/' className={styles.authorLink}>Ruijie Zheng</a></b></span>
                   <span className={styles.authorName}><b><a href='https://xieleo5.github.io/' className={styles.authorLink}>Yuqi Xie</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://jimmyyhwu.github.io/' className={styles.authorLink}>Jimmy Wu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=0zjxt5gAAAAJ&hl=en' className={styles.authorLink}>Qi Wang</a></b></span>
                   <span className={styles.authorName}><b><a href='https://faculty.cc.gatech.edu/~danfei/' className={styles.authorLink}>Danfei Xu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://yilundu.github.io/' className={styles.authorLink}>Yilun Du</a></b></span>
@@ -111,7 +112,7 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://jimfan.me/' className={styles.authorLink}>Linxi "Jim" Fan</a></b><sup>†</sup></span>
                   <span className={styles.authorName}><b><a href='https://joeljang.github.io/' className={styles.authorLink}>Joel Jang</a></b><sup>†</sup></span>
                 </div>
-                <div className={styles.affiliation} style={{ color: '#76b900' }}><b>NVIDIA</b></div>
+                <div className={styles.affiliation} style={{ color: '#2d6555' }}><b>NVIDIA</b></div>
                 <div className={styles.authorNote}>
                   <sup>†</sup>Project Leads &nbsp;&nbsp; <sup>*</sup>Core Contributors
                 </div>
@@ -173,7 +174,7 @@ export default function FirstPost() {
           </div>
           
           <p style={{marginTop: '1rem', marginBottom: '0.5rem'}}>
-            We evaluate DreamZero across five settings—four testing generalization, and one demonstrating real-time deployment:
+            We evaluate DreamZero across six settings—five testing generalization, and one demonstrating real-time deployment:
           </p>
 
           {/* Evaluation cards grid */}
@@ -203,7 +204,7 @@ export default function FirstPost() {
               {
                 num: '4',
                 title: 'New Embodiment Adaptation',
-                desc: 'With only 30 minutes of play data (50 trajectories), DreamZero performs zero-shot unseen tasks on the YAM robot'
+                desc: 'Post-trained on just 30 minutes of data (50 trajectories), DreamZero achieves zero-shot generalization on a new embodiment (YAM robot)'
               },
               {
                 num: '5',
@@ -228,7 +229,7 @@ export default function FirstPost() {
                 <div style={{
                   background: item.num === '6' 
                     ? 'linear-gradient(135deg, #4a90d9 0%, #357abd 100%)' 
-                    : 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+                    : 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
                   color: 'white',
                   borderRadius: '50%',
                   width: '32px',
@@ -261,8 +262,8 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
-              color: 'white',
+                background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
+                color: 'white',
               borderRadius: '50%',
               width: '28px',
               height: '28px',
@@ -353,7 +354,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -395,7 +396,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -462,7 +463,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -475,7 +476,9 @@ export default function FirstPost() {
             }}>4</span>
             New Embodiment Adaptation
           </h3>
-          <p>New embodiment adaptation</p>
+          <p>
+            With only <b>30 minutes</b> of play data (50 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes.See the full 30-minute play dataset <a href="https://dreamzero0.github.io/training_data_gallery_yam/" style={{color: '#4a90d9'}}>here</a>.
+          </p>
 
           <ButtonSelector
             options={YamVideos}
@@ -530,7 +533,7 @@ export default function FirstPost() {
             gap: '0.75rem' 
           }}>
             <span style={{
-              background: 'linear-gradient(135deg, #76b900 0%, #5a8f00 100%)',
+              background: 'linear-gradient(135deg, #2d6555 0%, #2d6555 100%)',
               color: 'white',
               borderRadius: '50%',
               width: '28px',
@@ -540,7 +543,7 @@ export default function FirstPost() {
               justifyContent: 'center',
               fontWeight: 'bold',
               fontSize: '0.85rem'
-            }}>4</span>
+            }}>5</span>
             Interactive Prompting
           </h3>
           <p>The era of prompting robot foundation models has arrived. In this section, we show some rollouts of interactive prompting in action, where we take the robot around, and just ask people to <b>prompt</b> the robot to do new things. Here are some cool tasks that we found the robot is able to do.</p>
@@ -608,7 +611,7 @@ export default function FirstPost() {
               justifyContent: 'center',
               fontWeight: 'bold',
               fontSize: '0.85rem'
-            }}>5</span>
+            }}>6</span>
             Real-Time Inference & DreamZero-Flash
           </h3>
 
@@ -695,7 +698,7 @@ export default function FirstPost() {
                 <div style={{ 
                   fontWeight: '600', 
                   fontSize: '1.1rem', 
-                  color: '#76b900',
+                  color: '#2d6555',
                   marginBottom: '0.25rem'
                 }}>
                   Explore 100+ Zero-Shot Task Rollouts →
