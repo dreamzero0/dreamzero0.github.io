@@ -1155,7 +1155,7 @@ export const YamVideos = [
     id: 'marker',
     label: 'Marker to Cup',
     policyRolloutVideo: '/labs/gear/videos/yam/hsl/5_marker.m3u8',
-    prompt: 'Pick marker pen into cup | ⚠️',
+    prompt: 'Pick up the marker and put it into the cup | ⚠️',
   },
 ];
 
