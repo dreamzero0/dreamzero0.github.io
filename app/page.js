@@ -9,6 +9,8 @@ import ButtonSelector from '../components/ButtonSelector';
 import VideoCarousel from '../components/VideoCarousel';
 import PerformanceChart from '../components/PerformanceChart';
 import PaperInfo from '../components/PaperInfo';
+import EvalBarChart from '../components/EvalBarChart';
+import UnseenEvalBarChart from '../components/UnseenEvalBarChart';
 import dynamic from 'next/dynamic';
 import { 
   behaviorVideos, 
@@ -282,6 +284,10 @@ export default function FirstPost() {
           <p style={{ marginTop: '2rem', fontWeight: '500' }}>
             Seen Tasks:
           </p>
+          
+          {/* Evaluation Bar Chart */}
+          <EvalBarChart />
+          
           {/* Robot platform selector buttons */}
           <ButtonSelector 
             options={[
@@ -313,7 +319,10 @@ export default function FirstPost() {
           <p style={{ marginTop: '2rem', fontWeight: '500' }}>
             Unseen Tasks:
           </p>
-          
+
+          {/* Unseen Evaluation Bar Chart */}
+          <UnseenEvalBarChart />
+
           <ButtonSelector 
             options={[
               { id: 'unseen_1', label: 'Untie Shoe/gift' },
