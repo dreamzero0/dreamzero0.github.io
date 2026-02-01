@@ -283,22 +283,22 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_003_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_003.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the blue box and hold it steady. It then reaches its right arm toward the blue ribbon and moves it to untie the knot. | ✅'
+        caption: 'The robot reaches its left arm to grasp the blue box and hold it steady. It then reaches its right arm toward the blue ribbon and moves it to untie the knot. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_006_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_006.m3u8',
-        caption: 'Prompt | The robot coordinates both arms to simultaneously grasp the two loops of the shoe. It then moves both arms outward in synchronized, opposing directions until the knot of the shoe is fully untied. | ⚠️'
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the shoe. It then moves both arms outward in synchronized, opposing directions until the knot of the shoe is fully untied. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_007_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_007.m3u8',
-        caption: 'Prompt | The robot coordinates both arms to simultaneously grasp the two loops of the knot of the package. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the package. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_008_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_008.m3u8',
-        caption: 'Prompt | The robot coordinates both arms to simultaneously grasp the two loops of the knot of the present box. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the present box. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
       },
     ],
   },
@@ -307,42 +307,42 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to gasp the crown and lifts it to remove it from the mannequin\'s head. | ✅'
+        caption: 'The robot reaches its right arm to gasp the crown and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_011_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_011.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
+        caption: 'The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_012_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_012.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to lift the hat & place it on the mannequin\'s head. | ✅'
+        caption: 'The robot reaches its left arm to lift the hat & place it on the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_013_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_013.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
+        caption: 'The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_015_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_015.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
+        caption: 'The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ⚠️'
+        caption: 'The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_016_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_016.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to lift the hat & place it on the mannequin\'s head. | ⚠️'
+        caption: 'The robot reaches its right arm to lift the hat & place it on the mannequin\'s head. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_010_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_010.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to gasp the hat and lifts it to put it on the mannequin\'s head. | ⚠️'
+        caption: 'The robot reaches its left arm to gasp the hat and lifts it to put it on the mannequin\'s head. | ⚠️'
       },
     ],
   },
@@ -351,42 +351,22 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_017_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_017.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to pick up the red marker and the left arm moves the marker to draw a circle on the book. | ⚠️'
+        caption: 'The robot reaches its left arm to pick up the red marker and the left arm moves the marker to draw a circle on the book. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_018_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_018.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the blue marker and the right arm moves the marker to draw a circle on the book. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_019_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_019.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the marker and the right arm  draws a circle on the whiteboard with the marker. | ⚠️'
+        caption: 'The robot reaches its right arm to pick up the blue marker and the right arm moves the marker to draw a circle on the book. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_020_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_020.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to pick up the marker and the left arm  draws a circle on the whiteboard with the marker.  | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_021_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_021.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to pick up the black marker and the left arm moves the marker to draw a circle on the paper | ❌'
+        caption: 'The robot reaches its left arm to pick up the marker and the left arm  draws a circle on the whiteboard with the marker.  | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_023_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_023.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the black marker and the right arm moves the marker to draw a llne on the whiteboard. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_024_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_024.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the red marker placed on the desk and the right arm uses the marker to draw a llne on the notebook. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_022_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_022.m3u8',
-        caption: 'Prompt | The robot reaches its right arm arm to pick up the red marker and the right arm moves the marker to draw a circle on the paper | ❌'
+        caption: 'The robot reaches its right arm to pick up the black marker and the right arm moves the marker to draw a llne on the whiteboard. | ⚠️'
       },
     ],
   },
@@ -395,42 +375,22 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_025_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_025.m3u8',
-        caption: 'Prompt | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
+        caption: 'The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_026_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_026.m3u8',
-        caption: 'Prompt | The right arm holds the McDonalds cup on the table. Then the left arm pulls the straw out of the cup. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_027_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_027.m3u8',
-        caption: 'Prompt | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
+        caption: 'The right arm holds the McDonalds cup on the table. Then the left arm pulls the straw out of the cup. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_028_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_028.m3u8',
-        caption: 'Prompt | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup.  | ✅'
+        caption: 'The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup.  | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_029_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_029.m3u8',
-        caption: 'Prompt | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_030_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_030.m3u8',
-        caption: 'Prompt | The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_031_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_031.m3u8',
-        caption: 'Prompt | The right arm holds the cup on the table. Then the left arm pulls the straw out of the cup. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_032_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_032.m3u8',
-        caption: 'Prompt | The right arm holds the cup on the table. Then the left arm pulls the straw out of the cup. | ⚠️'
+        caption: 'The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
       },
     ],
   },
@@ -439,42 +399,22 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_033_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_033.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to stack. It then reaches its right arm to pick up the yellow cube, moves it over the stack, and releases it onto the green cube to finish the task. | ✅'
+        caption: 'The robot reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to stack. It then reaches its right arm to pick up the yellow cube, moves it over the stack, and releases it onto the green cube to finish the task. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_035_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_035.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the red cube, moves it over the colorful cube, and releases it to stack. It then reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to finish the tower. | ⚠️'
+        caption: 'The robot reaches its right arm to pick up the red cube, moves it over the colorful cube, and releases it to stack. It then reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to finish the tower. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_037_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_037.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the white cube, moves it over the green cube, and releases it to stack. It then reaches its left arm to pick up the blue cube, moves it over the stack, and releases it onto the white cube to finish the task. | ⚠️'
+        caption: 'The robot reaches its right arm to pick up the white cube, moves it over the green cube, and releases it to stack. It then reaches its left arm to pick up the blue cube, moves it over the stack, and releases it onto the white cube to finish the task. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_039_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_039.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the red cube, moves it over the blue cube, and releases it to begin the stack. It then reaches its left arm to pick up the orange cube, moves it over the stack, and releases it onto the red cube to complete the three-tier structure. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_040_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_040.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the orange cube, moves it over the blue cube, and releases it to begin the stack. It then reaches its left arm to pick up the triangle puzzle, moves it over the stack, and releases it onto the orange cube to complete the three-tier structure. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_034_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_034.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the pink lego, moves it over the red lego, and releases it to stack. It then reaches its right arm to pick up the blue lego, moves it over the stack, and releases it onto the pink lego to finish the task. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_038_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_038.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to pick up the blue cube, moves it over the light green cube, and releases it to stack. It then reaches its left arm to pick up the dark green cube, moves it over the light green cube, and releases it to finish the tower. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_036_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_036.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to pick up the green cube, moves it over the red cube, and releases it to stack. It then reaches its left arm to pick up the orange cube, moves it over the green cube, and releases it to finish the tower. | ❌'
+        caption: 'The robot reaches its right arm to pick up the red cube, moves it over the blue cube, and releases it to begin the stack. It then reaches its left arm to pick up the orange cube, moves it over the stack, and releases it onto the red cube to complete the three-tier structure. | ⚠️'
       },
     ],
   },
@@ -483,81 +423,46 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_041.m3u8',
-        caption: 'Prompt | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ✅'
+        caption: 'The left arm grabs the brush. Then left arm paints with the brush on the notebook | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_043_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_043.m3u8',
-        caption: 'Prompt | The right arm grabs the brush. Then right arm paints with the brush on the paper | ⚠️'
+        caption: 'The right arm grabs the brush. Then right arm paints with the brush on the paper | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_047_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_047.m3u8',
-        caption: 'Prompt | The right arm grabs the brush. Then right arm paints with the brush on the notebook | ⚠️'
+        caption: 'The right arm grabs the brush. Then right arm paints with the brush on the notebook | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_048_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_048.m3u8',
-        caption: 'Prompt | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_042.m3u8',
-        caption: 'Prompt | The right arm grabs the brush. Then right arm paints with the brush on the notebook | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_045_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_045.m3u8',
-        caption: 'Prompt | The left arm grabs the brush. Then left arm paints with the brush on the notebook | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_046_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_046.m3u8',
-        caption: 'Prompt | The right arm grabs the brush. Then right arm paints with the brush on the notebook | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_044_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_044.m3u8',
-        caption: 'Prompt | The left arm grabs the brush. Then left arm paints with the brush on the paper | ❌'
+        caption: 'The left arm grabs the brush. Then left arm paints with the brush on the notebook | ⚠️'
       },
     ],
   },
   unseen_7: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_055_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_055.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the iron and moves it across the shorts to iron it. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_050_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_050.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to grasp the iron and moves it across the shirt to iron it. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it.  | ✅'
-      },
-      {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_053_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_053.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅'
+        caption: 'The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_056_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_056.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅'
+        caption: 'The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_051_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_051.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to grasp the iron and moves it across the shirt to iron it. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_049.m3u8',
+        caption: 'The robot reaches its left arm to grasp the iron and moves it across the shorts to iron it. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052.m3u8',
+        caption: 'The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it.  | ✅'
       },
     ],
   },
@@ -566,42 +471,22 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_057_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_057.m3u8',
-        caption: 'Prompt | The right arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ✅'
+        caption: 'The right arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_058_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_058.m3u8',
-        caption: 'Prompt | The left arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ✅'
+        caption: 'The left arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_059_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_059.m3u8',
-        caption: 'Prompt | The left arm shakes the hand of the human up and down | ✅'
+        caption: 'The left arm shakes the hand of the human up and down | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_060_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_060.m3u8',
-        caption: 'Prompt | The right arm shakes the hand of the human up and down  | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_062_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_062.m3u8',
-        caption: 'Prompt | The left arm shakes the hand of the human up and down | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_064_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_064.m3u8',
-        caption: 'Prompt | The right arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_063_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_063.m3u8',
-        caption: 'Prompt | The left arm of the robot grasp the human hand to shake hands. It then initiates a rhythmic up-and-down motion to perform the handshake. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_061_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_061.m3u8',
-        caption: 'Prompt | The right arm shakes the hand of the human up and down | ❌'
+        caption: 'The right arm shakes the hand of the human up and down  | ✅'
       },
     ],
   },
@@ -610,86 +495,46 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_066_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_066.m3u8',
-        caption: 'Prompt | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
+        caption: 'The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_067_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_067.m3u8',
-        caption: 'Prompt | The left arm grabs the left side of the map. The right arm folds the right side of the map. The left arm folds the left side of the map. | ⚠️'
+        caption: 'The left arm grabs the left side of the map. The right arm folds the right side of the map. The left arm folds the left side of the map. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_068_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_068.m3u8',
-        caption: 'Prompt | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
+        caption: 'The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069.m3u8',
-        caption: 'Prompt | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_070_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_070.m3u8',
-        caption: 'Prompt | The left arm grabs the right side of the map. The right arm folds the left side of the map. The right arm folds the left side of the map. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_071_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_071.m3u8',
-        caption: 'Prompt | The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_072_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_072.m3u8',
-        caption: 'Prompt | The left arm grabs the right side of the map. The right arm folds the left side of the map. The right arm folds the left side of the map. | ❌'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_065_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_065.m3u8',
-        caption: 'Prompt | The left arm grabs the left side of the map. The right arm folds the right side of the map. The left arm folds the left side of the map. | ❌'
+        caption: 'The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ❌'
       },
     ],
   },
   unseen_10: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_073_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_073.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to grasp the cart and pulls it. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_074_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_074.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the cart and pushes it forward. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_075_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_075.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the cart and pulls it forward. | ✅'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the cart and pulls it.  | ✅'
-      },
-      {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_079_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_079.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the cart and pulls it back. | ✅'
+        caption: 'The robot reaches its left arm to grasp the cart and pulls it back. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_073_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_073.m3u8',
+        caption: 'The robot reaches its right arm to grasp the cart and pulls it. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_080_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_080.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to grasp the cart and pulls it back. | ✅'
+        caption: 'The robot reaches its right arm to grasp the cart and pulls it back. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_077_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_077.m3u8',
-        caption: 'Prompt | The robot reaches its right arm to grasp the cart and pulls it forward. | ⚠️'
-      },
-      {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_078_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_078.m3u8',
-        caption: 'Prompt | The robot reaches its left arm to grasp the cart and pulls it forward. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076.m3u8',
+        caption: 'The robot reaches its left arm to grasp the cart and pulls it.  | ✅'
       },
     ],
   },
@@ -702,107 +547,107 @@ export const DroidVideos = {
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/cup_holder (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/cup_holder (real).m3u8',
-        caption: 'Prompt | Move the cup forward then put the marker inside the cup | ✅'
+        caption: 'Move the cup forward then put the marker inside the cup | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/arrange_marker (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/arrange_marker (real).m3u8',
-        caption: 'Prompt | Put the marker in the blue box | ✅'
+        caption: 'Put the marker in the blue box | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/remove_gloves_and_place_on_table (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/remove_gloves_and_place_on_table (real).m3u8',
-        caption: 'Prompt | Remove the pair of gloves from the open drawer and put it on the table | ✅'
+        caption: 'Remove the pair of gloves from the open drawer and put it on the table | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/place_marker_on_table (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/place_marker_on_table (real).m3u8',
-        caption: 'Prompt | Put the marker on table | ✅'
+        caption: 'Put the marker on table | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/towel_on_cup (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/towel_on_cup (real).m3u8',
-        caption: 'Prompt | Put the towel on the white cup | ✅'
+        caption: 'Put the towel on the white cup | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/towel_on_pan (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/towel_on_pan (real).m3u8',
-        caption: 'Prompt | Put the towel in the pan | ✅'
+        caption: 'Put the towel in the pan | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/put_the_hat_on_the_table (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/put_the_hat_on_the_table (real).m3u8',
-        caption: 'Prompt | Put the hat on the table | ✅'
+        caption: 'Put the hat on the table | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/put_the_pair_of_scissors_in_the_drawer (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/put_the_pair_of_scissors_in_the_drawer (real).m3u8',
-        caption: 'Prompt | Put the pair of scissors into the drawer | ✅'
+        caption: 'Put the pair of scissors into the drawer | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/towel_in_basket (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/towel_in_basket (real).m3u8',
-        caption: 'Prompt | Put the towel in the basket | ✅'
+        caption: 'Put the towel in the basket | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/move_bowl_to_right (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/move_bowl_to_right (real).m3u8',
-        caption: 'Prompt | Move the bowl on the left to the right side of the table. | ✅'
+        caption: 'Move the bowl on the left to the right side of the table. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/pencil_in_bowl (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/pencil_in_bowl (real).m3u8',
-        caption: 'Prompt | Pick up the pencil and put it on the bowl | ✅'
+        caption: 'Pick up the pencil and put it on the bowl | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/marker_in_bowl (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/marker_in_bowl (real).m3u8',
-        caption: 'Prompt | Pick the marker up from the table and put it in the bowl | ✅'
+        caption: 'Pick the marker up from the table and put it in the bowl | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/bowl_next_to_marker (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/bowl_next_to_marker (real).m3u8',
-        caption: 'Prompt | Place the bowl next to the marker | ✅'
+        caption: 'Place the bowl next to the marker | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/remove_lemon_from_bowl (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/remove_lemon_from_bowl (real).m3u8',
-        caption: 'Prompt | Remove a lemon from the bowl | ✅'
+        caption: 'Remove a lemon from the bowl | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/move_grapes_to_the_left (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/move_grapes_to_the_left (real).m3u8',
-        caption: 'Prompt | Move the grapes to the left | ✅'
+        caption: 'Move the grapes to the left | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/move_green_grapes_backward (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/move_green_grapes_backward (real).m3u8',
-        caption: 'Prompt | Move the green grapes backwards | ✅'
+        caption: 'Move the green grapes backwards | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/toast_bread (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/toast_bread (real).m3u8',
-        caption: 'Prompt | Put the bread inside the toaster | ✅'
+        caption: 'Put the bread inside the toaster | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/serve_banana (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/serve_banana (real).m3u8',
-        caption: 'Prompt | Put the banana on the green plate | ✅'
+        caption: 'Put the banana on the green plate | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/stack_cubes (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/stack_cubes (real).m3u8',
-        caption: 'Prompt | Put the ‘red’ cube on ‘top’ of the yellow cube | ✅'
+        caption: 'Put the ‘red’ cube on ‘top’ of the yellow cube | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/slide_plate (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/slide_plate (real).m3u8',
-        caption: 'Prompt | Slide plate to left side of table | ✅'
+        caption: 'Slide plate to left side of table | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/place_apple_in_basket (real).m3u8',
-        caption: 'Prompt | Pick up the apple and put it in the basket | ❌'
+        caption: 'Pick up the apple and put it in the basket | ❌'
       },
     ],
   },
@@ -811,103 +656,103 @@ export const DroidVideos = {
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0010_Withdraw toast (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0010_Withdraw toast.m3u8',
-        caption: 'Prompt | Withdraw the bread from the toaster and place on the plate | ✅'
+        caption: 'Withdraw the bread from the toaster and place on the plate | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/hook_the_hat (real).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/hook_the_hat (real).m3u8',
-        caption: 'Prompt | Hook the hat onto the tripod | ✅'
+        caption: 'Hook the hat onto the tripod | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0017_Fry vegetables (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0017_Fry vegetables.m3u8',
-        caption: 'Prompt | Fry the vegetables in the pan with the spatula | ✅'
+        caption: 'Fry the vegetables in the pan with the spatula | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0016_Elevate block (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-00016_Elevate block.m3u8',
-        caption: 'Prompt | Elevate the yellow block to the highest platform | ✅'
+        caption: 'Elevate the yellow block to the highest platform | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0002_Fan the food (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0002_Fan the food.m3u8',
-        caption: 'Prompt | Fan the burger | ✅'
+        caption: 'Fan the burger | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/depress_lever (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/depress_lever (real).m3u8',
-        caption: 'Prompt | Depress the lever on the toaster | ✅'
+        caption: 'Depress the lever on the toaster | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0005_Extricate straw (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0005_Extricate straw.m3u8',
-        caption: 'Prompt | Extricate the straw from the cup | ✅'
+        caption: 'Extricate the straw from the cup | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/affix_magnet (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/affix_magnet (real).m3u8',
-        caption: 'Prompt | Affix the magnet to the tray | ✅'
+        caption: 'Affix the magnet to the tray | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0009_Pinch binder clip (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0009_Pinch binder clip.m3u8',
-        caption: 'Prompt | Pinch the binder clip to release the papers | ⚠️'
+        caption: 'Pinch the binder clip to release the papers | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/orient_the_cup (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/orient_the_cup (real).m3u8',
-        caption: 'Prompt | Orient the mug so the handle is to the right | ⚠️'
+        caption: 'Orient the mug so the handle is to the right | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type _hi_ (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0004_Type _hi_.m3u8',
-        caption: 'Prompt | Type \'hi\' on the keyboard | ⚠️'
+        caption: 'Type \'hi\' on the keyboard | ⚠️'
       },
       
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/match_the_objects (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/match_the_objects (real).m3u8',
-        caption: 'Prompt | Match the objects to their corresponding bowl | ⚠️'
+        caption: 'Match the objects to their corresponding bowl | ⚠️'
       },  
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine nuts and batteries (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0019_Combine nuts and batteries.m3u8',
-        caption: 'Prompt | Combine the nuts and batteries into the bowl | ⚠️'
+        caption: 'Combine the nuts and batteries into the bowl | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/dispense_mustard (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/dispense_mustard (real).m3u8',
-        caption: 'Prompt | Dispense the mustard onto the bread | ⚠️'
+        caption: 'Dispense the mustard onto the bread | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0013_Bake the croissant (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0013_Bake the croissant.m3u8',
-        caption: 'Prompt | Bake the croissant in the oven | ⚠️'
+        caption: 'Bake the croissant in the oven | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0014_Cinch drawstring (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0011_Cinch drawstring.m3u8',
-        caption: 'Prompt | Cinch the drawstring of the bag | ⚠️'
+        caption: 'Cinch the drawstring of the bag | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0015_Weave wire (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0015_Weave wire.m3u8',
-        caption: 'Prompt | Weave the wire through the holes of the box | ⚠️'
+        caption: 'Weave the wire through the holes of the box | ⚠️'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal object (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0020_Reveal object.m3u8',
-        caption: 'Prompt | Reveal the object under the cup | ❌'
+        caption: 'Reveal the object under the cup | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0007_Maneuver shape (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0007_Maneuver shape.m3u8',
-        caption: 'Prompt | Maneuver the blocks through the matching hole | ❌'
+        caption: 'Maneuver the blocks through the matching hole | ❌'
       },
       {
         generatedUrl: '/labs/gear/videos/droid/hsl/V1-0003_Slice bread (AI).m3u8',
         executionUrl: '/labs/gear/videos/droid/hsl/V1-0003_Slice bread.m3u8',
-        caption: 'Prompt | Slice the bread with the knife | ❌'
+        caption: 'Slice the bread with the knife | ❌'
       },
     ],
   },

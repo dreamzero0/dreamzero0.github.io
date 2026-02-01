@@ -215,8 +215,8 @@ const UnseenEvalBarChart = () => {
             },
             layout: {
               padding: {
-                top: 20,
-                bottom: 60
+                top: 0,
+                bottom: 10
               }
             }
           }
