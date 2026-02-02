@@ -886,8 +886,8 @@ export const InferenceVideos = {
         caption: 'DreamZero (4 diffusion step) + async & action chunk smoothing'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/4.465_DZ_sync_no_chunk.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_1step_nochunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_1step_nochunk+sync.m3u8',
         caption: 'DreamZero (1 diffusion step)'
       },
       {
@@ -905,7 +905,7 @@ export const InferenceVideos = {
   dreamzero_flash: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/flash_tidying_16step_nochunk+sync_AI.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_16step_nochunk+sync_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_16step_nochunk+sync.m3u8',
         caption: 'DreamZero-flash (16 diffusion step)'
       },
@@ -920,7 +920,7 @@ export const InferenceVideos = {
         caption: 'DreamZero-flash (16 diffusion step) + async & action chunk smoothing'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/flash_tidying_4step_nochunk+sync_AI.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_4step_nochunk+sync_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_4step_nochunk+sync.m3u8',
         caption: 'DreamZero-flash (4 diffusion step)'
       },
