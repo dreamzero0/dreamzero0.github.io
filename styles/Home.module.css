@@ -1840,6 +1840,7 @@
   font-size: 1rem;
   color: #333;
   font-weight: 400;
+  white-space: nowrap; /* Add this line */
 }
 
 .authorName b {
