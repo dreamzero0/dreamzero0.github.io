@@ -149,8 +149,7 @@ export default function FirstPost() {
           <p>
             State-of-the-art <b>Vision-Language-Action (VLA)</b> models excel at <em>semantic generalization</em> but struggle to generalize to unseen physical motions in novel environments.
             We introduce <b>DreamZero</b>, a <em>World Action Model (WAM)</em> built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by jointly predicting future world states and actions, using video as a dense representation of how the world evolves.
-            By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to <b>new tasks and environments</b> compared to state-of-the-art VLAs in real-robot experiments and achieves <b>1st place on the <a href='https://robo-arena.github.io/leaderboard' className={styles.authorLink}>RoboArena leaderboard</a></b>. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time <em>closed-loop control at 7Hz.</em>
-            Finally, DreamZero improves unseen task performance by over 35% with just 10–20 minutes of video-only cross-embodiment demonstrations.
+            By jointly modeling video and action, DreamZero learns diverse skills effectively from heterogeneous robot data without relying on repetitive demonstrations. This results in over 2x improvement in generalization to <b>new tasks and environments</b> compared to state-of-the-art VLAs in real-robot experiments. Crucially, through model and system optimizations, we enable a 14B autoregressive video diffusion model to perform real-time <em>closed-loop control at 7Hz.</em> Finally, we demonstrate two forms of cross-embodiment transfer: video-only demonstrations from humans or other robots yield over 42% improvement on unseen tasks with just 10–20 minutes of data. More surprisingly, DreamZero adapts to an entirely new robot (YAM) with only <b>30 minutes of play data</b> while retaining zero-shot generalization.
           <br></br>
           </p>
 
@@ -193,17 +192,17 @@ export default function FirstPost() {
               {
                 num: '2', 
                 title: 'DROID Pretraining',
-                desc: 'Franka: 40 tasks—achieving 1st place on RoboArena Leaderboard'
+                desc: 'Franka: 20 seen tasks + 20 unseen tasks, evaluated zero-shot in novel environments with unseen objects'
               },
               {
                 num: '3',
-                title: 'Post-Training Generalization',
+                title: 'Post-Training',
                 desc: 'AgiBot: Fine-tuning on 3 downstream tasks while retaining out-of-distribution robustness'
               },
               {
                 num: '4',
                 title: 'New Embodiment Adaptation',
-                desc: 'Post-trained on just 30 minutes of data (50 trajectories), DreamZero achieves zero-shot generalization on a new embodiment (YAM robot)'
+                desc: 'Post-trained on just 30 minutes of data (55 trajectories), DreamZero achieves zero-shot generalization on a new embodiment (YAM robot)'
               },
               {
                 num: '5',
@@ -275,7 +274,7 @@ export default function FirstPost() {
             AgiBot Pretraining: Seen & Unseen Tasks
           </h3>
           <p>
-            We evaluate pretrained models out-of-the-box on tasks present in the pretraining data, but in <em>zero-shot environments with unseen objects</em>. DreamZero achieves 62.2% average task progress—over 2× higher than the best pretrained VLA baseline (27.4%). For unseen tasks entirely absent from training, DreamZero reaches 39.5% task progress while VLAs achieve near-zero, demonstrating that WAMs can generalize to novel motions like untying shoelaces and shaking hands. Both seen and unseen tasks were evaluated on 80 evaluation rollouts on unique objects for each checkpoint.
+            We evaluate pretrained models out-of-the-box on tasks from the pretraining distribution, but in <em>zero-shot environments with unseen objects</em>. DreamZero (also trained from scratch) achieves 62.2% average task progress—over 2× higher than the best pretrained VLA baseline (27.4%). VLAs trained from scratch achieve near-zero performance, while pretrained VLAs show modest progress. For tasks entirely absent from training—such as untying shoelaces and shaking hands—DreamZero reaches 39.5% task progress while VLAs again struggle. Notably, the limited task progress from pretrained VLAs on unseen tasks stems from defaulting to pick-and-place motions regardless of the instruction, suggesting they overfit to dominant training behaviors rather than understanding novel task semantics. We evaluate 80 rollouts per checkpoint across 4 robots, each in different environments with different objects.
           </p>
           
           <p style={{ marginTop: '2rem', fontWeight: '500' }}>
@@ -285,23 +284,107 @@ export default function FirstPost() {
           {/* Evaluation Bar Chart */}
           <EvalBarChart />
           
-          {/* Robot platform selector buttons */}
-          <ButtonSelector 
-            options={[
+          <div style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            justifyContent: 'center', 
+            gap: '0.5rem',
+            marginTop: '1rem'
+          }}>
+            {/* PnP-Easy - Green */}
+            {[
               { id: 'seen_1', label: 'Pick & Place Fruit' },
+              { id: 'seen_6', label: 'Take Fruit out of Bag' },
+              { id: 'seen_9', label: 'Wipe the Mess' },
+            ].map((option) => (
+              <button
+                key={option.id}
+                onClick={() => setSelectedSeen(option.id)}
+                style={{
+                  padding: '0.4rem 0.8rem',
+                  borderRadius: '4px',
+                  border: selectedSeen === option.id ? 'none' : '1px solid rgba(45, 101, 85, 0.4)',
+                  background: selectedSeen === option.id ? '#2d6555' : 'transparent',
+                  color: selectedSeen === option.id ? 'white' : '#2d6555',
+                  cursor: 'pointer',
+                  fontSize: '0.8rem',
+                  fontWeight: '500',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {option.label}
+              </button>
+            ))}
+            
+            <span style={{ opacity: 0.3, alignSelf: 'center' }}>|</span>
+            
+            {/* PnP-Hard - Blue */}
+            {[
+              { id: 'seen_5', label: 'Pick & Place Fork/Spoon' },
+              { id: 'seen_7', label: 'Pen in Cup' },
+              { id: 'seen_8', label: 'Cup on Coaster' },
+              { id: 'seen_10', label: 'Stack Bowls/Cups' },
+            ].map((option) => (
+              <button
+                key={option.id}
+                onClick={() => setSelectedSeen(option.id)}
+                style={{
+                  padding: '0.4rem 0.8rem',
+                  borderRadius: '4px',
+                  border: selectedSeen === option.id ? 'none' : '1px solid rgba(74, 144, 217, 0.4)',
+                  background: selectedSeen === option.id ? '#4a90d9' : 'transparent',
+                  color: selectedSeen === option.id ? 'white' : '#4a90d9',
+                  cursor: 'pointer',
+                  fontSize: '0.8rem',
+                  fontWeight: '500',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {option.label}
+              </button>
+            ))}
+            
+            <span style={{ opacity: 0.3, alignSelf: 'center' }}>|</span>
+            
+            {/* Contact-Rich - Orange */}
+            {[
               { id: 'seen_2', label: 'Folding Shirts' },
               { id: 'seen_3', label: 'Folding Shorts' },
-              { id: 'seen_4', label: 'Stacking clothes' },
-              { id: 'seen_5', label: 'Pick & Place fork/spoon' },
-              { id: 'seen_6', label: 'Take Fruit out of bag' },
-              { id: 'seen_7', label: 'Pen in Cup' },
-              { id: 'seen_8', label: 'Cup on coaster' },
-              { id: 'seen_9', label: 'Wipe the Mess' },
-              { id: 'seen_10', label: 'Stacking bowls/cups together' },
-            ]}
-            selectedId={selectedSeen}
-            onSelect={(option) => setSelectedSeen(option.id)}
-          />
+              { id: 'seen_4', label: 'Stacking Clothes' },
+            ].map((option) => (
+              <button
+                key={option.id}
+                onClick={() => setSelectedSeen(option.id)}
+                style={{
+                  padding: '0.4rem 0.8rem',
+                  borderRadius: '4px',
+                  border: selectedSeen === option.id ? 'none' : '1px solid rgba(217, 119, 6, 0.4)',
+                  background: selectedSeen === option.id ? '#d97706' : 'transparent',
+                  color: selectedSeen === option.id ? 'white' : '#d97706',
+                  cursor: 'pointer',
+                  fontSize: '0.8rem',
+                  fontWeight: '500',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Legend */}
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            gap: '1.5rem', 
+            marginTop: '0.75rem',
+            fontSize: '0.75rem',
+            opacity: 0.7
+          }}>
+            <span><span style={{ color: '#2d6555' }}>●</span> PnP-Easy</span>
+            <span><span style={{ color: '#4a90d9' }}>●</span> PnP-Hard</span>
+            <span><span style={{ color: '#d97706' }}>●</span> Contact-Rich</span>
+          </div>
         </div>
 
         {/* Neural Trajectories Row */}
@@ -320,10 +403,16 @@ export default function FirstPost() {
           {/* Unseen Evaluation Bar Chart */}
           <UnseenEvalBarChart />
 
-          <ButtonSelector 
-            options={[
-              { id: 'unseen_1', label: 'Untie Shoe/gift' },
-              { id: 'unseen_2', label: 'Take Hat Off from Mannequin' },
+          <div style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            justifyContent: 'center', 
+            gap: '0.5rem',
+            marginTop: '1rem'
+          }}>
+            {[
+              { id: 'unseen_1', label: 'Untie Shoe/Gift' },
+              { id: 'unseen_2', label: 'Take Hat Off/On from Mannequin' },
               { id: 'unseen_3', label: 'Draw a Circle' },
               { id: 'unseen_4', label: 'Take out the Straw' },
               { id: 'unseen_5', label: 'Stack the Cubes' },
@@ -331,11 +420,27 @@ export default function FirstPost() {
               { id: 'unseen_7', label: 'Iron the Clothes' },
               { id: 'unseen_8', label: 'Shake Hands with the Human' },
               { id: 'unseen_9', label: 'Fold the Map' },
-              { id: 'unseen_10', label: 'Pulling Cart' },          
-            ]}
-            selectedId={selectedUnseen}
-            onSelect={(option) => setSelectedUnseen(option.id)}
-          />
+              { id: 'unseen_10', label: 'Pulling Cart' },
+            ].map((option) => (
+              <button
+                key={option.id}
+                onClick={() => setSelectedUnseen(option.id)}
+                style={{
+                  padding: '0.4rem 0.8rem',
+                  borderRadius: '4px',
+                  border: selectedUnseen === option.id ? 'none' : '1px solid rgba(45, 101, 85, 0.4)',
+                  background: selectedUnseen === option.id ? '#2d6555' : 'transparent',
+                  color: selectedUnseen === option.id ? 'white' : '#2d6555',
+                  cursor: 'pointer',
+                  fontSize: '0.8rem',
+                  fontWeight: '500',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
         </div>
         
         {/* Neural Trajectories Row */}
@@ -374,17 +479,50 @@ export default function FirstPost() {
             DROID: Seen Tasks & Unseen Verbs
           </h3>
         <p>
-          To validate on publicly available data, we train DreamZero on <em>DROID</em>—one of the most heterogeneous open-source robotic datasets. We evaluate on 20 seen tasks and 20 tasks with <em>unseen verbs</em> (actions absent from DROID). DreamZero significantly outperforms pretrained baselines, achieving 49% task progress on unseen verbs compared to 25-32% for state-of-the-art VLAs, and securing <b>1st place on the RoboArena benchmark</b>.
+          To validate on publicly available data, we train DreamZero on <em><a href="https://droid-dataset.github.io/" style={{ color: '#2d6555' }}>DROID</a></em>—one of the most heterogeneous open-source robotic datasets. We evaluate on 20 seen tasks and 20 tasks with <em>unseen verbs</em> (actions absent from DROID). DreamZero outperforms pretrained baselines, achieving 49% task progress on unseen verbs compared to 25-32% for state-of-the-art VLAs.
         </p>
           
-          <ButtonSelector 
-            options={[
-              { id: 'droid_1', label: 'Seen Tasks' },
-              { id: 'droid_2', label: 'Unseen Verbs' },        
-            ]}
-            selectedId={selectedDroid}
-            onSelect={(option) => setSelectedDroid(option.id)}
-          />
+        <div style={{ 
+          display: 'flex', 
+          flexWrap: 'wrap', 
+          justifyContent: 'center', 
+          gap: '0.5rem',
+          marginTop: '1rem'
+        }}>
+          <button
+            onClick={() => setSelectedDroid('droid_1')}
+            style={{
+              padding: '0.4rem 0.8rem',
+              borderRadius: '4px',
+              border: selectedDroid === 'droid_1' ? 'none' : '1px solid rgba(45, 101, 85, 0.4)',
+              background: selectedDroid === 'droid_1' ? '#2d6555' : 'transparent',
+              color: selectedDroid === 'droid_1' ? 'white' : '#2d6555',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+              fontWeight: '500',
+              transition: 'all 0.2s ease'
+            }}
+          >
+            Seen Tasks
+          </button>
+          
+          <button
+            onClick={() => setSelectedDroid('droid_2')}
+            style={{
+              padding: '0.4rem 0.8rem',
+              borderRadius: '4px',
+              border: selectedDroid === 'droid_2' ? 'none' : '1px solid rgba(217, 119, 6, 0.4)',
+              background: selectedDroid === 'droid_2' ? '#d97706' : 'transparent',
+              color: selectedDroid === 'droid_2' ? 'white' : '#d97706',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+              fontWeight: '500',
+              transition: 'all 0.2s ease'
+            }}
+          >
+            Unseen Verbs
+          </button>
+        </div>
         </div>
         
         {/* Neural Trajectories Row */}
@@ -416,14 +554,84 @@ export default function FirstPost() {
             Post-Training: Out-of-Distribution Generalization
           </h3>
         <p>
-          We investigate whether WAMs retain their generalization advantage after fine-tuning on task-specific data. We post-train on three downstream tasks with varying distribution diversity: <em>shirt folding</em> (lowest diversity), <em>fruit packing</em> (medium), and <em>table bussing</em> (highest). DreamZero's improvement over VLAs correlates positively with dataset diversity—confirming that WAMs learn effectively from heterogeneous distributions even during post-training. 
+          We investigate whether WAMs retain their generalization after being fine-tuning on task-specific data. We post-train on three downstream tasks with varying distribution diversity: <em>shirt folding</em> (lowest diversity), <em>fruit packing</em> (medium), and <em>table bussing</em> (highest). DreamZero's improvement over VLAs correlates positively with dataset diversity—confirming that WAMs learn effectively from heterogeneous distributions even during post-training. 
         </p>
           
-          <ButtonSelector 
-            options={combinedVideos}
-            selectedId={selectedCombinedVideo.id}
-            onSelect={setSelectedCombinedVideo}
-          />
+        <div style={{ 
+          display: 'flex', 
+          flexWrap: 'wrap', 
+          justifyContent: 'center', 
+          gap: '0.5rem',
+          marginTop: '1rem'
+        }}>
+          {/* Shirt Folding - Green (lowest diversity) */}
+          <button
+            onClick={() => setSelectedCombinedVideo(combinedVideos[0])}
+            style={{
+              padding: '0.4rem 0.8rem',
+              borderRadius: '4px',
+              border: selectedCombinedVideo.id === combinedVideos[0].id ? 'none' : '1px solid rgba(45, 101, 85, 0.4)',
+              background: selectedCombinedVideo.id === combinedVideos[0].id ? '#2d6555' : 'transparent',
+              color: selectedCombinedVideo.id === combinedVideos[0].id ? 'white' : '#2d6555',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+              fontWeight: '500',
+              transition: 'all 0.2s ease'
+            }}
+          >
+            {combinedVideos[0].label}
+          </button>
+          
+          {/* Fruit Packing - Blue (medium diversity) */}
+          <button
+            onClick={() => setSelectedCombinedVideo(combinedVideos[1])}
+            style={{
+              padding: '0.4rem 0.8rem',
+              borderRadius: '4px',
+              border: selectedCombinedVideo.id === combinedVideos[1].id ? 'none' : '1px solid rgba(74, 144, 217, 0.4)',
+              background: selectedCombinedVideo.id === combinedVideos[1].id ? '#4a90d9' : 'transparent',
+              color: selectedCombinedVideo.id === combinedVideos[1].id ? 'white' : '#4a90d9',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+              fontWeight: '500',
+              transition: 'all 0.2s ease'
+            }}
+          >
+            {combinedVideos[1].label}
+          </button>
+          
+          {/* Table Bussing - Orange (highest diversity) */}
+          <button
+            onClick={() => setSelectedCombinedVideo(combinedVideos[2])}
+            style={{
+              padding: '0.4rem 0.8rem',
+              borderRadius: '4px',
+              border: selectedCombinedVideo.id === combinedVideos[2].id ? 'none' : '1px solid rgba(217, 119, 6, 0.4)',
+              background: selectedCombinedVideo.id === combinedVideos[2].id ? '#d97706' : 'transparent',
+              color: selectedCombinedVideo.id === combinedVideos[2].id ? 'white' : '#d97706',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+              fontWeight: '500',
+              transition: 'all 0.2s ease'
+            }}
+          >
+            {combinedVideos[2].label}
+          </button>
+        </div>
+
+        {/* Legend */}
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          gap: '1.5rem', 
+          marginTop: '0.75rem',
+          fontSize: '0.75rem',
+          opacity: 0.7
+        }}>
+          <span><span style={{ color: '#2d6555' }}>●</span> High Diversity</span>
+          <span><span style={{ color: '#4a90d9' }}>●</span> Medium Diversity</span>
+          <span><span style={{ color: '#d97706' }}>●</span> Low Diversity</span>
+        </div>
 
         </div>
 
@@ -483,14 +691,37 @@ export default function FirstPost() {
             New Embodiment Adaptation
           </h3>
           <p>
-            With only <b>30 minutes</b> of play data (50 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes.See the full 30-minute play dataset <a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#4a90d9'}}>here</a>.
+            With only <b><a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}>30 minutes</a></b> of play data (55 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes. See the full 30-minute play dataset <a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}><b>here</b></a>.
           </p>
 
-          <ButtonSelector
-            options={YamVideos}
-            selectedId={selectedYam.id}
-            onSelect={setSelectedYam} 
-          />
+          <div style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            justifyContent: 'center', 
+            gap: '0.5rem',
+            marginTop: '1rem',
+            marginBottom: '1.5rem'  /* Add this */
+          }}>
+            {YamVideos.map((option) => (
+              <button
+                key={option.id}
+                onClick={() => setSelectedYam(option)}
+                style={{
+                  padding: '0.4rem 0.8rem',
+                  borderRadius: '4px',
+                  border: selectedYam.id === option.id ? 'none' : '1px solid rgba(45, 101, 85, 0.4)',
+                  background: selectedYam.id === option.id ? '#2d6555' : 'transparent',
+                  color: selectedYam.id === option.id ? 'white' : '#2d6555',
+                  cursor: 'pointer',
+                  fontSize: '0.8rem',
+                  fontWeight: '500',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
         </div>
         
         <div style={{ 
@@ -508,7 +739,8 @@ export default function FirstPost() {
               borderRadius: '6px',
               overflow: 'hidden',
               backgroundColor: '#0f0f0f',
-              marginTop: '-2rem'
+              marginTop: '-2rem',
+              marginBottom: '-2rem'  /* Add this */
             }}>
               <LazyVideo
                 src={selectedYam.policyRolloutVideo}
@@ -576,7 +808,8 @@ export default function FirstPost() {
               borderRadius: '6px',
               overflow: 'hidden',
               backgroundColor: '#0f0f0f',
-              marginTop: '-2rem'
+              marginTop: '-2rem',
+              marginBottom: '-2rem',
             }}>
               <LazyVideo
                 src={selectedInteractivePrompting.policyRolloutVideo}
@@ -620,7 +853,9 @@ export default function FirstPost() {
             }}>6</span>
             Real-Time Inference & DreamZero-Flash
           </h3>
-
+          <p>
+            Through model, system, and implementation optimizations, DreamZero achieves real-time inference at 150ms per action chunk—enabling 7Hz closed-loop control. Combined with asynchronous inference and action chunk smoothing, this results in smooth, responsive execution. Below we compare rollouts using 16, 4, and 1 diffusion steps: fewer steps reduce latency while DreamZero-Flash maintains performance even at single-step inference. We additionally show the effect of action chunk smoothing and asynchronous inference on execution quality.
+          </p>
           <ButtonSelector
             options={[
               { id: 'dreamzero', label: 'DreamZero' },
@@ -639,7 +874,7 @@ export default function FirstPost() {
         </div>
 
         <div className={styles.blogContent}>
-          <h3>What's Next</h3>
+          <h3>What's Next?</h3>
           <p>
             How far can zero-shot generalization go? We've been stress-testing DreamZero with tasks we never trained on, in environments we've never seen. From fanning burgers to pressing elevator buttons, playing xylophones to shaking tambourines, we keep discovering surprising new capabilities. DreamZero is just the beginning of the new wave of robot foundation models built on video world models!
           </p>

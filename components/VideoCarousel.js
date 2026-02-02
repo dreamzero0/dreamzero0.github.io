@@ -45,7 +45,8 @@ const VideoCarousel = ({ videos, title }) => {
         <div style={{ 
           display: 'flex', 
           justifyContent: 'center', 
-          marginBottom: '1rem' 
+          marginBottom: '1rem',
+          marginTop: '3rem'
         }}>
           <button
             onClick={handleToggle}
