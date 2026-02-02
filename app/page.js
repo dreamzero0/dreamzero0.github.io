@@ -11,6 +11,7 @@ import PerformanceChart from '../components/PerformanceChart';
 import PaperInfo from '../components/PaperInfo';
 import EvalBarChart from '../components/EvalBarChart';
 import UnseenEvalBarChart from '../components/UnseenEvalBarChart';
+import DroidBarChart from '../components/DroidBarChart';
 import dynamic from 'next/dynamic';
 import { 
   behaviorVideos, 
@@ -481,7 +482,9 @@ export default function FirstPost() {
         <p>
           To validate on publicly available data, we train DreamZero on <em><a href="https://droid-dataset.github.io/" style={{ color: '#2d6555' }}>DROID</a></em>—one of the most heterogeneous open-source robotic datasets. We evaluate on 20 seen tasks and 20 tasks with <em>unseen verbs</em> (actions absent from DROID). DreamZero outperforms pretrained baselines, achieving 49% task progress on unseen verbs compared to 25-32% for state-of-the-art VLAs.
         </p>
-          
+
+        <DroidBarChart />
+
         <div style={{ 
           display: 'flex', 
           flexWrap: 'wrap', 

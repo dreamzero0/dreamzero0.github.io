@@ -91,7 +91,7 @@ export const unseenChartData = {
         stderr: [6, 5]
       },
       'pi0.5 (Pretrained)': {
-        mean: [32, 10],
+        mean: [32, 7.5],
         stderr: [7, 7]
       },
       'DreamZero (Scratch)': {
