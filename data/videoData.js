@@ -785,12 +785,6 @@ export const YamVideos = [
     policyRolloutVideo: '/labs/gear/videos/yam/hsl/2_orange.m3u8',
     prompt: 'Pick up the orange and put it in the pumpkin | ✅',
   },
-  {
-    id: 'marker',
-    label: 'Marker to Cup',
-    policyRolloutVideo: '/labs/gear/videos/yam/hsl/5_marker.m3u8',
-    prompt: 'Pick up the marker and put it into the cup | ⚠️',
-  },
 ];
 
 export const InteractivePromptingVideos = [
