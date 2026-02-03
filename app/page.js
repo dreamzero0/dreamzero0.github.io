@@ -108,6 +108,7 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://ryanjulian.me/' className={styles.authorLink}>Ryan Julian</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=ADkiClQAAAAJ&hl=en' className={styles.authorLink}>Yevgen Chebotar</a></b></span>
                   <span className={styles.authorName}><b><a href='https://reedscot.github.io/' className={styles.authorLink}>Scott Reed</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://jankautz.com/' className={styles.authorLink}>Jan Kautz</a></b></span>
                   <span className={styles.authorName}><b><a href='https://yukezhu.me/' className={styles.authorLink}>Yuke Zhu</a></b><sup>†</sup></span>
                   <span className={styles.authorName}><b><a href='https://jimfan.me/' className={styles.authorLink}>Linxi "Jim" Fan</a></b><sup>†</sup></span>
                   <span className={styles.authorName}><b><a href='https://joeljang.github.io/' className={styles.authorLink}>Joel Jang</a></b><sup>†</sup></span>
