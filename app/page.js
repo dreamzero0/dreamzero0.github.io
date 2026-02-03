@@ -787,11 +787,35 @@ export default function FirstPost() {
           </h3>
           <p>The era of prompting robot foundation models has arrived. In this section, we show some rollouts of interactive prompting in action, where we take the robot around, and just ask people to <b>prompt</b> the robot to do new things. Here are some cool tasks that we found the robot is able to do.</p>
 
-          <ButtonSelector
-            options={InteractivePromptingVideos}
-            selectedId={selectedInteractivePrompting.id}
-            onSelect={setSelectedInteractivePrompting}
-          />
+          {/* Section 5: Interactive Prompting - Green buttons */}
+          <div style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            justifyContent: 'center', 
+            gap: '0.5rem',
+            marginTop: '1rem',
+            marginBottom: '1.5rem'
+          }}>
+            {InteractivePromptingVideos.map((option) => (
+              <button
+                key={option.id}
+                onClick={() => setSelectedInteractivePrompting(option)}
+                style={{
+                  padding: '0.4rem 0.8rem',
+                  borderRadius: '4px',
+                  border: selectedInteractivePrompting.id === option.id ? 'none' : '1px solid rgba(45, 101, 85, 0.4)',
+                  background: selectedInteractivePrompting.id === option.id ? '#2d6555' : 'transparent',
+                  color: selectedInteractivePrompting.id === option.id ? 'white' : '#2d6555',
+                  cursor: 'pointer',
+                  fontSize: '0.8rem',
+                  fontWeight: '500',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
         </div>
         
         <div style={{ 
@@ -857,14 +881,48 @@ export default function FirstPost() {
           <p>
             Through model, system, and implementation optimizations, DreamZero achieves real-time inference at 150ms per action chunk—enabling 7Hz closed-loop control. Combined with asynchronous inference and action chunk smoothing, this results in smooth, responsive execution. Below we compare rollouts using 16, 4, and 1 diffusion steps: fewer steps reduce latency while DreamZero-Flash maintains performance even at single-step inference. We additionally show the effect of action chunk smoothing and asynchronous inference on execution quality.
           </p>
-          <ButtonSelector
-            options={[
-              { id: 'dreamzero', label: 'DreamZero' },
-              { id: 'dreamzero_flash', label: 'DreamZero-flash' },
-            ]}
-            selectedId={selectedInference}
-            onSelect={(option) => setSelectedInference(option.id)}
-          />
+          
+          {/* Section 6: Inference - Green for DreamZero, Blue for DreamZero-Flash */}
+          <div style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            justifyContent: 'center', 
+            gap: '0.5rem',
+            marginTop: '1rem'
+          }}>
+            <button
+              onClick={() => setSelectedInference('dreamzero')}
+              style={{
+                padding: '0.4rem 0.8rem',
+                borderRadius: '4px',
+                border: selectedInference === 'dreamzero' ? 'none' : '1px solid rgba(45, 101, 85, 0.4)',
+                background: selectedInference === 'dreamzero' ? '#2d6555' : 'transparent',
+                color: selectedInference === 'dreamzero' ? 'white' : '#2d6555',
+                cursor: 'pointer',
+                fontSize: '0.8rem',
+                fontWeight: '500',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              DreamZero
+            </button>
+            <button
+              onClick={() => setSelectedInference('dreamzero_flash')}
+              style={{
+                padding: '0.4rem 0.8rem',
+                borderRadius: '4px',
+                border: selectedInference === 'dreamzero_flash' ? 'none' : '1px solid rgba(74, 144, 217, 0.4)',
+                background: selectedInference === 'dreamzero_flash' ? '#4a90d9' : 'transparent',
+                color: selectedInference === 'dreamzero_flash' ? 'white' : '#4a90d9',
+                cursor: 'pointer',
+                fontSize: '0.8rem',
+                fontWeight: '500',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              DreamZero-Flash
+            </button>
+          </div>
         </div>
         
          {/* Neural Trajectories Row */}

@@ -860,7 +860,7 @@ export const InteractivePromptingVideos = [
   },
   {
     id: 'pool_table',
-    label: 'Rack the ball',
+    label: 'Play Pool',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/pool_table.m3u8',
     prompt: 'Place billiards ball into pool rack',
   },
