@@ -300,6 +300,16 @@ export const UnseenVideos = {
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_008.m3u8',
         caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the present box. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ✅'
       },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_006_02_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_006_02.m3u8',
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the package. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_007_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_007.m3u8',
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the shoe. It then moves both arms outward in synchronized, opposing directions until the knot of the shoe is fully untied. | ✅'
+      },
     ],
   },
   unseen_2: {
