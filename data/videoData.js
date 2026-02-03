@@ -286,19 +286,19 @@ export const UnseenVideos = {
         caption: 'The robot reaches its left arm to grasp the blue box and hold it steady. It then reaches its right arm toward the blue ribbon and moves it to untie the knot. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_006_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_006.m3u8',
-        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the shoe. It then moves both arms outward in synchronized, opposing directions until the knot of the shoe is fully untied. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_006_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_006.m3u8',
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the shoe. It then moves both arms outward in synchronized, opposing directions until the knot of the shoe is fully untied. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_007_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_007.m3u8',
-        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the package. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_005_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_005.m3u8',
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the package. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_008_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_008.m3u8',
-        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the present box. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_008_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_008.m3u8',
+        caption: 'The robot coordinates both arms to simultaneously grasp the two loops of the knot of the present box. It then moves both arms outward in synchronized, opposing directions until the knot of the package is fully untied. | ✅'
       },
     ],
   },
@@ -330,9 +330,9 @@ export const UnseenVideos = {
         caption: 'The robot reaches its left arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_014.m3u8',
-        caption: 'The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_014_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_014.m3u8',
+        caption: 'The robot reaches its right arm to grasp the hat and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_016_AI.m3u8',
@@ -402,19 +402,19 @@ export const UnseenVideos = {
         caption: 'The robot reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to stack. It then reaches its right arm to pick up the yellow cube, moves it over the stack, and releases it onto the green cube to finish the task. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_035_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_035.m3u8',
-        caption: 'The robot reaches its right arm to pick up the red cube, moves it over the colorful cube, and releases it to stack. It then reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to finish the tower. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_035_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_035.m3u8',
+        caption: 'The robot reaches its right arm to pick up the red cube, moves it over the colorful cube, and releases it to stack. It then reaches its right arm to pick up the green cube, moves it over the red cube, and releases it to finish the tower. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_037_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_037.m3u8',
-        caption: 'The robot reaches its right arm to pick up the white cube, moves it over the green cube, and releases it to stack. It then reaches its left arm to pick up the blue cube, moves it over the stack, and releases it onto the white cube to finish the task. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_037_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_037.m3u8',
+        caption: 'The robot reaches its right arm to pick up the white cube, moves it over the green cube, and releases it to stack. It then reaches its left arm to pick up the blue cube, moves it over the stack, and releases it onto the white cube to finish the task. | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_039_AI.m3u8',
-        executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_039.m3u8',
-        caption: 'The robot reaches its right arm to pick up the red cube, moves it over the blue cube, and releases it to begin the stack. It then reaches its left arm to pick up the orange cube, moves it over the stack, and releases it onto the red cube to complete the three-tier structure. | ⚠️'
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_039_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_039.m3u8',
+        caption: 'The robot reaches its right arm to pick up the red cube, moves it over the blue cube, and releases it to begin the stack. It then reaches its left arm to pick up the orange cube, moves it over the stack, and releases it onto the red cube to complete the three-tier structure. | ✅'
       },
     ],
   },
