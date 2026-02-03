@@ -317,7 +317,7 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_009.m3u8',
-        caption: 'The robot reaches its right arm to gasp the crown and lifts it to remove it from the mannequin\'s head. | ✅'
+        caption: 'The robot reaches its right arm to grasp the crown and lifts it to remove it from the mannequin\'s head. | ✅'
       },
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_011_AI.m3u8',
@@ -352,8 +352,24 @@ export const UnseenVideos = {
       {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_010_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_010.m3u8',
-        caption: 'The robot reaches its left arm to gasp the hat and lifts it to put it on the mannequin\'s head. | ⚠️'
+        caption: 'The robot reaches its left arm to grasp the hat and lifts it to put it on the mannequin\'s head. | ⚠️'
       },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_009_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_009.m3u8',
+        caption: 'Remove hat. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_012_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_012.m3u8',
+        caption: 'Remove hat. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_015_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_015.m3u8',
+        caption: 'Remove hat. | ✅'
+      },
+      
     ],
   },
   unseen_3: {
@@ -378,6 +394,11 @@ export const UnseenVideos = {
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_023.m3u8',
         caption: 'The robot reaches its right arm to pick up the black marker and the right arm moves the marker to draw a llne on the whiteboard. | ⚠️'
       },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_018_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_018.m3u8',
+        caption: 'Draw a circle | ✅'
+      },
     ],
   },
   unseen_4: {
@@ -401,6 +422,51 @@ export const UnseenVideos = {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_029_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_029.m3u8',
         caption: 'The left arm holds the cup on the table. Then the right arm pulls the straw out of the cup. | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_025_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_025.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_028_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_028.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_025_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_025.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_031_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_031.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_031-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_031-2.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_027_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_027.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_027-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_027-2.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_029_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_029.m3u8',
+        caption: 'Take out the straw | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_030_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_030.m3u8',
+        caption: 'Take out the straw | ✅'
       },
     ],
   },
@@ -450,6 +516,56 @@ export const UnseenVideos = {
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_048.m3u8',
         caption: 'The left arm grabs the brush. Then left arm paints with the brush on the notebook | ⚠️'
       },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_041_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_041.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_042_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_042.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_043_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_043.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_044_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_044.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_044-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_044-2.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_046_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_046.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_047_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_047.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_047-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_047-2.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_048_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_048.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_048-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_048-2.m3u8',
+        caption: 'Paint with Brush | ✅'
+      },
     ],
   },
   unseen_7: {
@@ -473,6 +589,66 @@ export const UnseenVideos = {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_052.m3u8',
         caption: 'The robot reaches its left arm to grasp the iron and moves it across the shirt to iron it.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_049_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_049.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_049-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_049-2.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_050_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_050.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_051_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_051.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_051-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_051-2.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_052_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_052.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_052-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_052-2.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_054_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_054.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_055_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_055.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_055-1_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_055-1.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_055-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_055-2.m3u8',
+        caption: 'Iron.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_056_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_056.m3u8',
+        caption: 'Iron.  | ✅'
       },
     ],
   },
@@ -498,6 +674,47 @@ export const UnseenVideos = {
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_060.m3u8',
         caption: 'The right arm shakes the hand of the human up and down  | ✅'
       },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_057_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_057.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_058_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_058.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_058-2_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_058-2.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_059_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_059.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_061_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_061.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_062_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_062.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_063_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_063.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_064_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_064.m3u8',
+        caption: 'Shake hands  | ✅'
+      },
+
     ],
   },
   unseen_9: {
@@ -522,6 +739,21 @@ export const UnseenVideos = {
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/SYNCUNSEEN_069.m3u8',
         caption: 'The right arm grabs the right side of the map. The left arm folds the left side of the map. The right arm folds the right side of the map. | ❌'
       },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_066_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_066.m3u8',
+        caption: 'Fold map.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_67_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_67.m3u8',
+        caption: 'Fold map.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_071_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_071.m3u8',
+        caption: 'Fold map.  | ✅'
+      },
     ],
   },
   unseen_10: {
@@ -545,6 +777,16 @@ export const UnseenVideos = {
         generatedUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/ASYNCUNSEEN_076.m3u8',
         caption: 'The robot reaches its left arm to grasp the cart and pulls it.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_073_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_073.m3u8',
+        caption: 'Pull cart.  | ✅'
+      },
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_074_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_074.m3u8',
+        caption: 'Pull cart.  | ✅'
       },
     ],
   },
@@ -773,9 +1015,9 @@ export const DroidVideos = {
 export const YamVideos = [
   {
     id: 'noodle',
-    label: 'Cup Noodle to Paper Bag',
+    label: 'Cup Noodle to Pumpkin',
     policyRolloutVideo: '/labs/gear/videos/yam/hsl/3_noodle.m3u8',
-    prompt: 'Put the cup noodle in the paper bag | ✅',
+    prompt: 'Put the cup noodle in the box | ✅',
   },
   {
     id: 'banana',
@@ -802,65 +1044,65 @@ export const InteractivePromptingVideos = [
     id: 'push_elevator',
     label: 'Push Elevator Button',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_elevator.m3u8',
-    prompt: 'Move forward and press the elevator button with right arm.',
+    prompt: 'Move forward and press the elevator button with right arm',
   },
   {
     id: 'pop_balloon',
     label: 'Pop the Balloon',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Balloon_pop.m3u8',
-    prompt: 'Pick up the knife with right arm and pop the balloon with the knife.',
+    prompt: 'Pick up the knife with right arm and pop the balloon with the knife',
   },
   {
     id: 'play_foosball',
     label: 'Play Foosball',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Play_foosball.m3u8',
-    prompt: 'Play foosball with left arm.',
+    prompt: 'Play foosball with left arm',
   },
   {
     id: 'pull_cart',
     label: 'Pull Cart',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Pull_the_cart.m3u8',
-    prompt: 'Grab the cart with both arms and move backwards.',
+    prompt: 'Grab the cart with both arms and move backwards',
   },
   {
     id: 'insert_lab',
     label: 'Insert Lab Equipment',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lab_Equipment_Insertion.m3u8',
-    prompt: 'Take the tube from the human\'s hand and place it into the tube holder.',
+    prompt: 'Take the tube from the human\'s hand and place it into the tube holder',
   },
   {
     id: 'water_plant',
     label: 'Water Plant',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Water_the_plant.m3u8',
-    prompt: 'Water the plant.',
+    prompt: 'Water the plant',
   },
   {
     id: 'lost_found',
     label: 'Place in Lost & Found',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lost_and_Found.m3u8',
-    prompt: 'Pick up a forgotten pair of glasses, move backwards, turn right, and and bring them to the \"Lost and Found\" box.',
+    prompt: 'Pick up a forgotten pair of glasses and bring them to the \"Lost and Found\" box',
   },
   {
     id: 'open_door',
     label: 'Open the Door',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Open_the_door.m3u8',
-    prompt: 'Move forward and open the door.',
+    prompt: 'Move forward and open the door',
   },
   {
     id: 'whisk_bowl',
     label: 'Whisk the Bowl',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Whisk_the_bowl.m3u8',
-    prompt: 'Right arm whisks the bowl.',
+    prompt: 'Right arm whisks the bowl',
   },
   {
     id: 'scan_snack',
     label: 'Scan the Snack',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Scan_snack.m3u8',
-    prompt: 'Pick up the snack with right arm and scan it.',
+    prompt: 'Pick up the snack with right arm and scan it',
   },
   {
     id: 'pool_table',
-    label: 'Play Pool',
+    label: 'Rack the ball',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/pool_table.m3u8',
     prompt: 'Place billiards ball into pool rack',
   },
@@ -874,7 +1116,19 @@ export const InteractivePromptingVideos = [
     id: 'bush',
     label: 'Put Fruit in Basket',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/bush.m3u8',
-    prompt: 'Place fruit from bush into basket.',
+    prompt: 'Place fruit from bush into basket',
+  },
+  {
+    id: 'wipe_counter',
+    label: 'Wipe the Counter',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/wipe_counter.m3u8',
+    prompt: 'Use right arm to wipe water on counter with towel',
+  },
+  {
+    id: 'paper_towel',
+    label: 'Pull Paper Towel',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/paper_towel.m3u8',
+    prompt: 'Pull paper towel out of dispenser with right arm',
   },
 ];
 
