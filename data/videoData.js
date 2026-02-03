@@ -858,6 +858,24 @@ export const InteractivePromptingVideos = [
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Scan_snack.m3u8',
     prompt: 'Pick up the snack with right arm and scan it.',
   },
+  {
+    id: 'pool_table',
+    label: 'Rack the ball',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/pool_table.m3u8',
+    prompt: 'Place billiards ball into pool rack',
+  },
+  {
+    id: 'arrange_pillow',
+    label: 'Arrange the Pillow',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/arrange_pillow.m3u8',
+    prompt: 'Arrange couch pillow',
+  },
+  {
+    id: 'bush',
+    label: 'Put Fruit in Basket',
+    policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/bush.m3u8',
+    prompt: 'Place fruit from bush into basket.',
+  },
 ];
 
 
