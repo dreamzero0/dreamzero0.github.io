@@ -103,9 +103,9 @@ export default function FirstPost() {
                   <span className={styles.authorName}><b><a href='https://xieleo5.github.io/' className={styles.authorLink}>Yuqi Xie</a></b></span>
                   <span className={styles.authorName}><b><a href='https://jimmyyhwu.github.io/' className={styles.authorLink}>Jimmy Wu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=0zjxt5gAAAAJ&hl=en' className={styles.authorLink}>Qi Wang</a></b></span>
+                  <span className={styles.authorName}><b><a href='https://ryanjulian.me/' className={styles.authorLink}>Ryan Julian</a></b></span>
                   <span className={styles.authorName}><b><a href='https://faculty.cc.gatech.edu/~danfei/' className={styles.authorLink}>Danfei Xu</a></b></span>
                   <span className={styles.authorName}><b><a href='https://yilundu.github.io/' className={styles.authorLink}>Yilun Du</a></b></span>
-                  <span className={styles.authorName}><b><a href='https://ryanjulian.me/' className={styles.authorLink}>Ryan Julian</a></b></span>
                   <span className={styles.authorName}><b><a href='https://scholar.google.com/citations?user=ADkiClQAAAAJ&hl=en' className={styles.authorLink}>Yevgen Chebotar</a></b></span>
                   <span className={styles.authorName}><b><a href='https://reedscot.github.io/' className={styles.authorLink}>Scott Reed</a></b></span>
                   <span className={styles.authorName}><b><a href='https://jankautz.com/' className={styles.authorLink}>Jan Kautz</a></b></span>
