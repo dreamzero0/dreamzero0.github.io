@@ -773,9 +773,9 @@ export const DroidVideos = {
 export const YamVideos = [
   {
     id: 'noodle',
-    label: 'Cup Noodle to Pumpkin',
+    label: 'Cup Noodle to Paper Bag',
     policyRolloutVideo: '/labs/gear/videos/yam/hsl/3_noodle.m3u8',
-    prompt: 'Put the cup noodle in the box | ✅',
+    prompt: 'Put the cup noodle in the paper bag | ✅',
   },
   {
     id: 'banana',
@@ -838,7 +838,7 @@ export const InteractivePromptingVideos = [
     id: 'lost_found',
     label: 'Place in Lost & Found',
     policyRolloutVideo: '/labs/gear/videos/agi_interactive_prompting/hsl/Lost_and_Found.m3u8',
-    prompt: 'Pick up a forgotten pair of glasses and bring them to the \"Lost and Found\" box.',
+    prompt: 'Pick up a forgotten pair of glasses, move backwards, turn right, and and bring them to the \"Lost and Found\" box.',
   },
   {
     id: 'open_door',
