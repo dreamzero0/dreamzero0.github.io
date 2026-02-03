@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from 'react';
 import { evalChartData, evalChartColors, agibotModelOrder, frankaModelOrder } from '../data/evalChartData';
+import pattern from 'patternomaly';
 
 const EvalBarChart = () => {
   const chartRef = useRef(null);
@@ -15,17 +16,82 @@ const EvalBarChart = () => {
     const initChart = async () => {
       try {
         const ChartModule = await import('chart.js');
-        const { Chart, CategoryScale, LinearScale, BarController, BarElement, 
+        const { Chart, CategoryScale, LinearScale, BarController, BarElement,
                 Title, Tooltip, Legend } = ChartModule;
-        
+
+        // Custom error bars plugin
+        const errorBarsPlugin = {
+          id: 'errorBars',
+          afterDatasetsDraw(chart) {
+            const ctx = chart.ctx;
+            chart.data.datasets.forEach((dataset, datasetIndex) => {
+              const meta = chart.getDatasetMeta(datasetIndex);
+              if (!meta.hidden && dataset.errorBars) {
+                meta.data.forEach((bar, index) => {
+                  const errorPlus = dataset.errorBars.plus[index];
+                  const errorMinus = dataset.errorBars.minus[index];
+
+                  if (errorPlus > 0 || errorMinus > 0) {
+                    const x = bar.x;
+                    const y = bar.y;
+                    const barWidth = bar.width;
+
+                    // Calculate error bar positions
+                    const yScale = chart.scales.y;
+                    const errorBarWidth = barWidth * 0.5;
+                    const capWidth = errorBarWidth;
+
+                    ctx.save();
+                    ctx.strokeStyle = dataset.errorBars.color || '#7A7A7C';
+                    ctx.lineWidth = dataset.errorBars.lineWidth || 1;
+
+                    // Draw upper error bar
+                    if (errorPlus > 0) {
+                      const yTop = yScale.getPixelForValue(yScale.getValueForPixel(y) + errorPlus);
+                      ctx.beginPath();
+                      ctx.moveTo(x, y);
+                      ctx.lineTo(x, yTop);
+                      ctx.stroke();
+
+                      // Draw cap
+                      ctx.beginPath();
+                      ctx.moveTo(x - capWidth / 2, yTop);
+                      ctx.lineTo(x + capWidth / 2, yTop);
+                      ctx.stroke();
+                    }
+
+                    // Draw lower error bar
+                    if (errorMinus > 0) {
+                      const yBottom = yScale.getPixelForValue(yScale.getValueForPixel(y) - errorMinus);
+                      ctx.beginPath();
+                      ctx.moveTo(x, y);
+                      ctx.lineTo(x, yBottom);
+                      ctx.stroke();
+
+                      // Draw cap
+                      ctx.beginPath();
+                      ctx.moveTo(x - capWidth / 2, yBottom);
+                      ctx.lineTo(x + capWidth / 2, yBottom);
+                      ctx.stroke();
+                    }
+
+                    ctx.restore();
+                  }
+                });
+              }
+            });
+          }
+        };
+
         Chart.register(
           CategoryScale,
           LinearScale,
-          BarController, 
+          BarController,
           BarElement,
-          Title, 
-          Tooltip, 
-          Legend
+          Title,
+          Tooltip,
+          Legend,
+          errorBarsPlugin
         );
         
         if (chartInstance.current) {
@@ -50,28 +116,45 @@ const EvalBarChart = () => {
         };
         
         // Prepare AgiBot datasets only
-        const agibotDatasets = agibotModelOrder.map((modelKey, idx) => {
+        const agibotDatasets = agibotModelOrder.map((modelKey) => {
           const data = evalChartData.agibot.models[modelKey];
           const color = evalChartColors[modelKey];
           const isPretrained = modelKey.includes('(Pretrained)');
-          
+
           // Apply minimum heights for display
           const displayMeans = applyMinHeight(data.mean);
-          
+
           // Store error values
           data.stderr.forEach((err, taskIdx) => {
             errorDataMap.set(`${modelKey}-${taskIdx}`, err);
           });
-          
+
+          // Use diagonal stripes for pretrained models
+          const backgroundColor = isPretrained
+            ? pattern.draw('diagonal', color, 'white', 6)
+            : color;
+
+          // Error bars only for AVG column (last data point)
+          const errorBars = data.stderr.map((err, idx) =>
+            idx === data.stderr.length - 1 ? err : 0
+          );
+
           return {
             label: modelKey.replace('pi0.5', 'π₀.₅'),
             data: displayMeans,
-            backgroundColor: color,
+            backgroundColor: backgroundColor,
             borderColor: 'white',
             borderWidth: isPretrained ? 0.6 : 0.5,
             borderRadius: 0,
             barThickness: 'flex',
             maxBarThickness: 60,
+            errorBars: {
+              plus: errorBars,
+              minus: errorBars,
+              color: '#7A7A7C',
+              lineWidth: 1,
+              width: '50%'
+            },
             errorValues: data.stderr,
             originalValues: data.mean, // Store original for tooltip
             modelKey: modelKey

@@ -11,6 +11,7 @@ import PerformanceChart from '../components/PerformanceChart';
 import PaperInfo from '../components/PaperInfo';
 import EvalBarChart from '../components/EvalBarChart';
 import UnseenEvalBarChart from '../components/UnseenEvalBarChart';
+import DroidBarChart from '../components/DroidBarChart';
 import dynamic from 'next/dynamic';
 import { 
   behaviorVideos, 
@@ -482,7 +483,9 @@ export default function FirstPost() {
         <p>
           To validate on publicly available data, we train DreamZero on <em><a href="https://droid-dataset.github.io/" style={{ color: '#2d6555' }}>DROID</a></em>—one of the most heterogeneous open-source robotic datasets. We evaluate on 20 seen tasks and 20 tasks with <em>unseen verbs</em> (actions absent from DROID). DreamZero outperforms pretrained baselines, achieving 49% task progress on unseen verbs compared to 25-32% for state-of-the-art VLAs.
         </p>
-          
+
+        <DroidBarChart />
+
         <div style={{ 
           display: 'flex', 
           flexWrap: 'wrap', 
@@ -555,7 +558,7 @@ export default function FirstPost() {
             Post-Training: Out-of-Distribution Generalization
           </h3>
         <p>
-          We investigate whether WAMs retain their generalization after being fine-tuning on task-specific data. We post-train on three downstream tasks with varying distribution diversity: <em>shirt folding</em> (lowest diversity), <em>fruit packing</em> (medium), and <em>table bussing</em> (highest). DreamZero's improvement over VLAs correlates positively with dataset diversity—confirming that WAMs learn effectively from heterogeneous distributions even during post-training. 
+          We investigate whether WAMs retain their generalization after being fine-tuning on task-specific data. We post-train on three downstream tasks : <em>shirt folding</em>, <em>fruit packing</em>, and <em>table bussing</em>. DreamZero enables stronger post-training results across three tasks, indicating that environment generalization is retained after post-training. 
         </p>
           
         <div style={{ 
@@ -629,9 +632,6 @@ export default function FirstPost() {
           fontSize: '0.75rem',
           opacity: 0.7
         }}>
-          <span><span style={{ color: '#2d6555' }}>●</span> High Diversity</span>
-          <span><span style={{ color: '#4a90d9' }}>●</span> Medium Diversity</span>
-          <span><span style={{ color: '#d97706' }}>●</span> Low Diversity</span>
         </div>
 
         </div>

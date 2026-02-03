@@ -785,12 +785,6 @@ export const YamVideos = [
     policyRolloutVideo: '/labs/gear/videos/yam/hsl/2_orange.m3u8',
     prompt: 'Pick up the orange and put it in the pumpkin | ✅',
   },
-  {
-    id: 'marker',
-    label: 'Marker to Cup',
-    policyRolloutVideo: '/labs/gear/videos/yam/hsl/5_marker.m3u8',
-    prompt: 'Pick up the marker and put it into the cup | ⚠️',
-  },
 ];
 
 export const InteractivePromptingVideos = [
@@ -892,8 +886,8 @@ export const InferenceVideos = {
         caption: 'DreamZero (4 diffusion step) + async & action chunk smoothing'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/',
-        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/4.465_DZ_sync_no_chunk.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_1step_nochunk+sync_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/tidying_1step_nochunk+sync.m3u8',
         caption: 'DreamZero (1 diffusion step)'
       },
       {
@@ -911,7 +905,7 @@ export const InferenceVideos = {
   dreamzero_flash: {
     neural: [
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/flash_tidying_16step_nochunk+sync_AI.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_16step_nochunk+sync_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_16step_nochunk+sync.m3u8',
         caption: 'DreamZero-flash (16 diffusion step)'
       },
@@ -926,7 +920,7 @@ export const InferenceVideos = {
         caption: 'DreamZero-flash (16 diffusion step) + async & action chunk smoothing'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_inference_ablation/flash_tidying_4step_nochunk+sync_AI.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_4step_nochunk+sync_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_inference_ablation/hsl/flash_tidying_4step_nochunk+sync.m3u8',
         caption: 'DreamZero-flash (4 diffusion step)'
       },

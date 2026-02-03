@@ -1,10 +1,10 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
-import { unseenChartData, evalChartColors, agibotModelOrder } from '../data/evalChartData';
+import { evalChartData, unseenChartData, evalChartColors, frankaModelOrder } from '../data/evalChartData';
 import pattern from 'patternomaly';
 
-const UnseenEvalBarChart = () => {
+const DroidBarChart = () => {
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
 
@@ -101,64 +101,50 @@ const UnseenEvalBarChart = () => {
 
         const ctx = chartRef.current.getContext('2d');
 
-        // Helper function to apply minimum bar heights (matching unseen.py logic)
-        const applyMinHeight = (values) => {
-          const MIN_BAR_HEIGHT_ZERO = 1.2;
-          const MIN_BAR_HEIGHT_SMALL = 2.5;
-          return values.map(v => {
-            if (v === 0) return MIN_BAR_HEIGHT_ZERO;
-            if (v < MIN_BAR_HEIGHT_SMALL) return Math.max(v, MIN_BAR_HEIGHT_SMALL);
-            return v;
-          });
-        };
-
-        // Prepare AgiBot G1 datasets for unseen tasks
-        const agibotDatasets = agibotModelOrder.map((modelKey) => {
-          const data = unseenChartData.agibotG1.models[modelKey];
+        // Prepare datasets for Seen vs Unseen
+        const datasets = frankaModelOrder.map((modelKey) => {
+          const seenData = evalChartData.franka.models[modelKey];
+          const unseenData = unseenChartData.droidFranka.models[modelKey];
           const color = evalChartColors[modelKey];
           const isPretrained = modelKey.includes('(Pretrained)');
 
-          // Apply minimum heights for display
-          const displayMeans = applyMinHeight(data.mean);
+          // Use success rate (second element) for both seen and unseen
+          const seenSuccessRate = seenData.mean[1];
+          const seenStderr = seenData.stderr[1];
+
+          const unseenSuccessRate = unseenData.mean[1];
+          const unseenStderr = unseenData.stderr[1];
 
           // Use diagonal stripes for pretrained models
           const backgroundColor = isPretrained
             ? pattern.draw('diagonal', color, 'white', 6)
             : color;
 
-          // Error bars for all columns in unseen chart
-          const errorBars = data.stderr;
-
           return {
             label: modelKey.replace('pi0.5', 'π₀.₅'),
-            data: displayMeans,
+            data: [seenSuccessRate, unseenSuccessRate],
             backgroundColor: backgroundColor,
             borderColor: 'white',
             borderWidth: isPretrained ? 0.6 : 0.5,
             borderRadius: 0,
             barThickness: 'flex',
-            maxBarThickness: 50,
+            maxBarThickness: 60,
             errorBars: {
-              plus: errorBars,
-              minus: errorBars,
+              plus: [seenStderr, unseenStderr],
+              minus: [seenStderr, unseenStderr],
               color: '#7A7A7C',
               lineWidth: 1,
               width: '50%'
             },
-            errorValues: data.stderr,
-            originalValues: data.mean,
             modelKey: modelKey
           };
         });
 
-        const allDatasets = agibotDatasets;
-        const labels = unseenChartData.agibotG1.tasks;
-
         chartObj = new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: labels,
-            datasets: allDatasets
+            labels: ['Seen', 'Unseen'],
+            datasets: datasets
           },
           options: {
             responsive: true,
@@ -209,28 +195,10 @@ const UnseenEvalBarChart = () => {
                 displayColors: true,
                 padding: 12,
                 callbacks: {
-                  title: function(context) {
-                    return context[0].label.replace(/\n/g, ' ');
-                  },
                   label: function(context) {
-                    const value = context.parsed.y;
-                    const dataset = context.dataset;
-                    const dataIndex = context.dataIndex;
-
-                    if (value === null || isNaN(value)) {
-                      return null;
-                    }
-
-                    // Get original value (not the display value with min height applied)
-                    let originalValue = value;
-                    if (dataset.originalValues) {
-                      originalValue = dataset.originalValues[dataIndex] || value;
-                    }
-
                     const label = context.dataset.label || '';
-                    const formattedValue = originalValue % 1 === 0 ? originalValue.toString() : originalValue.toFixed(2);
-
-                    return `${label}: ${formattedValue}%`;
+                    const value = context.parsed.y;
+                    return `${label}: ${value.toFixed(1)}%`;
                   },
                   labelColor: function(context) {
                     return {
@@ -241,6 +209,18 @@ const UnseenEvalBarChart = () => {
                     };
                   }
                 }
+              },
+              title: {
+                display: true,
+                text: 'DROID-Franka: Seen vs Unseen Average Success Rate',
+                align: 'center',
+                font: {
+                  family: "'NVIDIA Sans', sans-serif",
+                  size: 16,
+                  weight: 'bold'
+                },
+                color: '#48484A',
+                padding: { top: 10, bottom: 20 }
               }
             },
             scales: {
@@ -265,7 +245,7 @@ const UnseenEvalBarChart = () => {
                 },
                 title: {
                   display: true,
-                  text: 'Task Progress (%)',
+                  text: 'Average Success Rate (%)',
                   font: {
                     family: "'NVIDIA Sans', sans-serif",
                     size: 14,
@@ -279,12 +259,10 @@ const UnseenEvalBarChart = () => {
                 ticks: {
                   font: {
                     family: "'NVIDIA Sans', sans-serif",
-                    size: 11,
+                    size: 13,
                     weight: '600'
                   },
-                  color: '#48484A',
-                  maxRotation: 45,
-                  minRotation: 45
+                  color: '#48484A'
                 },
                 grid: {
                   display: false
@@ -329,7 +307,7 @@ const UnseenEvalBarChart = () => {
       position: 'relative'
     }}>
       <div style={{
-        height: '450px',
+        height: '400px',
         position: 'relative'
       }}>
         <canvas ref={chartRef} style={{ touchAction: 'manipulation' }}></canvas>
@@ -338,4 +316,4 @@ const UnseenEvalBarChart = () => {
   );
 };
 
-export default UnseenEvalBarChart;
+export default DroidBarChart;
