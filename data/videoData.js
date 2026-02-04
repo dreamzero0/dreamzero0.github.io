@@ -744,9 +744,9 @@ export const DroidVideos = {
 export const YamVideos = [
   {
     id: 'noodle',
-    label: 'Cup Noodle to Pumpkin',
+    label: 'Cup Noodle to Paper Bag',
     policyRolloutVideo: '/labs/gear/videos/yam/hsl/3_noodle.m3u8',
-    prompt: 'Put the cup noodle in the box | ✅',
+    prompt: 'Put the cup noodle in the paper bag | ✅',
   },
   {
     id: 'banana',
