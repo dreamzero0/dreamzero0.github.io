@@ -122,12 +122,16 @@ export default function FirstPost() {
           </h1>
           
           <div className={styles.linkContainer}>
-            <a href="https://arxiv.org/abs/2505.12705" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+            <a href="/DreamZero.pdf" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
               Paper
             </a>
             <span className={styles.linkDivider}>•</span>
             <a href="https://github.com/dreamzero0/dreamzero" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
               Code
+            </a>
+            <span className={styles.linkDivider}>•</span>
+            <a href="https://dreamzero0.github.io/evals_gallery" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+              Eval Gallery
             </a>
             <span className={styles.linkDivider}>•</span>
             <a href="http://github.com/nvidia/GR00T-dreams" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
@@ -1015,7 +1019,7 @@ export default function FirstPost() {
         <div className={styles.blogContent}>
           <PaperInfo
             title={<><b>DreamZero</b>: World Action Models are Zero-shot Policies</>}
-            paperUrl="https://arxiv.org/abs/2505.12705"
+            paperUrl="/DreamZero.pdf"
             paperType="paper"
             tags={['World Models', 'Zero-shot Generalization']}
           />
