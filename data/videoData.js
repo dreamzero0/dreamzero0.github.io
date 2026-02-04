@@ -369,7 +369,11 @@ export const UnseenVideos = {
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_015.m3u8',
         caption: 'Remove hat. | ✅'
       },
-      
+      {
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_016_AI.m3u8',
+        executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_016.m3u8',
+        caption: 'Remove hat. | ✅'
+      },  
     ],
   },
   unseen_3: {
