@@ -130,6 +130,10 @@ export default function FirstPost() {
               Code
             </a>
             <span className={styles.linkDivider}>•</span>
+            <a href="https://dreamzero0.github.io/evals_gallery" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+              Eval Gallery
+            </a>
+            <span className={styles.linkDivider}>•</span>
             <a href="http://github.com/nvidia/GR00T-dreams" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
               X Summary
             </a>
