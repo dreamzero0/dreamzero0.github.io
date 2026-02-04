@@ -696,7 +696,7 @@ export default function FirstPost() {
             New Embodiment Adaptation
           </h3>
           <p>
-            With only <b><a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}>30 minutes</a></b> of play data (55 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes. See the full 30-minute play dataset <a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}><b>here</b></a>.
+            With only <b><a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}>30 minutes</a></b> of play data (55 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes (no other YAM data was used). See the full 30-minute play dataset <a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}><b>here</b></a>.
           </p>
 
           <div style={{ 
