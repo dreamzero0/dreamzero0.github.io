@@ -134,9 +134,6 @@ export default function FirstPost() {
               Eval Gallery
             </a>
             <span className={styles.linkDivider}>•</span>
-            <a href="http://github.com/nvidia/GR00T-dreams" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
-              X Summary
-            </a>
           </div>
           
           {/* Main video with lazy loading */}
