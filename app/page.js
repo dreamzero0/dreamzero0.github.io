@@ -174,7 +174,7 @@ export default function FirstPost() {
           </div>
           
           <p style={{marginTop: '1rem', marginBottom: '0.5rem'}}>
-            We evaluate DreamZero across six settings—five testing generalization, and one demonstrating real-time deployment:
+            We show DreamZero's capability across six settings—five testing generalization, and one demonstrating real-time deployment:
           </p>
 
           {/* Evaluation cards grid */}
