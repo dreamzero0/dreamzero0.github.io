@@ -156,9 +156,7 @@ export default function FirstPost() {
           <br></br>
           </p>
 
-          <div style={{ 
-            width: '130%', 
-            marginLeft: '-15%', 
+          <div className={styles.wideBreakoutImage} style={{ 
             marginTop: '4rem',
             marginBottom: '4rem'
           }}>
@@ -179,13 +177,7 @@ export default function FirstPost() {
           </p>
 
           {/* Evaluation cards grid */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '1rem',
-            margin: '1.5rem 0 3rem 0',
-            padding: '0'
-          }}>
+          <div className={styles.evalCardsGrid}>
             {[
               {
                 num: '1',
@@ -287,13 +279,7 @@ export default function FirstPost() {
           {/* Evaluation Bar Chart */}
           <EvalBarChart />
           
-          <div style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            justifyContent: 'center', 
-            gap: '0.5rem',
-            marginTop: '1rem'
-          }}>
+          <div className={styles.taskButtonRow}>
             {/* PnP-Easy - Green */}
             {[
               { id: 'seen_1', label: 'Pick & Place Fruit' },
@@ -406,13 +392,7 @@ export default function FirstPost() {
           {/* Unseen Evaluation Bar Chart */}
           <UnseenEvalBarChart />
 
-          <div style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            justifyContent: 'center', 
-            gap: '0.5rem',
-            marginTop: '1rem'
-          }}>
+          <div className={styles.taskButtonRow}>
             {[
               { id: 'unseen_1', label: 'Untie Shoe/Gift' },
               { id: 'unseen_2', label: 'Take Hat Off/On from Mannequin' },
@@ -487,13 +467,7 @@ export default function FirstPost() {
 
         <DroidBarChart />
 
-        <div style={{ 
-          display: 'flex', 
-          flexWrap: 'wrap', 
-          justifyContent: 'center', 
-          gap: '0.5rem',
-          marginTop: '1rem'
-        }}>
+        <div className={styles.taskButtonRow}>
           <button
             onClick={() => setSelectedDroid('droid_1')}
             style={{
@@ -508,7 +482,7 @@ export default function FirstPost() {
               transition: 'all 0.2s ease'
             }}
           >
-            Seen Tasks
+            Seen Tasks<div className={styles.taskButtonRow}></div>
           </button>
           
           <button
@@ -562,13 +536,7 @@ export default function FirstPost() {
           We investigate whether WAMs retain their generalization after being fine-tuning on task-specific data. We post-train on three downstream tasks : <em>shirt folding</em>, <em>fruit packing</em>, and <em>table bussing</em>. DreamZero enables stronger post-training results across three tasks, indicating that environment generalization is retained after post-training. 
         </p>
           
-        <div style={{ 
-          display: 'flex', 
-          flexWrap: 'wrap', 
-          justifyContent: 'center', 
-          gap: '0.5rem',
-          marginTop: '1rem'
-        }}>
+        <div className={styles.taskButtonRow}>
           {/* Shirt Folding - Green (lowest diversity) */}
           <button
             onClick={() => setSelectedCombinedVideo(combinedVideos[0])}
@@ -642,20 +610,11 @@ export default function FirstPost() {
           display: 'flex',
           justifyContent: 'center'
         }}>
-          <div style={{ 
-            width: '60%',
-            maxWidth: '50%'
-          }}>
+          <div className={styles.responsiveVideoWrapper}>
             <h3 style={{ textAlign: 'center', marginBottom: '0.5rem', marginTop: '-2rem' }}>
               {selectedCombinedVideo.label}: 10 consecutive evaluations | {selectedCombinedVideo.progress}
             </h3>
-            <div style={{ 
-              width: '100%',
-              aspectRatio: '16/9',
-              borderRadius: '6px',
-              overflow: 'hidden',
-              backgroundColor: '#0f0f0f'
-            }}>
+            <div className={styles.responsiveVideoInner}>
               <LazyVideo
                 src={selectedCombinedVideo.policyRolloutVideo}
                 title="Policy Rollout Video"
@@ -696,14 +655,7 @@ export default function FirstPost() {
             With only <b><a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}>30 minutes</a></b> of play data (55 trajectories), DreamZero adapts to the YAM robot and generalizes zero-shot to novel objects like pumpkins, teddy bears, and paper bags, exhibiting strong language following capabilities. The knowledge gained from AgiBot pretraining transfers directly—no massive retraining required. To our understanding, this is the most efficient embodiment transfer yet—what previously demanded hundreds of hours of demonstrations, we accomplish in 30 minutes (no other YAM data was used). See the full 30-minute play dataset <a href="https://dreamzero0.github.io/yam_gallery/" style={{color: '#2d6555'}}><b>here</b></a>.
           </p>
 
-          <div style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            justifyContent: 'center', 
-            gap: '0.5rem',
-            marginTop: '1rem',
-            marginBottom: '1.5rem'  /* Add this */
-          }}>
+          <div className={styles.taskButtonRow} style={{ marginBottom: '1.5rem' }}>
             {YamVideos.map((option) => (
               <button
                 key={option.id}
@@ -731,19 +683,8 @@ export default function FirstPost() {
           display: 'flex',
           justifyContent: 'center'
         }}>
-          <div style={{ 
-            width: '60%',
-            maxWidth: '50%'
-          }}>
-            <div style={{ 
-              width: '100%',
-              aspectRatio: '16/9',
-              borderRadius: '6px',
-              overflow: 'hidden',
-              backgroundColor: '#0f0f0f',
-              marginTop: '-2rem',
-              marginBottom: '-2rem'  /* Add this */
-            }}>
+          <div className={styles.responsiveVideoWrapper}>
+            <div className={styles.responsiveVideoInner} style={{ marginTop: '-2rem', marginBottom: '-2rem' }}>
               <LazyVideo
                 src={selectedYam.policyRolloutVideo}
                 title="New Embodiment Adaptation Videos"
@@ -789,14 +730,7 @@ export default function FirstPost() {
           <p>The era of prompting robot foundation models has arrived. In this section, we show some rollouts of interactive prompting in action, where we take the robot around, and just ask people to <b>prompt</b> the robot to do new things. Here are some cool tasks that we found the robot is able to do.</p>
 
           {/* Section 5: Interactive Prompting - Green buttons */}
-          <div style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            justifyContent: 'center', 
-            gap: '0.5rem',
-            marginTop: '1rem',
-            marginBottom: '1.5rem'
-          }}>
+          <div className={styles.taskButtonRow} style={{ marginBottom: '1.5rem' }}>
             {InteractivePromptingVideos.map((option) => (
               <button
                 key={option.id}
@@ -824,19 +758,8 @@ export default function FirstPost() {
           display: 'flex',
           justifyContent: 'center'
         }}>
-          <div style={{ 
-            width: '60%',
-            maxWidth: '50%'
-          }}>
-            <div style={{ 
-              width: '100%',
-              aspectRatio: '16/9',
-              borderRadius: '6px',
-              overflow: 'hidden',
-              backgroundColor: '#0f0f0f',
-              marginTop: '-2rem',
-              marginBottom: '-2rem',
-            }}>
+          <div className={styles.responsiveVideoWrapper}>
+            <div className={styles.responsiveVideoInner} style={{ marginTop: '-2rem', marginBottom: '-2rem' }}>
               <LazyVideo
                 src={selectedInteractivePrompting.policyRolloutVideo}
                 title="Interactive Prompting Video"
@@ -884,13 +807,7 @@ export default function FirstPost() {
           </p>
           
           {/* Section 6: Inference - Green for DreamZero, Blue for DreamZero-Flash */}
-          <div style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            justifyContent: 'center', 
-            gap: '0.5rem',
-            marginTop: '1rem'
-          }}>
+            <div className={styles.taskButtonRow}>
             <button
               onClick={() => setSelectedInference('dreamzero')}
               style={{
@@ -939,35 +856,17 @@ export default function FirstPost() {
             How far can zero-shot generalization go? We've been stress-testing DreamZero with tasks we never trained on, in environments we've never seen. From fanning burgers to pressing elevator buttons, playing xylophones to shaking tambourines, we keep discovering surprising new capabilities. DreamZero is just the beginning of the new wave of robot foundation models built on video world models!
           </p>
           
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.5rem',
-            margin: '1rem 0'
-          }}>
+          <div className={styles.taskTags}>
             {[
               'Fan the burger', 'Press elevator button', 'Play xylophone', 
               'Shake tambourine', 'Pour into human-held cup', 'Open laptop',
               'Ring the bell', 'Flip the pancake', 'Water the plant'
             ].map((task) => (
-              <span key={task} style={{
-                background: 'rgba(118, 185, 0, 0.1)',
-                border: '1px solid rgba(118, 185, 0, 0.2)',
-                borderRadius: '20px',
-                padding: '0.35rem 0.75rem',
-                fontSize: '0.85rem'
-              }}>
+              <span key={task} className={styles.taskTag}>
                 {task}
               </span>
             ))}
-            <span style={{
-              background: 'rgba(118, 185, 0, 0.2)',
-              border: '1px solid rgba(118, 185, 0, 0.3)',
-              borderRadius: '20px',
-              padding: '0.35rem 0.75rem',
-              fontSize: '0.85rem',
-              fontWeight: '600'
-            }}>
+            <span className={`${styles.taskTag} ${styles.taskTagHighlight}`}>
               <a href="https://dreamzero0.github.io/evals_gallery/">+90 more...</a>
             </span>
           </div>
@@ -978,21 +877,8 @@ export default function FirstPost() {
             rel="noopener noreferrer"
             style={{ textDecoration: 'none' }}
           >
-            <div style={{
-              background: 'linear-gradient(135deg, rgba(118, 185, 0, 0.15) 0%, rgba(118, 185, 0, 0.05) 100%)',
-              border: '1px solid rgba(118, 185, 0, 0.3)',
-              borderRadius: '12px',
-              padding: '1.5rem',
-              marginTop: '1.5rem',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              cursor: 'pointer',
-              transition: 'all 0.2s ease'
-            }}>
-              <div style={{
-                fontSize: '2.5rem'
-              }}>
+            <div className={styles.ctaBox}>
+              <div style={{ fontSize: '2.5rem' }}>
                 🎬
               </div>
               <div>
