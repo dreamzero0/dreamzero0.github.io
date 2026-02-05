@@ -479,7 +479,7 @@ export const UnseenVideos = {
         caption: 'Grab one side of the map and fold the map.  | ✅'
       },
       {
-        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_67_AI.m3u8',
+        generatedUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_067_AI.m3u8',
         executionUrl: '/labs/gear/videos/agi_unseen/hsl/NEWUNSEEN_67.m3u8',
         caption: 'Grab one side of the map and fold the map.  | ⚠️'
       },
