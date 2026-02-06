@@ -587,7 +587,7 @@
   
   /* Blog styles */
 .blogPost {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
     font-family: 'NVIDIA Sans', sans-serif;
@@ -666,6 +666,32 @@
     font-size: 1rem;    /* was 1.5rem */
   }
   
+  /* Mobile: full-width paragraphs and charts (DROID section, etc.) */
+  @media (max-width: 768px) {
+    .blogContent {
+      max-width: 100%;
+      width: 100%;
+      padding: 1rem 0.25rem;
+    }
+    .blogContent > p,
+    .blogContent > h1,
+    .blogContent > h2,
+    .blogContent > h3,
+    .blogContent > h4,
+    .blogContent > h5,
+    .blogContent > h6,
+    .blogContent > ul,
+    .blogContent > ol,
+    .blogContent > blockquote,
+    .blogContent > .tableContainer {
+      max-width: 100%;
+    }
+    .chartContainer {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
   /* Text content should be narrower for better readability */
   .blogContent > p,
   .blogContent > h1,
