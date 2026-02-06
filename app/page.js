@@ -469,6 +469,7 @@ export default function FirstPost() {
 
         <div className={styles.taskButtonRow}>
           <button
+            className={styles.taskButtonRow}
             onClick={() => setSelectedDroid('droid_1')}
             style={{
               padding: '0.4rem 0.8rem',
@@ -482,10 +483,11 @@ export default function FirstPost() {
               transition: 'all 0.2s ease'
             }}
           >
-            Seen Tasks<div className={styles.taskButtonRow}></div>
+            Seen Tasks
           </button>
           
           <button
+            className={styles.taskButtonRow}
             onClick={() => setSelectedDroid('droid_2')}
             style={{
               padding: '0.4rem 0.8rem',
@@ -611,7 +613,7 @@ export default function FirstPost() {
           justifyContent: 'center'
         }}>
           <div className={styles.responsiveVideoWrapper}>
-            <h3 style={{ textAlign: 'center', marginBottom: '0.5rem', marginTop: '-2rem' }}>
+            <h3 style={{ textAlign: 'center', marginBottom: '0.5rem', marginTop: '-1rem' }}>
               {selectedCombinedVideo.label}: 10 consecutive evaluations | {selectedCombinedVideo.progress}
             </h3>
             <div className={styles.responsiveVideoInner}>
