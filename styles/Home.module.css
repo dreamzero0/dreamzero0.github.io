@@ -389,17 +389,30 @@
     .navLink:after {
       bottom: -3px;
     }
+
+    .navLink {
+      font-size: 0.95rem;
+    }
+    
+    .main {
+      max-width: 100%;
+      padding: 1rem 0;
+    }
     
     .hero h1 {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
     
     .hero h2 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    .heroContent {
+      padding: 1rem 1rem 0.5rem;
     }
     
     .projectsList {
@@ -408,7 +421,7 @@
     }
     
     .welcome h2, .positions h2, .projects h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     
     .positionsContent {
@@ -425,11 +438,156 @@
       align-items: center;
       gap: 1rem;
     }
+
+    /* Blog content mobile adjustments */
+    .blogContent {
+      max-width: 100%;
+      padding: 1rem;
+    }
+    
+    .blogContent h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+    
+    .blogContent h3 {
+      font-size: 1.2rem;
+    }
+    
+    .blogContent p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    
+    /* Video container mobile */
+    .videoContainer {
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+    
+    /* Author section mobile */
+    .authors {
+      max-width: 100%;
+      padding: 0 0.5rem;
+    }
+    
+    .authorList {
+      gap: 0.2rem 0.5rem;
+    }
+    
+    .authorName {
+      font-size: 0.85rem;
+    }
+    
+    .affiliation {
+      font-size: 1rem;
+    }
+    
+    /* Blog title mobile */
+    .blogTitle {
+      font-size: 1.6rem !important;
+      line-height: 1.3;
+    }
+    
+    /* Link container mobile */
+    .linkContainer {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: -0.5rem;
+    }
+    
+    .linkDivider {
+      display: none;
+    }
+    
+    .borderedLink {
+      font-size: 0.8rem;
+      padding: 3px 10px;
+    }
+    
+    /* Video preview mobile */
+    .videoPreview {
+      width: 100%;
+    }
+    
+    /* Charts mobile */
+    .chartContainer {
+      max-width: 100%;
+      height: 280px;
+      padding: 5px;
+    }
+    
+    /* Table adjustments */
+    .blogContent > .tableContainer {
+      max-width: 100%;
+    }
+    
+    /* Wide image container - prevent overflow */
+    .wideImageContainer {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    /* Button wrapper mobile */
+    .buttonWrapper {
+      gap: 0.4rem;
+    }
+    
+    .behaviorButton {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .main {
+      padding: 0.5rem 0;
+    }
+    
+    .blogContent {
+      padding: 0.75rem;
+    }
+    
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    
+    .blogTitle {
+      font-size: 1.4rem !important;
+    }
+    
+    .authorName {
+      font-size: 0.75rem;
+    }
+    
+    .affiliation {
+      font-size: 0.9rem;
+    }
+    
+    .chartContainer {
+      height: 240px;
+    }
+    
+    .carouselNavigation {
+      gap: 10px;
+    }
+    
+    .carouselButton {
+      width: 32px;
+      height: 32px;
+      font-size: 20px;
+    }
+    
+    .videoLabel {
+      font-size: 12px;
+    }
+
   }
   
   /* Blog styles */
 .blogPost {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
     font-family: 'NVIDIA Sans', sans-serif;
@@ -508,6 +666,32 @@
     font-size: 1rem;    /* was 1.5rem */
   }
   
+  /* Mobile: full-width paragraphs and charts (DROID section, etc.) */
+  @media (max-width: 768px) {
+    .blogContent {
+      max-width: 100%;
+      width: 100%;
+      padding: 1rem 0.25rem;
+    }
+    .blogContent > p,
+    .blogContent > h1,
+    .blogContent > h2,
+    .blogContent > h3,
+    .blogContent > h4,
+    .blogContent > h5,
+    .blogContent > h6,
+    .blogContent > ul,
+    .blogContent > ol,
+    .blogContent > blockquote,
+    .blogContent > .tableContainer {
+      max-width: 100%;
+    }
+    .chartContainer {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
   /* Text content should be narrower for better readability */
   .blogContent > p,
   .blogContent > h1,
@@ -770,20 +954,38 @@
   display: block;
 }
 
+@media (max-width: 1024px) {
+  .carouselItem {
+    width: 380px;
+    margin-right: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .carouselItem {
-    width: 90vw;
-    margin-right: 15px;
+    width: 85vw;
+    margin-right: 12px;
   }
   
   .carouselItem iframe {
-    height: calc(90vw * 9 / 16); /* maintain 16:9 aspect ratio */
+    height: calc(85vw * 9 / 16); /* maintain 16:9 aspect ratio */
   }
   
   .carouselButton {
     width: 36px;
     height: 36px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselItem {
+    width: 92vw;
+    margin-right: 10px;
+  }
+    
+  .carouselItem iframe {
+    height: calc(92vw * 9 / 16);
   }
 }
 
@@ -1057,12 +1259,12 @@
     background-color: transparent;
   }
   
-/* Remove old dropdown styles */
+/* Remove old dropdown styles - deprecated in favor of megamenu */
 .dropdown,
 .dropdownToggle,
 .dropdownMenu,
 .dropdownItem {
-  /* These will be replaced by megamenu styles */
+  display: none;
 }
 
 /* MegaMenu styles */
@@ -1707,68 +1909,7 @@
   color: #666;
 }
 
-@media (max-width: 65%) {
-  .blogContent {
-    padding: 1.5rem 1rem;
-  }
-
-  /* Adjust text width for mobile */
-  .blogContent > p,
-  .blogContent > h1,
-  .blogContent > h2,
-  .blogContent > h3,
-  .blogContent > h4,
-  .blogContent > h5,
-  .blogContent > h6,
-  .blogContent > ul,
-  .blogContent > ol,
-  .blogContent > blockquote,
-  .blogContent > .tableContainer {
-    max-width: 100%;
-    padding: 0 0.5rem;
-  }
-
-  /* Mobile-specific styles for FLARE page */
-  .blogTitle {
-    font-size: 2.5rem !important;
-  }
-
-  .blogSubtitle {
-    font-size: 1.2rem !important;
-  }
-
-  .linkContainer {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .linkContainer .linkDivider {
-    display: none;
-  }
-
-  /* Chart containers on mobile */
-  .chartContainer {
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-
-  /* Video containers on mobile */
-  .videoContainer {
-    margin: 1rem 0;
-  }
-
-  /* Button selector on mobile */
-  .buttonWrapper {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .behaviorButton {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
-}
-
+/* The styles below are also covered by the @media (max-width: 768px) block above */
 /* Additional responsive breakpoint for larger tablets */
 @media (max-width: 1024px) and (min-width: 769px) {
   .blogContent > p,
@@ -1914,4 +2055,186 @@
   font-weight: 600;
   color: #0050c0;
   text-decoration: underline;
+}
+
+
+/* Responsive utility classes for video containers */
+.responsiveVideoWrapper {
+  width: 60%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.responsiveVideoInner {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #0f0f0f;
+}
+
+/* Wide breakout image container */
+.wideBreakoutImage {
+  width: 130%;
+  margin-left: -15%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wideBreakoutImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* Evaluation cards grid */
+.evalCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+/* Button row for task selectors */
+.taskButtonRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .main {
+    max-width: 90%;
+  }
+  
+  .blogContent {
+    max-width: 80%;
+  }
+  
+  .authors {
+    max-width: 90%;
+  }
+  
+  .responsiveVideoWrapper {
+    width: 80%;
+    max-width: 75%;
+  }
+  
+  .wideBreakoutImage {
+    width: 110%;
+    margin-left: -5%;
+  }
+}
+
+/* Mobile adjustments for utility classes */
+@media (max-width: 768px) {
+  .responsiveVideoWrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .wideBreakoutImage {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0.5rem;
+  }
+  
+  .evalCardsGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+  
+  .taskButtonRow {
+    gap: 0.4rem;
+    padding: 0 0.5rem;
+    margin-bottom: .25rem;
+  }
+  
+  .taskButtonRow button {
+    font-size: 0.75rem !important;
+    padding: 0.35rem 0.6rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsiveVideoWrapper {
+    padding: 0 0.5rem;
+  }
+  
+  .evalCardsGrid {
+    margin: 1rem 0 2rem 0;
+  }
+  
+  .taskButtonRow button {
+    font-size: 0.7rem !important;
+    padding: 0.3rem 0.5rem !important;
+    margin-bottom: .25rem;
+  }
+}
+
+/* Task tags (What's Next section) */
+.taskTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.taskTag {
+  background: rgba(118, 185, 0, 0.1);
+  border: 1px solid rgba(118, 185, 0, 0.2);
+  border-radius: 20px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.taskTagHighlight {
+  background: rgba(118, 185, 0, 0.2);
+  border: 1px solid rgba(118, 185, 0, 0.3);
+  font-weight: 600;
+}
+
+.ctaBox {
+  background: linear-gradient(135deg, rgba(118, 185, 0, 0.15) 0%, rgba(118, 185, 0, 0.05) 100%);
+  border: 1px solid rgba(118, 185, 0, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.ctaBox:hover {
+  border-color: rgba(118, 185, 0, 0.5);
+  background: linear-gradient(135deg, rgba(118, 185, 0, 0.2) 0%, rgba(118, 185, 0, 0.08) 100%);
+}
+
+@media (max-width: 768px) {
+  .taskTag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+  
+  .ctaBox {
+    padding: 1rem;
+    gap: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .taskTag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
 }
