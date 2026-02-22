@@ -909,7 +909,67 @@ export default function FirstPost() {
             tags={['World Models', 'Zero-shot Generalization']}
           />
         </div>
-      
+
+        {/* BibTeX Citation Section */}
+        <div className={styles.blogContent}>
+          <h3>Citation</h3>
+          <p>If you find this work useful, please cite our paper:</p>
+          <div style={{
+            position: 'relative',
+            background: '#f5f5f5',
+            borderRadius: '8px',
+            padding: '1.25rem',
+            fontFamily: 'monospace',
+            fontSize: '0.8rem',
+            lineHeight: '1.6',
+            overflowX: 'auto',
+            border: '1px solid #e0e0e0'
+          }}>
+            <button
+              onClick={() => {
+                const bibtex = `@misc{ye2026worldactionmodelszeroshot,
+      title={World Action Models are Zero-shot Policies},
+      author={Seonghyeon Ye and Yunhao Ge and Kaiyuan Zheng and Shenyuan Gao and Sihyun Yu and George Kurian and Suneel Indupuru and You Liang Tan and Chuning Zhu and Jiannan Xiang and Ayaan Malik and Kyungmin Lee and William Liang and Nadun Ranawaka and Jiasheng Gu and Yinzhen Xu and Guanzhi Wang and Fengyuan Hu and Avnish Narayan and Johan Bjorck and Jing Wang and Gwanghyun Kim and Dantong Niu and Ruijie Zheng and Yuqi Xie and Jimmy Wu and Qi Wang and Ryan Julian and Danfei Xu and Yilun Du and Yevgen Chebotar and Scott Reed and Jan Kautz and Yuke Zhu and Linxi "Jim" Fan and Joel Jang},
+      year={2026},
+      eprint={2602.15922},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2602.15922},
+}`;
+                navigator.clipboard.writeText(bibtex);
+              }}
+              style={{
+                position: 'absolute',
+                top: '0.5rem',
+                right: '0.5rem',
+                padding: '0.3rem 0.7rem',
+                borderRadius: '4px',
+                border: '1px solid #ccc',
+                background: 'white',
+                cursor: 'pointer',
+                fontSize: '0.75rem',
+                color: '#555',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseOver={(e) => e.target.style.background = '#e8e8e8'}
+              onMouseOut={(e) => e.target.style.background = 'white'}
+            >
+              Copy
+            </button>
+            <pre style={{ margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+{`@misc{ye2026worldactionmodelszeroshot,
+      title={World Action Models are Zero-shot Policies},
+      author={Seonghyeon Ye and Yunhao Ge and Kaiyuan Zheng and Shenyuan Gao and Sihyun Yu and George Kurian and Suneel Indupuru and You Liang Tan and Chuning Zhu and Jiannan Xiang and Ayaan Malik and Kyungmin Lee and William Liang and Nadun Ranawaka and Jiasheng Gu and Yinzhen Xu and Guanzhi Wang and Fengyuan Hu and Avnish Narayan and Johan Bjorck and Jing Wang and Gwanghyun Kim and Dantong Niu and Ruijie Zheng and Yuqi Xie and Jimmy Wu and Qi Wang and Ryan Julian and Danfei Xu and Yilun Du and Yevgen Chebotar and Scott Reed and Jan Kautz and Yuke Zhu and Linxi "Jim" Fan and Joel Jang},
+      year={2026},
+      eprint={2602.15922},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2602.15922},
+}`}
+            </pre>
+          </div>
+        </div>
+
       </article>
     </>
   );
