@@ -904,7 +904,7 @@ export default function FirstPost() {
         <div className={styles.blogContent}>
           <PaperInfo
             title={<><b>DreamZero</b>: World Action Models are Zero-shot Policies</>}
-            paperUrl="/DreamZero.pdf"
+            paperUrl="https://arxiv.org/abs/2602.15922"
             paperType="paper"
             tags={['World Models', 'Zero-shot Generalization']}
           />
