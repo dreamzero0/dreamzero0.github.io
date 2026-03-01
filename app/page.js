@@ -122,7 +122,7 @@ export default function FirstPost() {
           </h1>
           
           <div className={styles.linkContainer}>
-            <a href="/DreamZero.pdf" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+            <a href="https://arxiv.org/abs/2602.15922" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
               Paper
             </a>
             <span className={styles.linkDivider}>•</span>
